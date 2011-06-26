@@ -1,0 +1,24 @@
+online references: 
+look up hospitals by mprovno or address/location: http://data.medicare.gov/dataset/Hospital-General-Information/v287-28n3
+codebook for medpar data: http://www.resdac.org/ddme/dd_me_.asp
+fips, pmsa, cmsa xwalk: http://www.census.gov/population/estimates/metro-city/99mfips.txt
+old msa, new msa xwalk: http://www.cms.gov/AcuteInpatientPPS/FFD/itemdetail.asp?filterType=none&filterByDID=-99&sortByDID=2&sortOrder=ascending&itemID=CMS022637&intNumPerPage=10
+icd-9 to hcc xwalk: https://www.cms.gov/MedicareAdvtgSpecRateStats/06a_Risk_adjustment_prior.asp
+hcc blog: http://www.hccblog.com/category/hcc-codes/
+bea income: http://www.bea.gov/newsreleases/regional/lapi/lapi_newsrelease.htm
+bls unemployment: http://www.bls.gov/lau/#tables
+BRFSS questions: http://apps.nccd.cdc.gov/BRFSSQuest/
+IV refresher: http://homepage.univie.ac.at/Christine.Zulehner/iv.pdf
+
+SAS related:
+sql versus data: http://www.ats.ucla.edu/stat/sas/library/nesug99/ad121.pdf
+dealing with date formats: http://www2.sas.com/proceedings/sugi24/Coders/p073-24.pdf
+geocode function: http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_distance_sect008.htm
+drive time: http://www.sascommunity.org/wiki/Driving_Distances_and_Drive_Times_using_SAS_and_Google_Maps
+
+papers:
+hospital competition kessler: http://www.nber.org/papers/w7266
+cms-hcc model: https://www.cms.gov/HealthCareFinancingReview/Downloads/04Summerpg119.pdf
+
+stanford resources (req stanford login):
+Little SAS book: http://proquest.safaribooksonline.com/9781599947259/firstchapter
