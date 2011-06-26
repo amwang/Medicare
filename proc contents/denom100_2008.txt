@@ -1,0 +1,180 @@
+                                                           The SAS System                       01:25 Tuesday, February 15, 2011   1
+
+                                                       The CONTENTS Procedure
+
+                Data Set Name        TMP.DENOM100_2008                                Observations          47675605
+                Member Type          DATA                                             Variables             127     
+                Engine               V9                                               Indexes               0       
+                Created              Wed, Nov 03, 2010 10:30:08 PM                    Observation Length    312     
+                Last Modified        Wed, Nov 03, 2010 10:30:08 PM                    Deleted Observations  0       
+                Protection                                                            Compressed            NO      
+                Data Set Type                                                         Sorted                NO      
+                Label                                                                                               
+                Data Representation  HP_UX_64, RS_6000_AIX_64, SOLARIS_64, HP_IA64                                  
+                Encoding             latin1  Western (ISO)                                                          
+
+
+                                                 Engine/Host Dependent Information
+
+                                Data Set Page Size          32768                                   
+                                Number of Data Set Pages    458420                                  
+                                First Data Page             1                                       
+                                Max Obs per Page            104                                     
+                                Obs in First Data Page      34                                      
+                                Number of Data Set Repairs  0                                       
+                                File Name                   /space/wanga/test/denom100_2008.sas7bdat
+                                Release Created             9.0101M3                                
+                                Host Created                SunOS                                   
+                                Inode Number                6248                                    
+                                Access Permission           rw-r--r--                               
+                                Owner Name                  UNKNOWN                                 
+                                File Size (bytes)           15021514752                             
+
+
+                                             Alphabetic List of Variables and Attributes
+ 
+                       #    Variable    Type    Len    Format    Label
+
+                       8    AGE         Num       3    3.        10. Age at Beginning of Bene Enrollment Refe  
+                     111    A_MO_CNT    Char      2    $2.       17. HI Coverage Count                         
+                      13    A_TRM_CD    Char      1    $1.       15. Part A Termination Code                   
+                     126    BENEDPSQ    Num       8    8.        24. BENE_ID w/ More than One Record           
+                       5    BENE_DOB    Num       4    DATE9.    7. Date of Birth                              
+                       1    BENE_ID     Char     15    $15.      1. Encrypted 723 Beneficiary ID               
+                       4    BENE_ZIP    Char      9    $9.       6. Zip Code of Residence                      
+                      15    BUYIN01     Char      1    $1.       18.1 Jan. Medicare Entitlement/Buy-In Indicat 
+                      16    BUYIN02     Char      1    $1.       18.2 Feb. Medicare Entitlement/Buy-In Indicat 
+                      17    BUYIN03     Char      1    $1.       18.3 Mar. Medicare Entitlement/Buy-In Indicat 
+                      18    BUYIN04     Char      1    $1.       18.4 Apr. Medicare Entitlement/Buy-In Indicat 
+                      19    BUYIN05     Char      1    $1.       18.5 May Medicare Entitlement/Buy-In Indicato 
+                      20    BUYIN06     Char      1    $1.       18.6 Jun. Medicare Entitlement/Buy-In Indicat 
+                      21    BUYIN07     Char      1    $1.       18.7 Jul. Medicare Entitlement/Buy-In Indicat 
+                      22    BUYIN08     Char      1    $1.       18.8 Aug. Medicare Entitlement/Buy-In Indicat 
+                      23    BUYIN09     Char      1    $1.       18.9 Sep. Medicare Entitlement/Buy-In Indicat 
+                      24    BUYIN10     Char      1    $1.       18.10 Oct. Medicare Entitlement/Buy-In Indicat
+                      25    BUYIN11     Char      1    $1.       18.11 Nov. Medicare Entitlement/Buy-In Indicat
+                      26    BUYIN12     Char      1    $1.       18.12 Dec. Medicare Entitlement/Buy-In Indicat
+                     114    BUYIN_MO    Char      2    $2.       20. State Buy-In Coverage Count               
+                     112    B_MO_CNT    Char      2    $2.       18. SMI Coverage Count                        
+                      14    B_TRM_CD    Char      1    $1.       16. Part B Termination Code                   
+                      39    CNTRCT01    Char      5    $5.       Jan. Encrypted Contract ID                    
+                                                           The SAS System                       01:25 Tuesday, February 15, 2011   2
+
+                                                       The CONTENTS Procedure
+
+                                             Alphabetic List of Variables and Attributes
+ 
+                       #    Variable    Type    Len    Format    Label
+
+                      40    CNTRCT02    Char      5    $5.       Feb. Encrypted Contract ID                    
+                      41    CNTRCT03    Char      5    $5.       Mar. Encrypted Contract ID                    
+                      42    CNTRCT04    Char      5    $5.       Apr. Encrypted Contract ID                    
+                      43    CNTRCT05    Char      5    $5.       May Encrypted Contract ID                     
+                      44    CNTRCT06    Char      5    $5.       Jun. Encrypted Contract ID                    
+                      45    CNTRCT07    Char      5    $5.       Jul. Encrypted Contract ID                    
+                      46    CNTRCT08    Char      5    $5.       Aug. Encrypted Contract ID                    
+                      47    CNTRCT09    Char      5    $5.       Sep. Encrypted Contract ID                    
+                      48    CNTRCT10    Char      5    $5.       Oct. Encrypted Contract ID                    
+                      49    CNTRCT11    Char      5    $5.       Nov. Encrypted Contract ID                    
+                      50    CNTRCT12    Char      5    $5.       Dec. Encrypted Contract ID                    
+                       3    CNTY_CD     Char      3    $3.       5. SSA County Code                            
+                     118    CRDCOVSW    Char      1    $1.       28. On/Off Creditable Coverage Switch         
+                      10    CREC        Char      1    $1.       12. Current Reason for Entitlement Code       
+                     123    CRNT_BIC    Char      2    $2.       25. Beneficiary Identification Code           
+                      75    CSTSHR01    Char      2    $2.       30.1 Jan. Cost Share Group Code               
+                      76    CSTSHR02    Char      2    $2.       30.2 Feb. Cost Share Group Code               
+                      77    CSTSHR03    Char      2    $2.       30.3 Mar. Cost Share Group Code               
+                      78    CSTSHR04    Char      2    $2.       30.4 Apr. Cost Share Group Code               
+                      79    CSTSHR05    Char      2    $2.       30.5 May Cost Share Group Code                
+                      80    CSTSHR06    Char      2    $2.       30.6 Jun. Cost Share Group Code               
+                      81    CSTSHR07    Char      2    $2.       30.7 Jul. Cost Share Group Code               
+                      82    CSTSHR08    Char      2    $2.       30.8 Aug. Cost Share Group Code               
+                      83    CSTSHR09    Char      2    $2.       30.9 Sep. Cost Share Group Code               
+                      84    CSTSHR10    Char      2    $2.       30.10 Oct. Cost Share Group Code              
+                      85    CSTSHR11    Char      2    $2.       30.11 Nov. Cost Share Group Code              
+                      86    CSTSHR12    Char      2    $2.       30.12 Dec. Cost Share Group Code              
+                     121    DEATH_DT    Num       4    DATE9.    22. Date of Death                             
+                      99    DUAL_01     Char      2    $2.       32.1 Jan. Dual Status Code                    
+                     100    DUAL_02     Char      2    $2.       32.2 Feb. Dual Status Code                    
+                     101    DUAL_03     Char      2    $2.       32.3 Mar. Dual Status Code                    
+                     102    DUAL_04     Char      2    $2.       32.4 Apr. Dual Status Code                    
+                     103    DUAL_05     Char      2    $2.       32.5 May Dual Status Code                     
+                     104    DUAL_06     Char      2    $2.       32.6 Jun. Dual Status Code                    
+                     105    DUAL_07     Char      2    $2.       32.7 Jul. Dual Status Code                    
+                     106    DUAL_08     Char      2    $2.       32.8 Aug. Dual Status Code                    
+                     107    DUAL_09     Char      2    $2.       32.9 Sep. Dual Status Code                    
+                     108    DUAL_10     Char      2    $2.       32.10 Oct. Dual Status Code                   
+                     109    DUAL_11     Char      2    $2.       32.11 Nov. Dual Status Code                   
+                     110    DUAL_12     Char      2    $2.       32.12 Dec. Dual Status Code                   
+                     117    DUAL_MO     Char      2    $2.       35. Dual Eligible Months Number               
+                     125    EFIVEPCT    Char      1    $1.       27. Enhanced 5% Flag                          
+                      11    ESRD_IND    Char      1    $1.       13. ESRD Indicator                            
+                     124    FIVEPCT     Char      1    $1.       26. Strict 5% Flag                            
+                      27    HMO1        Char      1    $1.       19.1 Jan. HMO Indicator                       
+                      28    HMO2        Char      1    $1.       19.2 Feb. HMO Indicator                       
+                      29    HMO3        Char      1    $1.       19.3 Mar. HMO Indicator                       
+                      30    HMO4        Char      1    $1.       19.4 Apr. HMO Indicator                       
+                      31    HMO5        Char      1    $1.       19.5 May HMO Indicator                        
+                      32    HMO6        Char      1    $1.       19.6 Jun. HMO Indicator                       
+                      33    HMO7        Char      1    $1.       19.7 Jul. HMO Indicator                       
+                      34    HMO8        Char      1    $1.       19.8 Aug. HMO Indicator                       
+                                                           The SAS System                       01:25 Tuesday, February 15, 2011   3
+
+                                                       The CONTENTS Procedure
+
+                                             Alphabetic List of Variables and Attributes
+ 
+                       #    Variable    Type    Len    Format    Label
+
+                      35    HMO9        Char      1    $1.       19.9 Sep. HMO Indicator                       
+                      36    HMO10       Char      1    $1.       19.10 Oct. HMO Indicator                      
+                      37    HMO11       Char      1    $1.       19.11 Nov. HMO Indicator                      
+                      38    HMO12       Char      1    $1.       19.12 Dec. HMO Indicator                      
+                     113    HMO_MO      Char      2    $2.       19. HMO Coverage Count                        
+                      12    MS_CD       Char      2    $2.       14. Medicare Status Code                      
+                       9    OREC        Char      1    $1.       11. Original Reason for Entitlement Code      
+                      51    PBPID01     Char      3    $3.       Jan. Encrypted Plan Benefit Package ID        
+                      52    PBPID02     Char      3    $3.       Feb. Encrypted Plan Benefit Package ID        
+                      53    PBPID03     Char      3    $3.       Mar. Encrypted Plan Benefit Package ID        
+                      54    PBPID04     Char      3    $3.       Apr. Encrypted Plan Benefit Package ID        
+                      55    PBPID05     Char      3    $3.       May Encrypted Plan Benefit Package ID         
+                      56    PBPID06     Char      3    $3.       Jun. Encrypted Plan Benefit Package ID        
+                      57    PBPID07     Char      3    $3.       Jul. Encrypted Plan Benefit Package ID        
+                      58    PBPID08     Char      3    $3.       Aug. Encrypted Plan Benefit Package ID        
+                      59    PBPID09     Char      3    $3.       Sep. Encrypted Plan Benefit Package ID        
+                      60    PBPID10     Char      3    $3.       Oct. Encrypted Plan Benefit Package ID        
+                      61    PBPID11     Char      3    $3.       Nov. Encrypted Plan Benefit Package ID        
+                      62    PBPID12     Char      3    $3.       Dec. Encrypted Plan Benefit Package ID        
+                     115    PLNCOVMO    Char      2    $2.       33. Plan Coverage Months Number               
+                       7    RACE        Char      1    $1.       9. Beneficiary Race Code                      
+                     116    RDSCOVMO    Char      2    $2.       34. Retiree Drug Subsidy Coverage Months Num  
+                      87    RDSIND01    Char      1    $1.       31.1 Jan. RDS Code - Retiree Drug Subsidy Cod 
+                      88    RDSIND02    Char      1    $1.       31.2 Feb. RDS Code - Retiree Drug Subsidy Cod 
+                      89    RDSIND03    Char      1    $1.       31.3 Mar. RDS Code - Retiree Drug Subsidy Cod 
+                      90    RDSIND04    Char      1    $1.       31.4 Apr. RDS Code - Retiree Drug Subsidy Cod 
+                      91    RDSIND05    Char      1    $1.       31.5 May RDS Code - Retiree Drug Subsidy Code 
+                      92    RDSIND06    Char      1    $1.       31.6 Jun. RDS Code - Retiree Drug Subsidy Cod 
+                      93    RDSIND07    Char      1    $1.       31.7 Jul. RDS Code - Retiree Drug Subsidy Cod 
+                      94    RDSIND08    Char      1    $1.       31.8 Aug. RDS Code - Retiree Drug Subsidy Cod 
+                      95    RDSIND09    Char      1    $1.       31.9 Sep. RDS Code - Retiree Drug Subsidy Cod 
+                      96    RDSIND10    Char      1    $1.       31.10 Oct. RDS Code - Retiree Drug Subsidy Cod
+                      97    RDSIND11    Char      1    $1.       31.11 Nov. RDS Code - Retiree Drug Subsidy Cod
+                      98    RDSIND12    Char      1    $1.       31.12 Dec. RDS Code - Retiree Drug Subsidy Cod
+                     122    RFRNC_YR    Num       8    4.        23. Beneficiary Enrollment Reference Year     
+                     119    RTI_RACE    Char      1    $1.       36. RTI (Research Triangle Institute) Race C  
+                       6    SEX         Char      1    $1.       8. Sex                                        
+                      63    SGMTID01    Char      3    $3.       Jan. Encrypted Segment ID                     
+                      64    SGMTID02    Char      3    $3.       Feb. Encrypted Segment ID                     
+                      65    SGMTID03    Char      3    $3.       Mar. Encrypted Segment ID                     
+                      66    SGMTID04    Char      3    $3.       Apr. Encrypted Segment ID                     
+                      67    SGMTID05    Char      3    $3.       May. Encrypted Segment ID                     
+                      68    SGMTID06    Char      3    $3.       Jun. Encrypted Segment ID                     
+                      69    SGMTID07    Char      3    $3.       Jul. Encrypted Segment ID                     
+                      70    SGMTID08    Char      3    $3.       Aug. Encrypted Segment ID                     
+                      71    SGMTID09    Char      3    $3.       Sep. Encrypted Segment ID                     
+                      72    SGMTID10    Char      3    $3.       Oct. Encrypted Segment ID                     
+                      73    SGMTID11    Char      3    $3.       Nov. Encrypted Segment ID                     
+                      74    SGMTID12    Char      3    $3.       Dec. Encrypted Segment ID                     
+                       2    STATE_CD    Char      2    $2.       4. SSA State Code                             
+                     120    V_DOD_SW    Char      2    $2.       21. Valid Date of Death Switch                
+                     127    seqnum      Num       6              Original order in raw data                    

@@ -1,0 +1,72 @@
+The CONTENTS Procedure
+
+Data Set Name        TMP.MEDPAR100                                    Observations          17237514
+Member Type          DATA                                             Variables             29      
+Engine               V9                                               Indexes               0       
+Created              Sunday, January 16, 2011 08:47:57 PM             Observation Length    184     
+Last Modified        Sunday, January 16, 2011 08:47:57 PM             Deleted Observations  0       
+Protection                                                            Compressed            NO      
+Data Set Type                                                         Sorted                YES     
+Label                                                                                               
+Data Representation  HP_UX_64, RS_6000_AIX_64, SOLARIS_64, HP_IA64                                  
+Encoding             latin1  Western (ISO)                                                          
+
+
+               Engine/Host Dependent Information
+
+Data Set Page Size          16384                               
+Number of Data Set Pages    195882                              
+First Data Page             1                                   
+Max Obs per Page            88                                  
+Obs in First Data Page      54                                  
+Number of Data Set Repairs  0                                   
+File Name                   /space/wanga/test/medpar100.sas7bdat
+Release Created             9.0101M3                            
+Host Created                SunOS                               
+Inode Number                6276                                
+Access Permission           rw-r--r--                           
+Owner Name                  UNKNOWN                             
+File Size (bytes)           3209338880                          
+
+
+                    Alphabetic List of Variables and Attributes
+ 
+ #    Variable    Type    Len    Format    Label
+
+ 5    ADMSNDT     Num       4    DATE9.    Date beneficiary admitted for Inpatient 
+ 9    BLDDEDAM    Num       8    9.        Beneficiarys liability for blood deducti
+ 7    COIN_AMT    Num       8    9.        Beneficiarys liability for part A coinsu
+ 8    DED_AMT     Num       8    9.        Beneficiarys liability for stay ($)     
+13    DGNSCD1     Char      6    $6.       Primary ICD-9-CM code                   
+14    DGNSCD2     Char      6    $6.       ICD-9-CM Diagnosis code II              
+15    DGNSCD3     Char      6    $6.       ICD-9-CM Diagnosis code III             
+16    DGNSCD4     Char      6    $6.       ICD-9-CM Diagnosis code IV              
+17    DGNSCD5     Char      6    $6.       ICD-9-CM Diagnosis code V               
+18    DGNSCD6     Char      6    $6.       ICD-9-CM Diagnosis code VI              
+19    DGNSCD7     Char      6    $6.       ICD-9-CM Diagnosis code VII             
+20    DGNSCD8     Char      6    $6.       ICD-9-CM Diagnosis code VIII            
+21    DGNSCD9     Char      6    $6.       ICD-9-CM Diagnosis code IX              
+22    DGNSCD10    Char      6    $6.       ICD-9-CM Diagnosis code X               
+29    DRG_CD      Char      3    $3.       DRG Code                                
+ 6    DSCHRGDT    Num       4    DATE9.    Date beneficiary was discharged or died 
+ 2    GHOPDCD     Char      1    $1.       Code indicating whether or not GHO has p
+12    PMT_AMT     Num       8    9.        Amt of payment from Medicare trust fund 
+23    PRCDRCD1    Char      7    $7.       Principal Procedure code                
+24    PRCDRCD2    Char      7    $7.       Procedure Code II                       
+25    PRCDRCD3    Char      7    $7.       Procedure Code III                      
+26    PRCDRCD4    Char      7    $7.       Procedure Code IV                       
+27    PRCDRCD5    Char      7    $7.       Procedure Code V                        
+The SAS System                                                                                    20:37 Sunday, January 16, 2011   2
+
+The CONTENTS Procedure
+
+                    Alphabetic List of Variables and Attributes
+ 
+ #    Variable    Type    Len    Format    Label
+
+28    PRCDRCD6    Char      7    $7.       Procedure Code VI                       
+10    PRPAYAMT    Num       8    9.        Primry payer other than Medicare for cov
+ 3    PRVDRNUM    Char      6    $6.       MEDPAR Provider Number                  
+ 4    SPCLUNIT    Char      1    $1.       Special num system code for hosp units t
+11    TOTCHRG     Num       8    9.        Total all charges for all srvcs provided
+ 1    hicbic      Char     15    $15.      Encrypted 723 Beneficiary ID
