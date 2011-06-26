@@ -1,0 +1,3520 @@
+mprovno	ssa	county
+010108	01	Autauga
+010100	01	Baldwin
+010129	01	Baldwin
+010083	01	Baldwin
+010069	01	Barbour
+010058	01	Bibb
+010050	01	Blount
+010110	01	Bullock
+010150	01	Butler
+010078	01	Calhoun
+010038	01	Calhoun
+010146	01	Calhoun
+010025	01	Chambers
+010022	01	Cherokee
+010043	01	Chilton
+010091	01	Clarke
+010015	01	Clarke
+010073	01	Clay
+010027	01	Coffee
+010049	01	Coffee
+010157	01	Colbert
+010019	01	Colbert
+010148	01	Conecuh
+010007	01	Covington
+010036	01	Covington
+010066	01	Covington
+010008	01	Crenshaw
+010143	01	Cullman
+010035	01	Cullman
+010021	01	Dale
+010118	01	Dallas
+010012	01	De Kalb
+010097	01	Elmore
+010034	01	Elmore
+010169	01	Escambia
+010099	01	Escambia
+010046	01	Etowah
+010045	01	Fayette
+010158	01	Franklin
+010062	01	Geneva
+010051	01	Greene
+010095	01	Hale
+010001	01	Houston
+010055	01	Houston
+010061	01	Jackson
+010104	01	Jefferson
+010018	01	Jefferson
+010033	01	Jefferson
+010064	01	Jefferson
+010139	01	Jefferson
+010011	01	Jefferson
+010167	01	Jefferson
+010103	01	Jefferson
+010056	01	Jefferson
+010137	01	Jefferson
+010114	01	Jefferson
+010006	01	Lauderdale
+010059	01	Lawrence
+010029	01	Lee
+010079	01	Limestone
+010039	01	Madison
+010131	01	Madison
+010112	01	Marengo
+010044	01	Marion
+010086	01	Marion
+010005	01	Marshall
+010010	01	Marshall
+010144	01	Mobile
+010087	01	Mobile
+010152	01	Mobile
+010090	01	Mobile
+010113	01	Mobile
+010120	01	Monroe
+010023	01	Montgomery
+010024	01	Montgomery
+010149	01	Montgomery
+010085	01	Morgan
+010009	01	Morgan
+010054	01	Morgan
+010109	01	Pickens
+010126	01	Pike
+010032	01	Randolph
+010168	01	Russell
+010016	01	Shelby
+010130	01	St. Clair
+010138	01	Sumter
+010101	01	Talladega
+010065	01	Tallapoosa
+010052	01	Tallapoosa
+010164	01	Talladega
+010092	01	Tuscaloosa
+010145	01	Tuscaloosa
+010089	01	Walker
+010102	01	Wilcox
+010125	01	Winston
+020001	02	Anchorage
+020008	02	Juneau
+020014	02	Kenai Peninsula
+020024	02	Kenai Peninsula
+020006	02	Matanuska-Susitna
+020017	02	Anchorage
+020012	02	Fairbanks North Star
+020027	02	Sitka
+030099	03	Apache
+030043	03	Cochise
+030023	03	Coconino
+030033	03	Gila
+030068	03	Graham
+030067	03	La Paz
+030030	03	Maricopa
+030102	03	Maricopa
+030112	03	Maricopa
+030123	03	Maricopa
+030103	03	Maricopa
+030065	03	Maricopa
+030124	03	Maricopa
+030110	03	Maricopa
+030107	03	Maricopa
+030122	03	Maricopa
+030014	03	Maricopa
+030105	03	Maricopa
+030126	03	Maricopa
+030022	03	Maricopa
+030002	03	Maricopa
+030094	03	Maricopa
+030125	03	Maricopa
+030083	03	Maricopa
+030017	03	Maricopa
+030024	03	Maricopa
+030108	03	Maricopa
+030001	03	Maricopa
+030120	03	Maricopa
+030115	03	Maricopa
+030038	03	Maricopa
+030121	03	Maricopa
+030061	03	Maricopa
+030093	03	Maricopa
+030089	03	Maricopa
+030036	03	Maricopa
+030087	03	Maricopa
+030088	03	Maricopa
+030037	03	Maricopa
+030092	03	Maricopa
+030119	03	Maricopa
+030055	03	Mohave
+030117	03	Mohave
+030069	03	Mohave
+030101	03	Mohave
+030062	03	Navajo
+030114	03	Pima
+030006	03	Pima
+030100	03	Pima
+030011	03	Pima
+030010	03	Pima
+030085	03	Pima
+030064	03	Pima
+030111	03	Pima
+030016	03	Pinal
+030007	03	Yavapai
+030012	03	Yavapai
+030118	03	Yavapai
+030013	03	Yuma
+040072	04	Arkansas
+040027	04	Baxter
+040010	04	Benton
+040001	04	Benton
+040017	04	Boone
+040067	04	Columbia
+040118	04	Craighead
+040145	04	Craighead
+040020	04	Craighead
+040018	04	Crawford
+040042	04	Crittenden
+040051	04	Drew
+040029	04	Faulkner
+040142	04	Garland
+040132	04	Garland
+040026	04	Garland
+040039	04	Greene
+040091	04	Hempstead
+040076	04	Hot Spring
+040119	04	Independence
+040080	04	Jackson
+040071	04	Jefferson
+040002	04	Johnson
+040069	04	Mississippi
+040050	04	Ouachita
+040085	04	Phillips
+040081	04	Pike
+040015	04	Polk
+040041	04	Pope
+040134	04	Pulaski
+040147	04	Pulaski
+040150	04	Pulaski
+040137	04	Pulaski
+040007	04	Pulaski
+040021	04	Pulaski
+040114	04	Pulaski
+040036	04	Pulaski
+040074	04	Pulaski
+040016	04	Pulaski
+040078	04	Pulaski
+040047	04	Randolph
+040084	04	Saline
+040055	04	Sebastian
+040062	04	Sebastian
+040019	04	St. Francis
+040088	04	Union
+040022	04	Washington
+040004	04	Washington
+040014	04	White
+040149	04	White
+040011	04	Yell
+050320	05	Alameda
+050305	05	Alameda
+050043	05	Alameda
+050488	05	Alameda
+050512	05	Alameda
+050002	05	Alameda
+050264	05	Alameda
+050211	05	Alameda
+050195	05	Alameda
+050283	05	Alameda
+050014	05	Amador
+050225	05	Butte
+050030	05	Butte
+050039	05	Butte
+050366	05	Calaveras
+050434	05	Colusa
+050523	05	Contra Costa
+050496	05	Contra Costa
+050689	05	Contra Costa
+050079	05	Contra Costa
+050760	05	Contra Costa
+050180	05	Contra Costa
+050072	05	Contra Costa
+050276	05	Contra Costa
+050417	05	Del Norte
+050352	05	El Dorado
+050254	05	El Dorado
+050060	05	Fresno
+050682	05	Fresno
+050093	05	Fresno
+050192	05	Fresno
+050710	05	Fresno
+050492	05	Fresno
+050708	05	Fresno
+050732	05	Fresno
+050397	05	Fresno
+050006	05	Humboldt
+050028	05	Humboldt
+050045	05	Imperial
+050342	05	Imperial
+050608	05	Kern
+050257	05	Kern
+050448	05	Kern
+050724	05	Kern
+050295	05	Kern
+050036	05	Kern
+050315	05	Kern
+050455	05	Kern
+050349	05	Kings
+050121	05	Kings
+050196	05	Kings
+050476	05	Lake
+050763	05	Los Angeles
+050063	05	Los Angeles
+050205	05	Los Angeles
+050111	05	Los Angeles
+050742	05	Los Angeles
+050376	05	Los Angeles
+050575	05	Los Angeles
+050752	05	Los Angeles
+050139	05	Los Angeles
+050644	05	Los Angeles
+050717	05	Los Angeles
+050373	05	Los Angeles
+050561	05	Los Angeles
+050481	05	Los Angeles
+050762	05	Los Angeles
+050138	05	Los Angeles
+050382	05	Los Angeles
+050531	05	Los Angeles
+050353	05	Los Angeles
+050040	05	Los Angeles
+050149	05	Los Angeles
+050056	05	Los Angeles
+050290	05	Los Angeles
+050696	05	Los Angeles
+050126	05	Los Angeles
+050740	05	Los Angeles
+050277	05	Los Angeles
+050411	05	Los Angeles
+050235	05	Los Angeles
+050281	05	Los Angeles
+050096	05	Los Angeles
+050350	05	Los Angeles
+050146	05	Los Angeles
+050262	05	Los Angeles
+050393	05	Los Angeles
+050624	05	Los Angeles
+050660	05	Los Angeles
+050588	05	Los Angeles
+050641	05	Los Angeles
+050278	05	Los Angeles
+050091	05	Los Angeles
+050438	05	Los Angeles
+050103	05	Los Angeles
+050485	05	Los Angeles
+050204	05	Los Angeles
+050158	05	Los Angeles
+050239	05	Los Angeles
+050468	05	Los Angeles
+050677	05	Los Angeles
+050753	05	Los Angeles
+050116	05	Los Angeles
+050238	05	Los Angeles
+050735	05	Los Angeles
+050736	05	Los Angeles
+050738	05	Los Angeles
+050137	05	Los Angeles
+050727	05	Los Angeles
+050169	05	Los Angeles
+050609	05	Los Angeles
+050018	05	Los Angeles
+050124	05	Los Angeles
+050597	05	Los Angeles
+050112	05	Los Angeles
+050723	05	Los Angeles
+050737	05	Los Angeles
+050581	05	Los Angeles
+050231	05	Los Angeles
+050135	05	Los Angeles
+050378	05	Los Angeles
+050471	05	Los Angeles
+050601	05	Los Angeles
+050058	05	Los Angeles
+050761	05	Los Angeles
+050191	05	Los Angeles
+050663	05	Los Angeles
+050104	05	Los Angeles
+050078	05	Los Angeles
+050132	05	Los Angeles
+050552	05	Los Angeles
+050219	05	Los Angeles
+050625	05	Los Angeles
+050739	05	Los Angeles
+050704	05	Los Angeles
+050502	05	Los Angeles
+050755	05	Los Angeles
+050351	05	Los Angeles
+050545	05	Los Angeles
+050568	05	Madera
+050360	05	Marin
+050131	05	Marin
+050510	05	Marin
+050301	05	Mendocino
+050528	05	Merced
+050444	05	Merced
+050430	05	Modoc
+050248	05	Monterey
+050334	05	Monterey
+050145	05	Monterey
+050189	05	Monterey
+050013	05	Napa
+050667	05	Napa
+050009	05	Napa
+050150	05	Nevada
+050075	05	Alameda
+050603	05	Orange
+050570	05	Orange
+050226	05	Orange
+050193	05	Orange
+050580	05	Orange
+050173	05	Orange
+050693	05	Orange
+050589	05	Orange
+050745	05	Orange
+050720	05	Orange
+050746	05	Orange
+050348	05	Orange
+050168	05	Orange
+050543	05	Orange
+050678	05	Orange
+050426	05	Orange
+050567	05	Orange
+050747	05	Orange
+050230	05	Orange
+050551	05	Orange
+050744	05	Orange
+050526	05	Orange
+050224	05	Orange
+050548	05	Orange
+050498	05	Placer
+050022	05	Riverside
+050329	05	Riverside
+050423	05	Riverside
+050573	05	Riverside
+050292	05	Riverside
+050102	05	Riverside
+050686	05	Riverside
+050586	05	Riverside
+050701	05	Riverside
+050243	05	Riverside
+050534	05	Riverside
+050684	05	Riverside
+050390	05	Riverside
+050765	05	Riverside
+050694	05	Riverside
+050108	05	Sacramento
+050414	05	Sacramento
+050425	05	Sacramento
+050599	05	Sacramento
+050516	05	Sacramento
+050017	05	Sacramento
+050674	05	Sacramento
+050590	05	Sacramento
+050296	05	San Benito
+050298	05	San Bernardino
+050279	05	San Bernardino
+050709	05	San Bernardino
+050245	05	San Bernardino
+050272	05	San Bernardino
+050517	05	San Bernardino
+050327	05	San Bernardino
+050089	05	San Bernardino
+050054	05	San Bernardino
+050099	05	San Bernardino
+050300	05	San Bernardino
+050618	05	San Bernardino
+050140	05	San Bernardino
+050758	05	San Bernardino
+050129	05	San Bernardino
+050636	05	San Diego
+050222	05	San Diego
+050722	05	San Diego
+050077	05	San Diego
+050115	05	San Diego
+050025	05	San Diego
+050435	05	San Diego
+050234	05	San Diego
+050515	05	San Diego
+050324	05	San Diego
+050128	05	San Diego
+050503	05	San Diego
+050026	05	San Diego
+050024	05	San Diego
+050757	05	San Diego
+050100	05	San Diego
+050424	05	San Diego
+050228	05	San Francisco
+050457	05	San Francisco
+050407	05	San Francisco
+050454	05	San Francisco
+050055	05	San Francisco
+050668	05	San Francisco
+050008	05	San Francisco
+050047	05	San Francisco
+050076	05	San Francisco
+050152	05	San Francisco
+050084	05	San Joaquin
+050122	05	San Joaquin
+050313	05	San Joaquin
+050748	05	San Joaquin
+050118	05	San Joaquin
+050167	05	San Joaquin
+050336	05	San Joaquin
+050506	05	San Luis Obispo
+050016	05	San Luis Obispo
+050633	05	San Luis Obispo
+050232	05	San Luis Obispo
+050289	05	San Mateo
+050113	05	San Mateo
+050197	05	San Mateo
+050541	05	San Mateo
+050070	05	San Mateo
+050007	05	San Mateo
+050754	05	San Mateo
+050396	05	Santa Barbara
+050478	05	Santa Barbara
+050357	05	Santa Barbara
+050107	05	Santa Barbara
+050110	05	Santa Barbara
+050380	05	Santa Clara
+050604	05	Santa Clara
+050688	05	Santa Clara
+050308	05	Santa Clara
+050125	05	Santa Clara
+050038	05	Santa Clara
+050071	05	Santa Clara
+050441	05	Santa Clara
+050188	05	Santa Clara
+050662	05	Santa Clara
+050153	05	Santa Clara
+050194	05	Santa Cruz
+050714	05	Santa Cruz
+050242	05	Santa Cruz
+050280	05	Shasta
+050733	05	Shasta
+050697	05	Shasta
+050680	05	Solano
+050101	05	Solano
+050073	05	Solano
+050367	05	Solano
+050136	05	Sonoma
+050090	05	Sonoma
+050385	05	Sonoma
+050174	05	Sonoma
+050291	05	Sonoma
+050690	05	Sonoma
+050547	05	Sonoma
+050464	05	Stanislaus
+050067	05	Stanislaus
+050179	05	Stanislaus
+050726	05	Stanislaus
+050557	05	Stanislaus
+050042	05	Tehama
+050335	05	Tuolumne
+050057	05	Tulare
+050359	05	Tulare
+050261	05	Tulare
+050546	05	Tulare
+050325	05	Tuolumne
+050069	05	Orange
+050309	05	Placer
+050751	05	Los Angeles
+050082	05	Ventura
+050046	05	Ventura
+050394	05	Ventura
+050236	05	Ventura
+050616	05	Ventura
+050159	05	Ventura
+050749	05	Ventura
+050549	05	Ventura
+050127	05	Yolo
+050537	05	Yolo
+050133	05	Yuba
+060004	06	Adams
+060024	06	Adams
+060065	06	Adams
+060104	06	Adams
+060008	06	Alamosa
+060100	06	Arapahoe
+060034	06	Arapahoe
+060113	06	Arapahoe
+060122	06	Archuleta
+060003	06	Boulder
+060027	06	Boulder
+060116	06	Boulder
+060103	06	Boulder
+060043	06	Cheyenne
+060071	06	Delta
+060123	06	Denver
+060032	06	Denver
+060015	06	Denver
+060011	06	Denver
+060107	06	Denver
+060014	06	Denver
+060064	06	Denver
+060028	06	Denver
+060112	06	Douglas
+060114	06	Douglas
+060013	06	La Plata
+060096	06	Eagle
+060022	06	El Paso
+060031	06	El Paso
+060016	06	Fremont
+060075	06	Garfield
+060009	06	Jefferson
+060117	06	La Plata
+060030	06	Larimer
+060119	06	Larimer
+060010	06	Larimer
+060121	06	Larimer
+060036	06	Las Animas
+060076	06	Logan
+060023	06	Mesa
+060054	06	Mesa
+060018	06	Montezuma
+060006	06	Montrose
+060044	06	Morgan
+060012	06	Pueblo
+060020	06	Pueblo
+060049	06	Routt
+060118	06	Summit
+060120	06	Teller
+060001	06	Weld
+070028	07	Fairfield
+070010	07	Fairfield
+070034	07	Fairfield
+070018	07	Fairfield
+070006	07	Fairfield
+070033	07	Fairfield
+070036	07	Hartford
+070002	07	Hartford
+070029	07	Hartford
+070027	07	Hartford
+070040	07	Hartford
+070025	07	Hartford
+070035	07	Hartford
+070004	07	Litchfield
+070015	07	Litchfield
+070011	07	Litchfield
+070020	07	Middlesex
+070005	07	New Haven
+070031	07	New Haven
+070016	07	New Haven
+070017	07	New Haven
+070038	07	New Haven
+070039	07	New Haven
+070019	07	New Haven
+070022	07	New Haven
+070001	07	New Haven
+070024	07	New London
+070007	07	New London
+070008	07	Tolland
+070012	07	Tolland
+070021	07	Windham
+070003	07	Windham
+080004	08	Kent
+080003	08	New Castle
+080001	08	New Castle
+080007	08	Sussex
+080002	08	Sussex
+080006	08	Sussex
+090003	09	District of Columbia
+090004	09	District of Columbia
+090008	09	District of Columbia
+090005	09	District of Columbia
+090006	09	District of Columbia
+090001	09	District of Columbia
+090011	09	District of Columbia
+100113	10	Alachua
+100204	10	Alachua
+100305	10	Alachua
+100134	10	Baker
+100026	10	Bay
+100242	10	Bay
+100177	10	Brevard
+100028	10	Brevard
+100092	10	Brevard
+100291	10	Brevard
+100019	10	Brevard
+100285	10	Broward
+100200	10	Broward
+100086	10	Broward
+100210	10	Broward
+100039	10	Broward
+100281	10	Broward
+100228	10	Broward
+100073	10	Broward
+100189	10	Broward
+100038	10	Broward
+100224	10	Broward
+100276	10	Broward
+100289	10	Broward
+100167	10	Broward
+100237	10	Broward
+100230	10	Broward
+100236	10	Charlotte
+100077	10	Charlotte
+100047	10	Charlotte
+100023	10	Citrus
+100249	10	Citrus
+100226	10	Clay
+100018	10	Collier
+100286	10	Collier
+100156	10	Columbia
+100102	10	Columbia
+100154	10	Dade
+100131	10	Dade
+100183	10	Dade
+100009	10	Dade
+100125	10	Dade
+100029	10	Dade
+100022	10	Dade
+100034	10	Dade
+100187	10	Dade
+100053	10	Dade
+100209	10	Dade
+100284	10	Dade
+100061	10	Dade
+100008	10	Dade
+100175	10	De Soto
+100040	10	Duval
+100001	10	Duval
+100151	10	Duval
+100179	10	Duval
+100117	10	Duval
+100088	10	Duval
+100307	10	Duval
+100231	10	Escambia
+100093	10	Escambia
+100025	10	Escambia
+100306	10	Escambia
+100118	10	Flagler
+100298	10	Gadsden
+100264	10	Hernando
+100071	10	Hernando
+100049	10	Highlands
+100109	10	Highlands
+100128	10	Hillsborough
+100259	10	Hillsborough
+100075	10	Hillsborough
+100206	10	Hillsborough
+100132	10	Hillsborough
+100271	10	Hillsborough
+100069	10	Hillsborough
+100243	10	Hillsborough
+100126	10	Hillsborough
+100173	10	Hillsborough
+100255	10	Hillsborough
+100217	10	Indian River
+100105	10	Indian River
+100142	10	Jackson
+100057	10	Lake
+100051	10	Lake
+100084	10	Lake
+100220	10	Lee
+100012	10	Lee
+100107	10	Lee
+100244	10	Lee
+100254	10	Leon
+100135	10	Leon
+100303	10	Leon
+100139	10	Levy
+100035	10	Manatee
+100299	10	Manatee
+100213	10	Manatee
+100212	10	Marion
+100062	10	Marion
+100044	10	Martin
+100076	10	Dade
+100296	10	Dade
+100240	10	Dade
+100050	10	Dade
+100277	10	Dade
+100181	10	Dade
+100079	10	Dade
+100150	10	Monroe
+100160	10	Monroe
+100024	10	Monroe
+100140	10	Nassau
+100122	10	Okaloosa
+100223	10	Okaloosa
+100054	10	Okaloosa
+100252	10	Okeechobee
+100006	10	Orange
+100030	10	Orange
+100007	10	Orange
+100110	10	Osceola
+100302	10	Osceola
+100253	10	Palm Beach
+100268	10	Palm Beach
+100275	10	Palm Beach
+100168	10	Palm Beach
+100309	10	Palm Beach
+100310	10	Palm Beach
+100287	10	Palm Beach
+100176	10	Palm Beach
+100002	10	Palm Beach
+100234	10	Palm Beach
+100288	10	Palm Beach
+100080	10	Palm Beach
+100258	10	Palm Beach
+100130	10	Palm Beach
+100269	10	Palm Beach
+100046	10	Pasco
+100211	10	Pasco
+100256	10	Pasco
+100191	10	Pasco
+100063	10	Pasco
+100238	10	Pinellas
+100015	10	Pinellas
+100067	10	Pinellas
+100265	10	Pinellas
+100248	10	Pinellas
+100239	10	Pinellas
+100032	10	Pinellas
+100043	10	Pinellas
+100308	10	Pinellas
+100055	10	Pinellas
+100180	10	Pinellas
+100127	10	Pinellas
+100099	10	Polk
+100157	10	Polk
+100121	10	Polk
+100137	10	Polk
+100052	10	Polk
+100232	10	Putnam
+100266	10	Santa Rosa
+100048	10	Santa Rosa
+100124	10	Santa Rosa
+100087	10	Sarasota
+100267	10	Sarasota
+100070	10	Sarasota
+100166	10	Sarasota
+100161	10	Seminole
+100090	10	St. Johns
+100246	10	St. Lucie
+100260	10	St. Lucie
+100290	10	Sumter
+100106	10	Taylor
+100045	10	Volusia
+100068	10	Volusia
+100014	10	Volusia
+100017	10	Volusia
+100072	10	Volusia
+100292	10	Walton
+100081	10	Walton
+110071	11	Appling
+110150	11	Baldwin
+110045	11	Barrow
+110030	11	Bartow
+110112	11	Berrien
+110107	11	Bibb
+110164	11	Bibb
+110075	11	Bulloch
+110113	11	Burke
+110146	11	Camden
+110015	11	Carroll
+110011	11	Carroll
+110036	11	Chatham
+110043	11	Chatham
+110024	11	Chatham
+110008	11	Cherokee
+110006	11	Clarke
+110074	11	Clarke
+110231	11	Clarke
+110165	11	Clayton
+110035	11	Cobb
+110143	11	Cobb
+110183	11	Cobb
+110089	11	Coffee
+110105	11	Colquitt
+110209	11	Colquitt
+110101	11	Cook
+110229	11	Coweta
+110104	11	Crisp
+110132	11	Decatur
+110010	11	De Kalb
+110082	11	De Kalb
+110203	11	De Kalb
+110226	11	De Kalb
+110076	11	De Kalb
+110092	11	Dodge
+110007	11	Dougherty
+110163	11	Dougherty
+110184	11	Douglas
+110026	11	Elbert
+110109	11	Emanuel
+110142	11	Evans
+110083	11	Fulton
+110215	11	Fayette
+110189	11	Fannin
+110054	11	Floyd
+110168	11	Floyd
+110005	11	Forsyth
+110027	11	Franklin
+110198	11	Fulton
+110161	11	Fulton
+110219	11	Fulton
+110230	11	Fulton
+110115	11	Fulton
+110078	11	Fulton
+110079	11	Fulton
+110205	11	Gilmer
+110025	11	Glynn
+110023	11	Gordon
+110121	11	Grady
+110192	11	Gwinnett
+110087	11	Gwinnett
+110041	11	Habersham
+110029	11	Hall
+110059	11	Hart
+110191	11	Henry
+110153	11	Houston
+110069	11	Houston
+110130	11	Irwin
+110040	11	Jackson
+110100	11	Jefferson
+110125	11	Laurens
+110212	11	Lowndes
+110122	11	Lowndes
+110187	11	Lumpkin
+110190	11	Macon
+110201	11	Macon
+110111	11	McDuffie
+110050	11	Murray
+110200	11	Muscogee
+110186	11	Muscogee
+110064	11	Muscogee
+110129	11	Muscogee
+110018	11	Newton
+110042	11	Paulding
+110225	11	Pickens
+110135	11	Pulaski
+110028	11	Richmond
+110177	11	Richmond
+110034	11	Richmond
+110039	11	Richmond
+110031	11	Spalding
+110032	11	Stephens
+110044	11	Sumter
+110038	11	Thomas
+110095	11	Tift
+110128	11	Toombs
+110016	11	Troup
+110051	11	Union
+110002	11	Upson
+110073	11	Ben Hill
+110194	11	Seminole
+110004	11	Catoosa
+110046	11	Walton
+110003	11	Ware
+110086	11	Washington
+110124	11	Wayne
+110001	11	Whitfield
+120028	12	Hawaii
+120007	12	Honolulu
+120004	12	Honolulu
+120026	12	Honolulu
+120022	12	Honolulu
+120011	12	Honolulu
+120006	12	Honolulu
+120014	12	Kauai
+120002	12	Maui
+120001	12	Honolulu
+120010	12	Honolulu
+120027	12	Honolulu
+120019	12	Hawaii
+120005	12	Hawaii
+130007	13	Ada
+130069	13	Ada
+130006	13	Ada
+130070	13	Ada
+130063	13	Ada
+130028	13	Bannock
+130024	13	Bonner
+130065	13	Bonneville
+130062	13	Bonneville
+130018	13	Bonneville
+130014	13	Canyon
+130013	13	Canyon
+130066	13	Kootenai
+130049	13	Kootenai
+130025	13	Madison
+130003	13	Nez Perce
+130002	13	Twin Falls
+140015	14	Adams
+140137	14	Bond
+140143	14	Bureau
+140091	14	Champaign
+140113	14	Champaign
+140007	14	Champaign
+140145	14	Clinton
+140189	14	Coles
+140114	14	Cook
+140251	14	Cook
+140301	14	Cook
+140223	14	Cook
+140180	14	Cook
+140252	14	Cook
+140303	14	Cook
+140207	14	Cook
+140179	14	Cook
+140103	14	Cook
+140181	14	Cook
+140095	14	Cook
+140010	14	Cook
+140206	14	Cook
+140177	14	Cook
+140191	14	Cook
+140158	14	Cook
+140133	14	Cook
+140119	14	Cook
+140276	14	Cook
+140080	14	Cook
+140197	14	Cook
+140063	14	Cook
+140018	14	Cook
+140240	14	Cook
+140051	14	Cook
+140062	14	Cook
+140094	14	Cook
+140208	14	Cook
+140075	14	Cook
+140117	14	Cook
+140281	14	Cook
+140049	14	Cook
+140082	14	Cook
+140151	14	Cook
+140224	14	Cook
+140150	14	Cook
+140054	14	Cook
+140048	14	Cook
+140250	14	Cook
+140300	14	Cook
+140083	14	Cook
+140118	14	Cook
+140065	14	Cook
+140115	14	Cook
+140290	14	Cook
+140008	14	Cook
+140088	14	Cook
+140258	14	Cook
+140124	14	Cook
+140182	14	Cook
+140172	14	Cook
+140068	14	Cook
+140286	14	DeKalb
+140288	14	DuPage
+140122	14	DuPage
+140231	14	DuPage
+140200	14	DuPage
+140292	14	DuPage
+140242	14	DuPage
+140032	14	Effingham
+140001	14	Fulton
+140101	14	Grundy
+140167	14	Iroquois
+140164	14	Jackson
+140046	14	Jefferson
+140294	14	Jefferson
+140059	14	Jersey
+140217	14	Kane
+140174	14	Kane
+140211	14	Kane
+140029	14	Kane
+140030	14	Kane
+140155	14	Kankakee
+140040	14	Knox
+140064	14	Knox
+140291	14	Lake
+140130	14	Lake
+140100	14	Lake
+140202	14	Lake
+140033	14	Lake
+140084	14	Lake
+140234	14	La Salle
+140026	14	La Salle
+140110	14	La Salle
+140012	14	Lee
+140161	14	Livingston
+140166	14	Macon
+140135	14	Macon
+140289	14	Madison
+140052	14	Madison
+140002	14	Madison
+140125	14	Madison
+140034	14	Marion
+140089	14	McDonough
+140176	14	McHenry
+140116	14	McHenry
+140127	14	McLean
+140162	14	McLean
+140058	14	Morgan
+140013	14	Peoria
+140067	14	Peoria
+140209	14	Peoria
+140147	14	Richland
+140280	14	Rock Island
+140275	14	Rock Island
+140185	14	St. Clair
+140210	14	Saline
+140053	14	Sangamon
+140148	14	Sangamon
+140019	14	Shelby
+140066	14	St. Clair
+140077	14	St. Clair
+140187	14	St. Clair
+140160	14	Stephenson
+140120	14	Tazewell
+140186	14	Kankakee
+140093	14	Vermilion
+140043	14	Whiteside
+140213	14	Will
+140304	14	Will
+140011	14	Williamson
+140184	14	Williamson
+140228	14	Winnebago
+140233	14	Winnebago
+140239	14	Winnebago
+150167	15	Allen
+150150	15	Allen
+150047	15	Allen
+150168	15	Allen
+150021	15	Allen
+150017	15	Allen
+150112	15	Bartholomew
+150104	15	Boone
+150072	15	Cass
+150163	15	Clark
+150009	15	Clark
+150061	15	Daviess
+150086	15	Dearborn
+150045	15	De Kalb
+150089	15	Delaware
+150115	15	Dubois
+150018	15	Elkhart
+150026	15	Elkhart
+150064	15	Fayette
+150044	15	Floyd
+150172	15	Floyd
+150011	15	Grant
+150157	15	Hamilton
+150153	15	Hamilton
+150059	15	Hamilton
+150161	15	Hamilton
+150037	15	Hancock
+150158	15	Hendricks
+150005	15	Hendricks
+150030	15	Henry
+150007	15	Howard
+150010	15	Howard
+150091	15	Huntington
+150097	15	Shelby
+150065	15	Jackson
+150069	15	Jefferson
+150001	15	Johnson
+150042	15	Knox
+150133	15	Kosciusko
+150126	15	Lake
+150125	15	Lake
+150166	15	Lake
+150034	15	Lake
+150090	15	Lake
+150004	15	Lake
+150008	15	Lake
+150165	15	Lake
+150002	15	Lake
+150170	15	Lake
+150006	15	La Porte
+150015	15	La Porte
+150113	15	Madison
+150088	15	Madison
+150154	15	Marion
+150162	15	Marion
+150056	15	Marion
+150169	15	Marion
+150160	15	Marion
+150033	15	Marion
+150128	15	Marion
+150074	15	Marion
+150129	15	Marion
+150024	15	Marion
+150084	15	Marion
+150076	15	Marshall
+150051	15	Monroe
+150164	15	Monroe
+150022	15	Montgomery
+150038	15	Morgan
+150057	15	Morgan
+150146	15	Noble
+150035	15	Porter
+150029	15	St. Joseph
+150012	15	St. Joseph
+150058	15	St. Joseph
+150102	15	Starke
+150109	15	Tippecanoe
+150173	15	Tippecanoe
+150003	15	Tippecanoe
+150082	15	Vanderburgh
+150100	15	Vanderburgh
+150023	15	Vigo
+150046	15	Vigo
+150149	15	Warrick
+150048	15	Wayne
+150075	15	Wells
+150101	15	Whitley
+160067	16	Black Hawk
+160110	16	Black Hawk
+160040	16	Black Hawk
+160005	16	Carroll
+160064	16	Cerro Gordo
+160112	16	Clay
+160080	16	Clinton
+160057	16	Des Moines
+160124	16	Dickinson
+160117	16	Dubuque
+160069	16	Dubuque
+160032	16	Jasper
+160029	16	Johnson
+160058	16	Johnson
+160122	16	Lee
+160008	16	Lee
+160045	16	Linn
+160079	16	Linn
+160156	16	Linn
+160001	16	Marshall
+160013	16	Muscatine
+160083	16	Polk
+160101	16	Polk
+160082	16	Polk
+160024	16	Polk
+160047	16	Pottawattamie
+160028	16	Pottawattamie
+160147	16	Poweshiek
+160033	16	Scott
+160104	16	Scott
+160030	16	Story
+160089	16	Wapello
+160016	16	Webster
+160153	16	Woodbury
+160146	16	Woodbury
+170191	17	Barton
+170033	17	Barton
+170058	17	Bourbon
+170017	17	Butler
+170197	17	Butler
+170094	17	Coffey
+170150	17	Cowley
+170006	17	Crawford
+170137	17	Douglas
+170013	17	Ellis
+170023	17	Finney
+170175	17	Ford
+170014	17	Franklin
+170074	17	Geary
+170110	17	Grant
+170103	17	Harvey
+170180	17	Johnson
+170185	17	Johnson
+170182	17	Johnson
+170194	17	Johnson
+170049	17	Johnson
+170176	17	Johnson
+170195	17	Johnson
+170104	17	Johnson
+170188	17	Johnson
+170120	17	Labette
+170009	17	Leavenworth
+170133	17	Leavenworth
+170001	17	Lyon
+170105	17	McPherson
+170075	17	McPherson
+170109	17	Miami
+170145	17	Montgomery
+170010	17	Montgomery
+170166	17	Morton
+170027	17	Pratt
+170020	17	Reno
+170198	17	Reno
+170190	17	Riley
+170142	17	Riley
+170187	17	Saline
+170012	17	Saline
+170192	17	Sedgwick
+170186	17	Sedgwick
+170123	17	Sedgwick
+170122	17	Sedgwick
+170183	17	Sedgwick
+170196	17	Sedgwick
+170068	17	Seward
+170016	17	Shawnee
+170086	17	Shawnee
+170039	17	Sumner
+170146	17	Wyandotte
+170040	17	Wyandotte
+180149	18	Adair
+180017	18	Barren
+180021	18	Bell
+180020	18	Bell
+180045	18	Boone
+180046	18	Bourbon
+180009	18	Boyd
+180048	18	Boyle
+180139	18	Breathitt
+180027	18	Calloway
+180001	18	Campbell
+180051	18	Christian
+180092	18	Clark
+180043	18	Clay
+180106	18	Clinton
+180095	18	Crittenden
+180038	18	Daviess
+180143	18	Fayette
+180067	18	Fayette
+180103	18	Fayette
+180010	18	Fayette
+180053	18	Fleming
+180005	18	Floyd
+180127	18	Franklin
+180117	18	Fulton
+180116	18	Graves
+180070	18	Grayson
+180036	18	Greenup
+180012	18	Hardin
+180050	18	Harlan
+180079	18	Harrison
+180056	18	Henderson
+180093	18	Hopkins
+180088	18	Jefferson
+180130	18	Jefferson
+180040	18	Jefferson
+180141	18	Jefferson
+180078	18	Johnson
+180035	18	Kenton
+180011	18	Laurel
+180128	18	Lawrence
+180002	18	Letcher
+180066	18	Logan
+180049	18	Madison
+180024	18	Marion
+180019	18	Mason
+180102	18	McCracken
+180104	18	McCracken
+180105	18	Monroe
+180064	18	Montgomery
+180004	18	Muhlenberg
+180025	18	Nelson
+180138	18	Oldham
+180029	18	Perry
+180069	18	Pike
+180044	18	Pike
+180132	18	Pulaski
+180115	18	Rockcastle
+180018	18	Rowan
+180101	18	Scott
+180016	18	Shelby
+180087	18	Taylor
+180124	18	Warren
+180013	18	Warren
+180080	18	Whitley
+190044	19	Acadia
+190106	19	Allen
+190133	19	Allen
+190242	19	Ascension
+190099	19	Avoyelles
+190266	19	East Baton Rouge
+190050	19	Beauregard
+190258	19	Bossier
+190236	19	Bossier
+190060	19	Calcasieu
+190098	19	Caddo
+190111	19	Caddo
+190041	19	Caddo
+190278	19	Caddo
+190027	19	Calcasieu
+190161	19	Calcasieu
+190201	19	Calcasieu
+190013	19	Calcasieu
+190190	19	Caldwell
+190184	19	Caldwell
+190037	19	Cameron
+190114	19	Claiborne
+190118	19	De Soto
+190273	19	East Baton Rouge
+190251	19	East Baton Rouge
+190065	19	East Baton Rouge
+190128	19	East Baton Rouge
+190020	19	East Baton Rouge
+190122	19	East Baton Rouge
+190208	19	East Carroll
+190199	19	East Feliciana
+190167	19	Evangeline
+190025	19	Evangeline
+190140	19	Franklin
+190003	19	Iberia
+190054	19	Iberia
+190131	19	Iberville
+190275	19	Jefferson
+190274	19	Jefferson
+190039	19	Jefferson
+190036	19	Jefferson
+190146	19	Jefferson
+190053	19	Jefferson Davis
+190196	19	Lafayette
+190255	19	Lafayette
+190259	19	Lafayette
+190268	19	Lafayette
+190002	19	Lafayette
+190006	19	Lafayette
+190272	19	Lafayette
+190102	19	Lafayette
+190263	19	Lafayette
+190205	19	Lafayette
+190004	19	Lafourche
+190145	19	La Salle
+190086	19	Lincoln
+190257	19	Lincoln
+190202	19	Livingston
+190116	19	Morehouse
+190007	19	Natchitoches
+190046	19	Orleans
+190005	19	Orleans
+190135	19	Orleans
+190176	19	Orleans
+190245	19	Ouachita
+190125	19	Ouachita
+190160	19	Ouachita
+190246	19	Ouachita
+190261	19	Ouachita
+190011	19	Ouachita
+190026	19	Rapides
+190019	19	Rapides
+190009	19	Rapides
+190151	19	Richland
+190218	19	Sabine
+190115	19	Shreveport
+190191	19	St. Landry
+190078	19	St. Landry
+190040	19	St. Tammany
+190267	19	St. Tammany
+190250	19	St. Tammany
+190045	19	St. Tammany
+190079	19	St. Charles
+190175	19	St. John the Baptist
+190017	19	St. Landry
+190014	19	St. Mary
+190256	19	St. Tammany
+190204	19	St. Tammany
+190270	19	St. Tammany
+190177	19	St. Tammany
+190015	19	Tangipahoa
+190008	19	Terrebonne
+190241	19	Terrebonne
+190183	19	Terrebonne
+190064	19	East Baton Rouge
+190034	19	Vermilion
+190297	19	Vernon
+190164	19	Vernon
+190001	19	Washington
+190144	19	Webster
+190088	19	Webster
+190081	19	West Carroll
+190090	19	Winn
+200034	20	Androscoggin
+200024	20	Androscoggin
+200031	20	Aroostook
+200018	20	Aroostook
+200052	20	Aroostook
+200025	20	Cumberland
+200008	20	Cumberland
+200021	20	Cumberland
+200009	20	Cumberland
+200037	20	Franklin
+200050	20	Hancock
+200041	20	Kennebec
+200039	20	Kennebec
+200063	20	Knox
+200002	20	Lincoln
+200032	20	Oxford
+200001	20	Penobscot
+200033	20	Penobscot
+200040	20	York
+200020	20	York
+200019	20	York
+210027	21	Allegany
+210025	21	Allegany
+210023	21	Anne Arundel
+210043	21	Anne Arundel
+210012	21	Baltimore
+210058	21	Baltimore
+210040	21	Baltimore
+210056	21	Baltimore
+210015	21	Baltimore
+210007	21	Baltimore
+210034	21	Baltimore
+210011	21	Baltimore
+210038	21	Baltimore
+210013	21	Baltimore
+210002	21	Baltimore
+210029	21	Baltimore
+210009	21	Baltimore
+210008	21	Baltimore
+210024	21	Baltimore
+210044	21	Baltimore
+210039	21	Calvert
+210033	21	Carroll
+210032	21	Cecil
+210035	21	Charles
+210005	21	Frederick
+210017	21	Garrett
+210049	21	Harford
+210006	21	Harford
+210048	21	Howard
+210030	21	Queen Anne's
+210016	21	Montgomery
+210057	21	Montgomery
+210018	21	Montgomery
+210004	21	Montgomery
+210003	21	Prince George's
+210055	21	Prince George's
+210060	21	Prince George's
+210054	21	Prince George's
+210051	21	Prince George's
+210045	21	Somerset
+210028	21	St. Mary's
+210037	21	Talbot
+210022	21	Montgomery
+210001	21	Washington
+210061	21	Wicomico
+210019	21	Wicomico
+220012	22	Barnstable
+220135	22	Barnstable
+220051	22	Berkshire
+220046	22	Berkshire
+220074	22	Bristol
+220073	22	Bristol
+220008	22	Bristol
+220020	22	Bristol
+220029	22	Essex
+220033	22	Essex
+220080	22	Essex
+220035	22	Essex
+220010	22	Essex
+220174	22	Essex
+220016	22	Franklin
+220153	22	Hampden
+220030	22	Hampden
+220065	22	Hampden
+220024	22	Hampden
+220077	22	Hampden
+220015	22	Hampshire
+220050	22	Hampshire
+220066	22	Hampden
+220175	22	Middlesex
+220105	22	Middlesex
+220063	22	Middlesex
+220101	22	Middlesex
+220098	22	Middlesex
+220011	22	Middlesex
+220049	22	Middlesex
+220082	22	Middlesex
+220070	22	Middlesex
+220084	22	Middlesex
+220002	22	Middlesex
+220177	22	Nantucket
+220108	22	Norfolk
+220083	22	Norfolk
+220067	22	Norfolk
+220100	22	Norfolk
+220126	22	Norfolk
+220111	22	Plymouth
+220052	22	Plymouth
+220060	22	Plymouth
+220119	22	Suffolk
+220071	22	Suffolk
+220110	22	Suffolk
+220075	22	Suffolk
+220116	22	Suffolk
+220017	22	Suffolk
+220162	22	Suffolk
+220088	22	Suffolk
+220086	22	Suffolk
+220036	22	Suffolk
+220154	22	Suffolk
+220171	22	Middlesex
+220031	22	Suffolk
+220095	22	Worcester
+220163	22	Worcester
+220025	22	Worcester
+220058	22	Worcester
+220001	22	Worcester
+220062	22	Worcester
+220176	22	Worcester
+220019	22	Worcester
+220090	22	Worcester
+230036	23	Alpena
+230040	23	Barry
+230041	23	Bay
+230078	23	Berrien
+230021	23	Berrien
+230093	23	Mecosta
+230022	23	Branch
+230075	23	Calhoun
+230217	23	Calhoun
+230034	23	Cheboygan
+230239	23	Chippewa
+230180	23	Clare
+230058	23	Crawford
+230101	23	Delta
+230055	23	Dickinson
+230105	23	Emmet
+230141	23	Genesee
+230197	23	Genesee
+230132	23	Genesee
+230097	23	Grand Traverse
+230030	23	Gratiot
+230037	23	Hillsdale
+230108	23	Houghton
+230118	23	Huron
+230167	23	Ingham
+230230	23	Ingham
+230100	23	Iosco
+230080	23	Isabella
+230092	23	Jackson
+230117	23	Kalamazoo
+230190	23	Kalamazoo
+230017	23	Kalamazoo
+230236	23	Kent
+230059	23	Kent
+230038	23	Kent
+230193	23	Lapeer
+230005	23	Lenawee
+230069	23	Livingston
+230279	23	Livingston
+230204	23	Macomb
+230047	23	Macomb
+230227	23	Macomb
+230257	23	Macomb
+230264	23	Macomb
+230195	23	Macomb
+230060	23	Manistee
+230054	23	Marquette
+230110	23	Mason
+230222	23	Midland
+230099	23	Monroe
+230208	23	Montcalm
+230035	23	Montcalm
+230066	23	Muskegon
+230004	23	Muskegon
+230106	23	Newaygo
+230207	23	Oakland
+230071	23	Oakland
+230151	23	Oakland
+230254	23	Oakland
+230029	23	Oakland
+230269	23	Oakland
+230277	23	Oakland
+230019	23	Oakland
+230301	23	Oakland
+230013	23	Oakland
+230130	23	Oakland
+230095	23	Ogemaw
+230133	23	Otsego
+230174	23	Ottawa
+230072	23	Ottawa
+230003	23	Ottawa
+230077	23	Saginaw
+230070	23	Saginaw
+230275	23	Saginaw
+230241	23	St. Clair
+230121	23	Shiawassee
+230216	23	St. Clair
+230031	23	St. Clair
+230096	23	St. Joseph
+230015	23	St. Joseph
+230085	23	Van Buren
+230259	23	Washtenaw
+230156	23	Washtenaw
+230046	23	Washtenaw
+230212	23	Washtenaw
+230297	23	Wayne
+230135	23	Wayne
+230176	23	Wayne
+230165	23	Wayne
+230244	23	Wayne
+230002	23	Wayne
+230270	23	Wayne
+230146	23	Wayne
+230020	23	Wayne
+230053	23	Wayne
+230024	23	Wayne
+230142	23	Wayne
+230089	23	Wayne
+230104	23	Wayne
+230273	23	Wayne
+230081	23	Wexford
+240115	24	Anoka
+240132	24	Anoka
+240101	24	Becker
+240100	24	Beltrami
+240093	24	Blue Earth
+240056	24	Carver
+240050	24	Chisago
+240075	24	Crow Wing
+240059	24	Dakota
+240014	24	Dakota
+240207	24	Dakota
+240030	24	Douglas
+240043	24	Freeborn
+240018	24	Goodhue
+240001	24	Hennepin
+240053	24	Hennepin
+240004	24	Hennepin
+240196	24	Hennepin
+240078	24	Hennepin
+240080	24	Hennepin
+240057	24	Hennepin
+240020	24	Isanti
+240064	24	Itasca
+240088	24	Kandiyohi
+240166	24	Martin
+240187	24	McLeod
+240117	24	Mower
+240022	24	Nobles
+240010	24	Olmsted
+240006	24	Olmsted
+240061	24	Olmsted
+240052	24	Otter Tail
+240211	24	Pine
+240063	24	Ramsey
+240106	24	Ramsey
+240210	24	Ramsey
+240038	24	Ramsey
+240071	24	Rice
+240104	24	Scott
+240141	24	Sherburne
+240002	24	St. Louis
+240040	24	St. Louis
+240084	24	St. Louis
+240019	24	St. Louis
+240047	24	St. Louis
+240036	24	Stearns
+240069	24	Steele
+240213	24	Washington
+240066	24	Washington
+240044	24	Winona
+240076	24	Wright
+250084	25	Adams
+250122	25	Adams
+250009	25	Alcorn
+250059	25	Attala
+250093	25	Bolivar
+250112	25	Calhoun
+250017	25	Chickasaw
+250067	25	Clay
+250042	25	Coahoma
+250141	25	DeSoto
+250078	25	Forrest
+250035	25	Franklin
+250036	25	George
+250015	25	Grenada
+250162	25	Hancock
+250007	25	Harrison
+250123	25	Harrison
+250019	25	Harrison
+250001	25	Hinds
+250072	25	Hinds
+250152	25	Hinds
+250102	25	Hinds
+250048	25	Hinds
+250040	25	Jackson
+250018	25	Jasper
+250060	25	Jefferson
+250058	25	Jones
+250034	25	Lafayette
+250094	25	Lamar
+250151	25	Lauderdale
+250104	25	Lauderdale
+250081	25	Lauderdale
+250069	25	Lauderdale
+250004	25	Lee
+250099	25	Leflore
+250057	25	Lincoln
+250100	25	Lowndes
+250038	25	Madison
+250085	25	Marion
+250012	25	Marshall
+250025	25	Monroe
+250051	25	Montgomery
+250043	25	Neshoba
+250149	25	Newton
+250050	25	Oktibbeha
+250128	25	Panola
+250023	25	Pearl River
+250117	25	Pearl River
+250049	25	Pike
+250097	25	Pike
+250044	25	Prentiss
+250134	25	Rankin
+250096	25	Rankin
+250136	25	Rankin
+250138	25	Rankin
+250079	25	Sharkey
+250124	25	Simpson
+250163	25	Smith
+250095	25	Sunflower
+250126	25	Tate
+250010	25	Tippah
+250002	25	Tishomingo
+250006	25	Union
+250031	25	Warren
+250082	25	Washington
+250077	25	Wayne
+250020	25	Webster
+250027	25	Winston
+250061	25	Yalobusha
+260022	26	Adair
+260064	26	Audrain
+260034	26	Bates
+260178	26	Boone
+260068	26	Boone
+260141	26	Boone
+260006	26	Buchanan
+260119	26	Butler
+260209	26	Callaway
+260186	26	Camden
+260183	26	Cape Girardeau
+260110	26	Cape Girardeau
+260062	26	Clay
+260222	26	Clay
+260177	26	Clay
+260096	26	Clay
+260057	26	Clinton
+260047	26	Cole
+260011	26	Cole
+260004	26	Cooper
+260015	26	Dunklin
+260115	26	Franklin
+260052	26	Franklin
+260065	26	Greene
+260040	26	Greene
+260207	26	Greene
+260221	26	Greene
+260175	26	Henry
+260078	26	Howell
+260102	26	Jackson
+260193	26	Jackson
+260095	26	Jackson
+260214	26	Jackson
+260216	26	Jackson
+260138	26	Jackson
+260048	26	Jackson
+260190	26	Jackson
+260085	26	Jackson
+260211	26	Jackson
+260027	26	Jackson
+260001	26	Jasper
+260023	26	Jefferson
+260097	26	Johnson
+260059	26	Laclede
+260025	26	Marion
+260137	26	Newton
+260050	26	Nodaway
+260070	26	Pemiscot
+260009	26	Pettis
+260017	26	Phelps
+260195	26	Polk
+260074	26	Randolph
+260080	26	Ripley
+260105	26	St. Louis
+260077	26	St. Louis
+260142	26	Saline
+260113	26	Scott
+260219	26	St. Charles
+260081	26	St. Louis
+260176	26	St. Louis
+260179	26	St. Louis
+260191	26	St. Charles
+260005	26	St. Charles
+260200	26	St. Charles
+260147	26	St. Clair
+260163	26	St. Francois
+260116	26	St. Francois
+260180	26	St. Louis
+260108	26	St. Louis
+260020	26	St. Louis
+260104	26	St. Louis
+260021	26	St. Louis
+260091	26	St. Louis
+260210	26	St. Louis
+260162	26	St. Louis
+260159	26	St. Louis
+260032	26	St. Louis
+260160	26	Stoddard
+260094	26	Taney
+260024	26	Texas
+260061	26	Vernon
+270012	27	Cascade
+270086	27	Cascade
+270002	27	Custer
+270051	27	Flathead
+270087	27	Flathead
+270057	27	Gallatin
+270032	27	Hill
+270003	27	Lewis and Clark
+270014	27	Missoula
+270023	27	Missoula
+270017	27	Silver Bow
+270004	27	Yellowstone
+270088	27	Yellowstone
+270049	27	Yellowstone
+280032	28	Adams
+280009	28	Buffalo
+280077	28	Dodge
+280130	28	Douglas
+280060	28	Douglas
+280013	28	Douglas
+280129	28	Douglas
+280131	28	Douglas
+280081	28	Douglas
+280040	28	Douglas
+280023	28	Hall
+280020	28	Lancaster
+280127	28	Lancaster
+280123	28	Lancaster
+280003	28	Lancaster
+280128	28	Lancaster
+280065	28	Lincoln
+280125	28	Madison
+280030	28	Douglas
+280111	28	Platte
+280105	28	Sarpy
+280061	28	Scotts Bluff
+290055	29	Carson City city
+290019	29	Carson City city
+290051	29	Carson City city
+290006	29	Churchill
+290054	29	Clark
+290045	29	Clark
+290012	29	Clark
+290053	29	Clark
+290046	29	Clark
+290041	29	Clark
+290022	29	Clark
+290007	29	Clark
+290003	29	Clark
+290039	29	Clark
+290047	29	Clark
+290005	29	Clark
+290021	29	Clark
+290008	29	Elko
+290027	29	Lincoln
+290002	29	Lyon
+290020	29	Nye
+290032	29	Washoe
+290009	29	Washoe
+290049	29	Washoe
+290001	29	Washoe
+300005	30	Belknap
+300019	30	Cheshire
+300003	30	Grafton
+300011	30	Hillsborough
+300034	30	Hillsborough
+300012	30	Hillsborough
+300020	30	Hillsborough
+300001	30	Merrimack
+300029	30	Rockingham
+300017	30	Rockingham
+300023	30	Rockingham
+300018	30	Strafford
+300014	30	Strafford
+310047	31	Atlantic
+310088	31	Atlantic
+310064	31	Atlantic
+310012	31	Bergen
+310001	31	Bergen
+310045	31	Bergen
+310058	31	Bergen
+310008	31	Bergen
+310031	31	Burlington
+310061	31	Burlington
+310057	31	Burlington
+310022	31	Camden
+310029	31	Camden
+310014	31	Camden
+310086	31	Camden
+310011	31	Cape May
+310032	31	Cumberland
+310083	31	Essex
+310054	31	Essex
+310018	31	Essex
+310119	31	Essex
+310002	31	Essex
+310093	31	Essex
+310076	31	Essex
+310009	31	Essex
+310096	31	Essex
+310081	31	Gloucester
+310016	31	Hudson
+310105	31	Hudson
+310118	31	Hudson
+310003	31	Hudson
+310074	31	Hudson
+310040	31	Hudson
+310025	31	Hudson
+310005	31	Hunterdon
+310021	31	Mercer
+310044	31	Mercer
+310092	31	Mercer
+310110	31	Mercer
+310010	31	Mercer
+310039	31	Middlesex
+310038	31	Middlesex
+310070	31	Middlesex
+310108	31	Middlesex
+310112	31	Monmouth
+310073	31	Monmouth
+310111	31	Monmouth
+310034	31	Monmouth
+310075	31	Monmouth
+310017	31	Morris
+310050	31	Morris
+310015	31	Morris
+310113	31	Ocean
+310041	31	Ocean
+310084	31	Ocean
+310052	31	Ocean
+310116	31	Passaic
+310019	31	Passaic
+310006	31	Passaic
+310091	31	Salem
+310069	31	Salem
+310048	31	Somerset
+310120	31	Sussex
+310028	31	Sussex
+310024	31	Union
+310051	31	Union
+310063	31	Union
+310027	31	Union
+310060	31	Warren
+310115	31	Warren
+320017	32	Bernalillo
+320074	32	Bernalillo
+320009	32	Bernalillo
+320083	32	Bernalillo
+320021	32	Bernalillo
+320001	32	Bernalillo
+320006	32	Chaves
+320086	32	Chaves
+320037	32	Cibola
+320069	32	Colfax
+320022	32	Curry
+320018	32	Dona Ana
+320088	32	Dona Ana
+320085	32	Dona Ana
+320030	32	Eddy
+320063	32	Eddy
+320016	32	Grant
+320067	32	Guadalupe
+320065	32	Lea
+320033	32	Los Alamos
+320014	32	Luna
+320038	32	McKinley
+320004	32	Otero
+320011	32	Rio Arriba
+320084	32	Roosevelt
+320005	32	San Juan
+320003	32	San Miguel
+320002	32	Santa Fe
+320087	32	Santa Fe
+320013	32	Taos
+330003	33	Albany
+330407	33	Albany
+330013	33	Albany
+330189	33	Albany
+330096	33	Allegany
+330080	33	Bronx
+330399	33	Bronx
+330316	33	Bronx
+330072	33	Bronx
+330385	33	Bronx
+330233	33	Kings
+330056	33	Kings
+330394	33	Broome
+330011	33	Broome
+330132	33	Cattaraugus
+330103	33	Cattaraugus
+330235	33	Cayuga
+330166	33	Chautauqua
+330239	33	Chautauqua
+330229	33	Chautauqua
+330108	33	Chemung
+330090	33	Chemung
+330033	33	Chenango
+330250	33	Clinton
+330094	33	Columbia
+330175	33	Cortland
+330408	33	Deleware
+330049	33	Dutchess
+330067	33	Dutchess
+330023	33	Dutchess
+330029	33	Erie
+330102	33	Erie
+330111	33	Erie
+330219	33	Erie
+330091	33	Erie
+330279	33	Erie
+330354	33	Erie
+330005	33	Erie
+330078	33	Erie
+330084	33	Franklin
+330079	33	Franklin
+330276	33	Fulton
+330073	33	Genesee
+330263	33	Jefferson
+330157	33	Jefferson
+330202	33	Kings
+330133	33	Kings
+330306	33	Kings
+330396	33	Kings
+330196	33	Kings
+330242	33	Kings
+330236	33	Kings
+330350	33	Kings
+330019	33	Kings
+330194	33	Kings
+330397	33	Kings
+330201	33	Kings
+330221	33	Kings
+330152	33	Kings
+330390	33	Kings
+330357	33	Kings
+330213	33	Lewis
+330238	33	Livingston
+330115	33	Madison
+330249	33	Madison
+330024	33	New York
+330270	33	New York
+330164	33	Monroe
+330285	33	Monroe
+330125	33	Monroe
+330037	33	Monroe
+330226	33	Monroe
+330403	33	Monroe
+330047	33	Montgomery
+330010	33	Montgomery
+330106	33	Nassau
+330181	33	Nassau
+330167	33	Nassau
+330182	33	Nassau
+330331	33	Nassau
+330198	33	Nassau
+330259	33	Nassau
+330225	33	Nassau
+330027	33	Nassau
+330332	33	Nassau
+330372	33	Nassau
+330240	33	New York
+330119	33	New York
+330247	33	New York
+330101	33	New York
+330154	33	New York
+330387	33	New York
+330214	33	New York
+330169	33	New York
+330046	33	New York
+330100	33	New York
+330204	33	New York
+330290	33	New York
+330199	33	New York
+330064	33	New York
+330188	33	Niagara
+330025	33	Niagara
+330163	33	Niagara
+330065	33	Niagara
+330215	33	Oneida
+330245	33	Oneida
+330044	33	Oneida
+330159	33	Onondaga
+330241	33	Onondaga
+330140	33	Onondaga
+330203	33	Onondaga
+330265	33	Ontario
+330074	33	Ontario
+330058	33	Ontario
+330264	33	Orange
+330126	33	Orange
+330135	33	Orange
+330205	33	Orange
+330053	33	Orleans
+330075	33	Oswego
+330218	33	Oswego
+330136	33	Otsego
+330085	33	Otsego
+330273	33	Putnam
+330055	33	Queens
+330041	33	Queens
+330395	33	Queens
+330014	33	Queens
+330231	33	Queens
+330193	33	Queens
+330002	33	Queens
+330195	33	Queens
+330353	33	Queens
+330128	33	Queens
+330232	33	Rensselaer
+330180	33	Rensselaer
+330028	33	Richmond
+330160	33	Richmond
+330405	33	Rockland
+330158	33	Rockland
+330104	33	Rockland
+330222	33	Saratoga
+330153	33	Schenectady
+330406	33	Schenectady
+330268	33	Schoharie
+330177	33	St. Lawrence
+330211	33	St. Lawrence
+330197	33	St. Lawrence
+330223	33	St. Lawrence
+330144	33	Steuben
+330151	33	Steuben
+330277	33	Steuben
+330185	33	Suffolk
+330088	33	Suffolk
+330286	33	Suffolk
+330393	33	Suffolk
+330045	33	Suffolk
+330141	33	Suffolk
+330401	33	Suffolk
+330043	33	Suffolk
+330340	33	Suffolk
+330246	33	Suffolk
+330107	33	Suffolk
+330386	33	Sullivan
+330009	33	Bronx
+330307	33	Tompkins
+330224	33	Ulster
+330004	33	Ulster
+330127	33	Bronx
+330057	33	Albany
+330059	33	Bronx
+330191	33	Warren
+330030	33	Wayne
+330267	33	Westchester
+330162	33	Westchester
+330061	33	Westchester
+330006	33	Westchester
+330234	33	Westchester
+330261	33	Westchester
+330208	33	Westchester
+330304	33	Westchester
+330086	33	Westchester
+330404	33	Westchester
+330036	33	Westchester
+330184	33	Westchester
+330008	33	Wyoming
+340070	34	Alamance
+340084	34	Anson
+340038	34	Beaufort
+340121	34	Brunswick
+340158	34	Brunswick
+340002	34	Buncombe
+340075	34	Burke
+340055	34	Burke
+340137	34	Burke
+340001	34	Cabarrus
+340041	34	Caldwell
+340142	34	Carteret
+340116	34	Catawba
+340143	34	Catawba
+340160	34	Cherokee
+340104	34	Cleveland
+340021	34	Cleveland
+340037	34	Cleveland
+340068	34	Columbus
+340131	34	Craven
+340028	34	Cumberland
+340085	34	Davidson
+340096	34	Davidson
+340120	34	Duplin
+340155	34	Durham
+340049	34	Durham
+340030	34	Durham
+340107	34	Edgecombe
+340014	34	Forsyth
+340148	34	Forsyth
+340047	34	Forsyth
+340036	34	Franklin
+340032	34	Gaston
+340127	34	Granville
+340091	34	Guilford
+340004	34	Guilford
+340151	34	Halifax
+340071	34	Harnett
+340184	34	Haywood
+340025	34	Haywood
+340023	34	Henderson
+340017	34	Henderson
+340099	34	Hertford
+340039	34	Iredell
+340129	34	Iredell
+340144	34	Iredell
+340016	34	Jackson
+340090	34	Johnston
+340020	34	Lee
+340027	34	Lenoir
+340145	34	Lincoln
+340012	34	Macon
+340133	34	Martin
+340087	34	McDowell
+340153	34	Mecklenburg
+340113	34	Mecklenburg
+340183	34	Mecklenburg
+340171	34	Mecklenburg
+340166	34	Mecklenburg
+340098	34	Mecklenburg
+340053	34	Mecklenburg
+340011	34	Mitchell
+340115	34	Moore
+340147	34	Nash
+340141	34	New Hanover
+340042	34	Onslow
+340061	34	Orange
+340109	34	Pasquotank
+340159	34	Person
+340040	34	Pitt
+340123	34	Randolph
+340035	34	Richmond
+340106	34	Richmond
+340050	34	Robeson
+340060	34	Rockingham
+340015	34	Rowan
+340013	34	Rutherford
+340024	34	Sampson
+340008	34	Scotland
+340119	34	Stanly
+340003	34	Surry
+340097	34	Surry
+340130	34	Union
+340132	34	Vance
+340073	34	Wake
+340114	34	Wake
+340138	34	Wake
+340069	34	Wake
+340173	34	Wake
+340051	34	Watauga
+340010	34	Wayne
+340064	34	Wilkes
+340126	34	Wilson
+350002	35	Burleigh
+350015	35	Burleigh
+350011	35	Cass
+350070	35	Cass
+350019	35	Grand Forks
+350030	35	Ramsey
+350003	35	Stark
+350009	35	Stutsman
+350006	35	Ward
+350017	35	Williams
+360066	36	Allen
+360009	36	Allen
+360263	36	Allen
+360002	36	Ashland
+360125	36	Ashtabula
+360245	36	Ashtabula
+360014	36	Athens
+360032	36	Auglaize
+360153	36	Belmont
+360080	36	Belmont
+360116	36	Brown
+360046	36	Butler
+360132	36	Butler
+360269	36	Butler
+360271	36	Butler
+360086	36	Clark
+360236	36	Clermont
+360175	36	Clinton
+360096	36	Columbiana
+360185	36	Columbiana
+360109	36	Coshocton
+360115	36	Cuyahoga
+360041	36	Cuyahoga
+360101	36	Cuyahoga
+360075	36	Cuyahoga
+360230	36	Cuyahoga
+360087	36	Cuyahoga
+360144	36	Cuyahoga
+360155	36	Cuyahoga
+360180	36	Cuyahoga
+360077	36	Cuyahoga
+360137	36	Cuyahoga
+360059	36	Cuyahoga
+360082	36	Cuyahoga
+360123	36	Cuyahoga
+360143	36	Cuyahoga
+360212	36	Cuyahoga
+360037	36	Cuyahoga
+360044	36	Darke
+360270	36	Defiance
+360210	36	Delaware
+360025	36	Erie
+360072	36	Fairfield
+360247	36	Franklin
+360346	36	Franklin
+360348	36	Franklin
+360266	36	Franklin
+360006	36	Franklin
+360152	36	Franklin
+360035	36	Franklin
+360242	36	Franklin
+360012	36	Franklin
+360017	36	Franklin
+360085	36	Franklin
+360054	36	Gallia
+360192	36	Geauga
+360026	36	Greene
+360203	36	Guernsey
+360350	36	Hamilton
+360134	36	Hamilton
+360001	36	Hamilton
+360003	36	Hamilton
+360038	36	Hamilton
+360234	36	Hamilton
+360179	36	Hamilton
+360016	36	Hamilton
+360113	36	Hamilton
+360163	36	Hamilton
+360056	36	Hamilton
+360095	36	Hancock
+360148	36	Holmes
+360065	36	Huron
+360211	36	Jefferson
+360040	36	Knox
+360098	36	Lake
+360261	36	Lawrence
+360347	36	Licking
+360218	36	Licking
+360197	36	Logan
+360130	36	Lorain
+360172	36	Lorain
+360145	36	Lorain
+360262	36	Lucas
+360074	36	Lucas
+360112	36	Lucas
+360048	36	Lucas
+360068	36	Lucas
+360259	36	Lucas
+360090	36	Lucas
+360349	36	Lucas
+360081	36	Lucas
+360189	36	Madison
+360064	36	Mahoning
+360141	36	Mahoning
+360276	36	Mahoning
+360011	36	Marion
+360091	36	Medina
+360195	36	Medina
+360058	36	Mercer
+360174	36	Miami
+360133	36	Montgomery
+360051	36	Montgomery
+360079	36	Montgomery
+360274	36	Montgomery
+360052	36	Montgomery
+360253	36	Montgomery
+360239	36	Montgomery
+360039	36	Muskingum
+360170	36	Pickaway
+360078	36	Portage
+360118	36	Richland
+360159	36	Ross
+360008	36	Scioto
+360156	36	Sandusky
+360107	36	Sandusky
+360089	36	Seneca
+360013	36	Shelby
+360070	36	Stark
+360151	36	Stark
+360084	36	Stark
+360131	36	Stark
+360150	36	Summit
+360020	36	Summit
+360027	36	Summit
+360019	36	Summit
+360055	36	Trumbull
+360161	36	Trumbull
+360010	36	Tuscarawas
+360092	36	Union
+360071	36	Van Wert
+360076	36	Warren
+360147	36	Washington
+360036	36	Wayne
+360121	36	Williams
+360029	36	Wood
+370178	37	Adair
+370103	37	Beckham
+370019	37	Beckham
+370014	37	Bryan
+370211	37	Canadian
+370011	37	Canadian
+370047	37	Carter
+370089	37	Cherokee
+370100	37	Choctaw
+370008	37	Cleveland
+370097	37	Comanche
+370056	37	Comanche
+370065	37	Craig
+370041	37	Creek
+370029	37	Custer
+370113	37	Delaware
+370007	37	Ellis
+370026	37	Garfield
+370016	37	Garfield
+370214	37	Garvin
+370156	37	Garvin
+370054	37	Grady
+370036	37	Harmon
+370084	37	Haskell
+370022	37	Jackson
+370030	37	Kay
+370006	37	Kay
+370153	37	Kiowa
+370072	37	Latimer
+370040	37	Le Flore
+370015	37	Mayes
+370158	37	McClain
+370048	37	McCurtain
+370169	37	McIntosh
+370025	37	Muskogee
+370139	37	Noble
+370013	37	Oklahoma
+370192	37	Oklahoma
+370206	37	Oklahoma
+370212	37	Oklahoma
+370037	37	Oklahoma
+370093	37	Oklahoma
+370028	37	Oklahoma
+370215	37	Oklahoma
+370201	37	Oklahoma
+370148	37	Oklahoma
+370105	37	Oklahoma
+370032	37	Oklahoma
+370199	37	Oklahoma
+370222	37	Oklahoma
+370203	37	Oklahoma
+370094	37	Oklahoma
+370220	37	Oklahoma
+370106	37	Oklahoma
+370057	37	Okmulgee
+370183	37	Okmulgee
+370004	37	Ottawa
+370099	37	Payne
+370049	37	Payne
+370034	37	Pittsburg
+370020	37	Pontotoc
+370149	37	Pottawatomie
+370083	37	Pushmataha
+370039	37	Rogers
+370229	37	Seminole
+370112	37	Sequoyah
+370023	37	Stephens
+370138	37	Texas
+370051	37	Tillman
+370228	37	Tulsa
+370190	37	Tulsa
+370227	37	Tulsa
+370001	37	Tulsa
+370114	37	Tulsa
+370218	37	Tulsa
+370091	37	Tulsa
+370210	37	Tulsa
+370078	37	Tulsa
+370202	37	Tulsa
+370216	37	Tulsa
+370166	37	Wagoner
+370018	37	Washington
+370080	37	Woods
+370002	37	Woodward
+380014	38	Benton
+380038	38	Clackamas
+380089	38	Clackamas
+380091	38	Clackamas
+380082	38	Clackamas
+380090	38	Coos
+380040	38	Deschutes
+380047	38	Deschutes
+380027	38	Douglas
+380005	38	Jackson
+380018	38	Jackson
+380075	38	Jackson
+380002	38	Josephine
+380050	38	Klamath
+380033	38	Lane
+380020	38	Lane
+380102	38	Lane
+380022	38	Linn
+380052	38	Malheur
+380056	38	Marion
+380051	38	Marion
+380029	38	Marion
+380017	38	Multnomah
+380004	38	Multnomah
+380061	38	Multnomah
+380060	38	Multnomah
+380025	38	Multnomah
+380007	38	Multnomah
+380009	38	Multnomah
+380101	38	Portland
+380001	38	Wasco
+380021	38	Washington
+380071	38	Yamhill
+380037	38	Yamhill
+390065	39	Adams
+390267	39	Allegheny
+390002	39	Allegheny
+390037	39	Allegheny
+390050	39	Allegheny
+390157	39	Allegheny
+390164	39	Allegheny
+390032	39	Allegheny
+390228	39	Allegheny
+390102	39	Allegheny
+390131	39	Allegheny
+390090	39	Allegheny
+390114	39	Allegheny
+390128	39	Allegheny
+390265	39	Allegheny
+390107	39	Allegheny
+390028	39	Allegheny
+390163	39	Armstrong
+390036	39	Beaver
+390176	39	Beaver
+390117	39	Bedford
+390096	39	Berks
+390044	39	Berks
+390316	39	Berks
+390062	39	Blair
+390073	39	Blair
+390236	39	Bradford
+390079	39	Bradford
+390057	39	Bucks
+390070	39	Bucks
+390258	39	Bucks
+390203	39	Bucks
+390035	39	Bucks
+390317	39	Bucks
+390168	39	Butler
+390130	39	Cambria
+390110	39	Cambria
+390194	39	Carbon
+390019	39	Carbon
+390268	39	Centre
+390179	39	Chester
+390127	39	Chester
+390180	39	Chester
+390076	39	Chester
+390153	39	Chester
+390220	39	Chester
+390093	39	Clarion
+390052	39	Clearfield
+390086	39	Clearfield
+390071	39	Clinton
+390072	39	Columbia
+390003	39	Columbia
+390122	39	Crawford
+390113	39	Crawford
+390004	39	Cumberland
+390058	39	Cumberland
+390067	39	Dauphin
+390256	39	Dauphin
+390222	39	Delaware
+390081	39	Delaware
+390154	39	Elk
+390198	39	Erie
+390063	39	Erie
+390009	39	Erie
+390041	39	Fayette
+390184	39	Fayette
+390151	39	Franklin
+390138	39	Franklin
+390150	39	Greene
+390056	39	Huntingdon
+390173	39	Indiana
+390199	39	Jefferson
+390237	39	Lackawanna
+390119	39	Lackawanna
+390095	39	Lackawanna
+390001	39	Lackawanna
+390225	39	Lancaster
+390100	39	Lancaster
+390068	39	Lancaster
+390016	39	Lawrence
+390008	39	Lawrence
+390066	39	Lebanon
+390263	39	Lehigh
+390197	39	Lehigh
+390049	39	Lehigh
+390318	39	Lehigh
+390133	39	Lehigh
+390185	39	Luzerne
+390270	39	Luzerne
+390169	39	Luzerne
+390137	39	Luzerne
+390045	39	Lycoming
+390104	39	McKean
+390118	39	McKean
+390307	39	Mercer
+390211	39	Mercer
+390266	39	Mercer
+390178	39	Mercer
+390048	39	Mifflin
+390201	39	Monroe
+390139	39	Montgomery
+390012	39	Montgomery
+390272	39	Montgomery
+390231	39	Montgomery
+390278	39	Montgomery
+390123	39	Montgomery
+390195	39	Montgomery
+390116	39	Montgomery
+390097	39	Montgomery
+390108	39	Montgomery
+390006	39	Montour
+390162	39	Northampton
+390314	39	Northampton
+390084	39	Northumberland
+390189	39	Northumberland
+390204	39	Philadelphia
+390115	39	Philadelphia
+390023	39	Philadelphia
+390304	39	Philadelphia
+390290	39	Philadelphia
+390174	39	Philadelphia
+390026	39	Philadelphia
+390223	39	Philadelphia
+390312	39	Philadelphia
+390132	39	Philadelphia
+390196	39	Philadelphia
+390027	39	Philadelphia
+390320	39	Philadelphia
+390080	39	Philadelphia
+390226	39	Philadelphia
+390142	39	Philadelphia
+390111	39	Philadelphia
+390313	39	Schuylkill
+390030	39	Schuylkill
+390183	39	Schuylkill
+390031	39	Schuylkill
+390112	39	Somerset
+390039	39	Somerset
+390043	39	Tioga
+390013	39	Union
+390061	39	Lancaster
+390156	39	Delaware
+390147	39	Washington
+390091	39	Venango
+390146	39	Warren
+390042	39	Washington
+390160	39	Washington
+390125	39	Wayne
+390145	39	Westmoreland
+390217	39	Westmoreland
+390010	39	Westmoreland
+390219	39	Westmoreland
+390192	39	Wyoming
+390101	39	York
+390233	39	York
+390046	39	York
+410009	41	Kent
+410006	41	Newport
+410012	41	Providence
+410011	41	Providence
+410001	41	Providence
+410007	41	Providence
+410004	41	Providence
+410010	41	Providence
+410005	41	Providence
+410013	41	Washington
+410008	41	Washington
+420082	42	Aiken
+420027	42	Anderson
+420056	42	Bamberg
+420016	42	Barnwell
+420067	42	Beaufort
+420080	42	Beaufort
+420089	42	Charleston
+420087	42	Charleston
+420004	42	Charleston
+420065	42	Charleston
+420006	42	Charleston
+420079	42	Charleston
+420043	42	Cherokee
+420019	42	Chester
+420062	42	Chesterfield
+420069	42	Clarendon
+420030	42	Colleton
+420057	42	Darlington
+420010	42	Darlington
+420005	42	Dillon
+420066	42	Florence
+420051	42	Florence
+420091	42	Florence
+420020	42	Georgetown
+420098	42	Georgetown
+420102	42	Greenville
+420023	42	Greenville
+420037	42	Greenville
+420033	42	Greenville
+420078	42	Greenville
+420071	42	Greenwood
+420072	42	Hampton
+420085	42	Horry
+420064	42	Horry
+420049	42	Horry
+420101	42	Jasper
+420048	42	Kershaw
+420036	42	Lancaster
+420038	42	Laurens
+420073	42	Lexington
+420055	42	Marion
+420054	42	Marlboro
+420053	42	Newberry
+420009	42	Oconee
+420068	42	Orangeburg
+420011	42	Pickens
+420015	42	Pickens
+420026	42	Richland
+420018	42	Richland
+420086	42	Richland
+420083	42	Spartanburg
+420103	42	Spartanburg
+420007	42	Spartanburg
+420070	42	Sumter
+420039	42	Union
+420002	42	York
+430008	43	Brookings
+430014	43	Brown
+430092	43	Brown
+430005	43	Codington
+430013	43	Davison
+430015	43	Hughes
+430048	43	Lawrence
+430094	43	Lawrence
+430095	43	Lincoln
+430090	43	Minnehaha
+430016	43	Minnehaha
+430027	43	Minnehaha
+430093	43	Pennington
+430091	43	Pennington
+430077	43	Pennington
+430060	43	Potter
+430064	43	Roberts
+430089	43	Union
+430012	43	Yankton
+430096	43	Yankton
+440034	44	Anderson
+440137	44	Bedford
+440011	44	Blount
+440185	44	Bradley
+440033	44	Campbell
+440180	44	Campbell
+440200	44	Cannon
+440016	44	Carroll
+440182	44	Carroll
+440018	44	Carter
+440057	44	Claiborne
+440141	44	Clay
+440153	44	Cocke
+440144	44	Coffee
+440007	44	Coffee
+440009	44	Cumberland
+440082	44	Davidson
+440218	44	Davidson
+440197	44	Davidson
+440039	44	Davidson
+440111	44	Davidson
+440133	44	Davidson
+440006	44	Davidson
+440026	44	Davidson
+440161	44	Davidson
+440150	44	Davidson
+440070	44	Decatur
+440148	44	DeKalb
+440046	44	Dickson
+440072	44	Dyer
+440168	44	Fayette
+440083	44	Fentress
+440058	44	Franklin
+440060	44	Gibson
+440115	44	Gibson
+440047	44	Gibson
+440020	44	Giles
+440025	44	Greene
+440050	44	Greene
+440030	44	Hamblen
+440067	44	Hamblen
+440104	44	Hamilton
+440068	44	Hamilton
+440156	44	Hamilton
+440091	44	Hamilton
+440181	44	Hardeman
+440109	44	Hardin
+440032	44	Hawkins
+440174	44	Haywood
+440008	44	Henderson
+440132	44	Henry
+440056	44	Jefferson
+440015	44	Knox
+440120	44	Knox
+440125	44	Knox
+440173	44	Knox
+440226	44	Knox
+440019	44	Knox
+440225	44	Knox
+440175	44	Lawrence
+440102	44	Lincoln
+440110	44	Loudon
+440002	44	Madison
+440189	44	Madison
+440064	44	Marion
+440073	44	Maury
+440054	44	McMinn
+440051	44	McNairy
+440084	44	Monroe
+440035	44	Montgomery
+440130	44	Obion
+440187	44	Overton
+440040	44	Perry
+440059	44	Putnam
+440031	44	Roane
+440065	44	Robertson
+440227	44	Rutherford
+440053	44	Rutherford
+440052	44	Scott
+440081	44	Sevier
+440159	44	Shelby
+440048	44	Shelby
+440049	44	Shelby
+440183	44	Shelby
+440152	44	Shelby
+440217	44	Shelby
+440228	44	Shelby
+440147	44	Shelby
+440186	44	Smith
+440017	44	Sullivan
+440012	44	Sullivan
+440176	44	Sullivan
+440003	44	Sumner
+440194	44	Sumner
+440131	44	Tipton
+440001	44	Unicoi
+440151	44	Warren
+440184	44	Washington
+440105	44	Washington
+440063	44	Washington
+440010	44	Wayne
+440061	44	Weakley
+440192	44	White
+440029	44	Williamson
+440193	44	Wilson
+450747	45	Anderson
+450144	45	Andrews
+450484	45	Angelina
+450211	45	Angelina
+450165	45	Atascosa
+450253	45	Austin
+450143	45	Bastrop
+450586	45	Baylor
+450082	45	Bee
+450054	45	Bell
+450152	45	Bell
+450008	45	Bell
+450213	45	Bexar
+450058	45	Bexar
+450130	45	Bexar
+450697	45	Bexar
+450388	45	Bexar
+450780	45	Bexar
+450878	45	Bexar
+450856	45	Bexar
+450237	45	Bexar
+450052	45	Bosque
+450200	45	Bowie
+450801	45	Bowie
+450072	45	Brazoria
+450591	45	Brazoria
+450011	45	Brazos
+450299	45	Brazos
+450834	45	Brazos
+450830	45	Brewster
+450587	45	Brown
+450841	45	Cameron
+450028	45	Cameron
+450855	45	Cameron
+450662	45	Cameron
+450033	45	Cameron
+450615	45	Cass
+450194	45	Cherokee
+450369	45	Childress
+450853	45	Collin
+450651	45	Collin
+450840	45	Collin
+450403	45	Collin
+450771	45	Collin
+450370	45	Colorado
+450438	45	Colorado
+450234	45	Comanche
+450059	45	Comel
+450090	45	Cooke
+450239	45	Coryell
+450379	45	Dallas
+450647	45	Dallas
+450044	45	Dallas
+450051	45	Dallas
+450742	45	Dallas
+450766	45	Dallas
+450723	45	Dallas
+450678	45	Dallas
+450079	45	Dallas
+450822	45	Dallas
+450730	45	Dallas
+450280	45	Dallas
+450422	45	Dallas
+450462	45	Dallas
+450537	45	Dallas
+450021	45	Dallas
+450851	45	Dallas
+450015	45	Dallas
+450315	45	Dallas
+450688	45	Dallas
+450489	45	Dawson
+450155	45	Deaf Smith
+450743	45	Denton
+450634	45	Denton
+450669	45	Denton
+450597	45	De Witt
+450620	45	Dimmit
+450411	45	Eastland
+450661	45	Ector
+450132	45	Ector
+450877	45	El Paso
+450107	45	El Paso
+450646	45	El Paso
+450002	45	El Paso
+450845	45	El Paso
+450668	45	El Paso
+450024	45	El Paso
+450372	45	Ellis
+450833	45	Ellis
+450351	45	Erath
+450348	45	Falls
+450847	45	Fort Bend
+450330	45	Fort Bend
+450848	45	Fort Bend
+450860	45	Fort Bend
+450820	45	Fort Bend
+450373	45	Franklin
+450658	45	Freestone
+450293	45	Frio
+450813	45	Frio
+450018	45	Galveston
+450530	45	Galveston
+450604	45	Gillespie
+450235	45	Gonzales
+450099	45	Gray
+450469	45	Grayson
+450324	45	Grayson
+450488	45	Gregg
+450702	45	Gregg
+450037	45	Gregg
+450104	45	Guadalupe
+450610	45	Harris
+450539	45	Hale
+450754	45	Hamilton
+450068	45	Harris
+450424	45	Harris
+450644	45	Harris
+450184	45	Harris
+450076	45	Harris
+450638	45	Harris
+450716	45	Harris
+450670	45	Harris
+450659	45	Harris
+450709	45	Harris
+450795	45	Harris
+450797	45	Harris
+450832	45	Harris
+450684	45	Harris
+450446	45	Harris
+450804	45	Harris
+450193	45	Harris
+450844	45	Harris
+450774	45	Harris
+450358	45	Harris
+450831	45	Harris
+450617	45	Harris
+450674	45	Harris
+450126	45	Harris
+450035	45	Harris
+450097	45	Harris
+450803	45	Harris
+450630	45	Harris
+450289	45	Harris
+450775	45	Harris
+450032	45	Harrison
+450272	45	Hays
+450578	45	Hemphill
+450389	45	Henderson
+450176	45	Hidalgo
+450825	45	Hidalgo
+450119	45	Hidalgo
+450128	45	Hidalgo
+450869	45	Hidalgo
+450711	45	Hidalgo
+450270	45	Hill
+450192	45	Hill
+450755	45	Hockley
+450596	45	Hood
+450236	45	Hopkins
+450580	45	Houston
+450653	45	Howard
+450352	45	Hunt
+450874	45	Dallas
+450241	45	Jack
+450573	45	Jasper
+450034	45	Jefferson
+450123	45	Jefferson
+450346	45	Jefferson
+450518	45	Jefferson
+450828	45	Jim Wells
+450148	45	Johnson
+450243	45	Jones
+450306	45	Jones
+450078	45	Jones
+450292	45	Kaufman
+450683	45	Kaufman
+450007	45	Kerr
+450163	45	Kleberg
+450746	45	Knox
+450196	45	Lamar
+450698	45	Lamb
+450296	45	Liberty
+450400	45	Limestone
+450219	45	Llano
+450040	45	Lubbock
+450876	45	Lubbock
+450162	45	Lubbock
+450686	45	Lubbock
+450465	45	Matagorda
+450092	45	Maverick
+450101	45	McLennan
+450042	45	McLennan
+450133	45	Midland
+450770	45	Milam
+450497	45	Montague
+450641	45	Montague
+450862	45	Montgomery
+450222	45	Montgomery
+450221	45	Moore
+450656	45	Nacogdoches
+450508	45	Nacogdoches
+450447	45	Navarro
+450788	45	Nueces
+450055	45	Nolan
+450046	45	Nueces
+450005	45	Orange
+450565	45	Palo Pinto
+450210	45	Panola
+450203	45	Parker
+450178	45	Pecos
+450395	45	Polk
+450796	45	Potter
+450209	45	Potter
+450875	45	Potter
+450231	45	Potter
+450188	45	Red River
+450475	45	Rusk
+450605	45	San Patricio
+450073	45	Scurry
+450839	45	Shelby
+450864	45	Smith
+450690	45	Smith
+450083	45	Smith
+450102	45	Smith
+450451	45	Somervell
+450654	45	Starr
+450498	45	Stephens
+450639	45	Tarrant
+450064	45	Tarrant
+450135	45	Tarrant
+450872	45	Tarrant
+450675	45	Tarrant
+450137	45	Tarrant
+450039	45	Tarrant
+450677	45	Tarrant
+450672	45	Tarrant
+450087	45	Tarrant
+450563	45	Tarrant
+450419	45	Tarrant
+450779	45	Tarrant
+450558	45	Taylor
+450229	45	Taylor
+450399	45	Terry
+450080	45	Titus
+450571	45	Tom Green
+450340	45	Tom Green
+450713	45	Travis
+450056	45	Travis
+450871	45	Travis
+450867	45	Travis
+450865	45	Travis
+450809	45	Travis
+450824	45	Travis
+450431	45	Travis
+450124	45	Travis
+450808	45	Travis
+450749	45	Trinity
+450460	45	Tyler
+450177	45	Uvalde
+450154	45	Val Verde
+450283	45	Van Zandt
+450023	45	Victoria
+450147	45	Victoria
+450347	45	Walker
+450187	45	Washington
+450643	45	Webb
+450029	45	Webb
+450214	45	Wharton
+450694	45	Wharton
+450010	45	Wichita
+450827	45	Wichita
+450584	45	Wilbarger
+450718	45	Williamson
+450191	45	Williamson
+450108	45	Wilson
+450271	45	Wise
+450224	45	Wood
+450547	45	Wood
+450085	45	Young
+460035	46	Beaver
+460017	46	Box Elder
+460039	46	Box Elder
+460015	46	Cache
+460054	46	Cache
+460011	46	Carbon
+460041	46	Davis
+460042	46	Davis
+460019	46	Duchesne
+460033	46	Garfield
+460007	46	Iron
+460018	46	Kane
+460013	46	Utah
+460009	46	Salt Lake
+460006	46	Salt Lake
+460051	46	Salt Lake
+460010	46	Salt Lake
+460044	46	Salt Lake
+460047	46	Salt Lake
+460003	46	Salt Lake
+460049	46	Salt Lake
+460026	46	Sevier
+460014	46	Tooele
+460030	46	Uintah
+460001	46	Utah
+460043	46	Utah
+460052	46	Utah
+460023	46	Utah
+460021	46	Washington
+460005	46	Weber
+460004	46	Weber
+470012	47	Bennington
+470003	47	Chittenden
+470024	47	Franklin
+470005	47	Rutland
+470001	47	Washington
+470011	47	Windham
+490077	49	Albemarle
+490009	49	Albemarle
+490126	49	Alleghany
+490108	49	Amherst
+490050	49	Arlington
+490106	49	Augusta
+490018	49	Augusta
+490088	49	Bedford
+490127	49	Buchanan
+490115	49	Carroll
+490136	49	Chesterfield
+490067	49	Petersburg
+490071	49	Richmond
+490019	49	Culpeper
+490104	49	Dinwiddie
+490084	49	Essex
+490063	49	Fairfax
+490122	49	Fairfax
+490040	49	Fairfax
+490101	49	Fairfax
+490107	49	Fairfax
+490023	49	Fauquier
+490089	49	Franklin
+490005	49	Frederick
+490130	49	Gloucester
+490097	49	Greensville
+490013	49	Halifax
+490069	49	Hanover
+490059	49	Henrico
+490139	49	Henrico
+490118	49	Henrico
+490079	49	Henry
+490020	49	Hopewell
+490109	49	James City
+490123	49	Lancaster
+490012	49	Lee
+490043	49	Loudoun
+490021	49	Lynchburg
+490098	49	Mecklenburg
+490042	49	Montgomery
+490110	49	Montgomery
+490046	49	Norfolk
+490066	49	Williamsburg
+490119	49	Virginia Beach
+490120	49	Chesapeake
+490093	49	Hampton
+490041	49	Newport News
+490052	49	Newport News
+490011	49	Norfolk
+490007	49	Norfolk
+490037	49	Northampton
+490001	49	Norton
+490134	49	Nottoway
+490075	49	Pittsylvania
+490017	49	Portsmouth
+490090	49	Prince Edward
+490113	49	Prince William
+490045	49	Prince William
+490116	49	Pulaski
+490112	49	Richmond
+490032	49	Richmond
+490094	49	Richmond
+490048	49	Roanoke
+490135	49	Roanoke
+490004	49	Rockingham
+490002	49	Russell
+490038	49	Smyth
+490105	49	Smyth
+490092	49	Southampton
+490022	49	Fredericksburg
+490044	49	Suffolk
+490060	49	Tazewell
+490117	49	Tazewell
+490024	49	Roanoke
+490057	49	Virginia Beach
+490033	49	Warren
+490053	49	Washington
+490027	49	Wise
+490114	49	Wise
+490111	49	Wythe
+500058	50	Benton
+500053	50	Benton
+500016	50	Chelan
+500148	50	Chelan
+500072	50	Clallam
+500150	50	Clark
+500050	50	Clark
+500041	50	Cowlitz
+500033	50	Grant
+500031	50	Grays Harbor
+500027	50	King
+500088	50	King
+500141	50	King
+500008	50	King
+500015	50	King
+500124	50	King
+500138	50	King
+500064	50	King
+500001	50	King
+500005	50	King
+500051	50	King
+500025	50	King
+500011	50	King
+500039	50	Kitsap
+500019	50	Lewis
+500129	50	Pierce
+500108	50	Pierce
+500021	50	Pierce
+500079	50	Pierce
+500007	50	Skagit
+500003	50	Skagit
+500084	50	Snohomish
+500026	50	Snohomish
+500014	50	Snohomish
+500060	50	Snohomish
+500119	50	Spokane
+500044	50	Spokane
+500054	50	Spokane
+500077	50	Spokane
+500024	50	Thurston
+500143	50	Thurston
+500139	50	Thurston
+500049	50	Walla Walla
+500002	50	Walla Walla
+500030	50	Whatcom
+500037	50	Yakima
+500012	50	Yakima
+500036	50	Yakima
+510008	51	Berkeley
+510023	51	Brooke
+510055	51	Cabell
+510007	51	Cabell
+510026	51	Grant
+510002	51	Greenbrier
+510006	51	Harrison
+510018	51	Jackson
+510031	51	Kanawha
+510022	51	Kanawha
+510059	51	Kanawha
+510029	51	Kanawha
+510038	51	Lewis
+510048	51	Logan
+510047	51	Marion
+510013	51	Marshall
+510012	51	Mason
+510086	51	McDowell
+510046	51	Mercer
+510071	51	Mercer
+510077	51	Mingo
+510001	51	Monongalia
+510024	51	Monongalia
+510082	51	Nicholas
+510050	51	Ohio
+510039	51	Ohio
+510085	51	Putnam
+510070	51	Raleigh
+510062	51	Raleigh
+510030	51	Randolph
+510053	51	Upshur
+510072	51	Wetzel
+510058	51	Wood
+510033	51	Wood
+520011	52	Barron
+520075	52	Brown
+520193	52	Brown
+520097	52	Brown
+520049	52	Brown
+520017	52	Chippewa
+520041	52	Columbia
+520098	52	Dane
+520083	52	Dane
+520089	52	Dane
+520116	52	Dodge
+520076	52	Dodge
+520070	52	Eau Claire
+520196	52	Eau Claire
+520013	52	Eau Claire
+520088	52	Fond du Lac
+520028	52	Green
+520071	52	Jefferson
+520109	52	Juneau
+520021	52	Kenosha
+520189	52	Kenosha
+520004	52	La Crosse
+520087	52	La Crosse
+520107	52	Manitowoc
+520034	52	Manitowoc
+520030	52	Marathon
+520202	52	Marathon
+520113	52	Marinette
+520204	52	Milwaukee
+520138	52	Milwaukee
+520194	52	Milwaukee
+520177	52	Milwaukee
+520078	52	Milwaukee
+520195	52	Milwaukee
+520136	52	Milwaukee
+520199	52	Milwaukee
+520064	52	Milwaukee
+520051	52	Milwaukee
+520139	52	Milwaukee
+520019	52	Oneida
+520091	52	Oneida
+520160	52	Outagamie
+520009	52	Outagamie
+520027	52	Ozaukee
+520002	52	Portage
+520059	52	Racine
+520096	52	Racine
+520066	52	Rock
+520100	52	Rock
+520057	52	Sauk
+520095	52	Sauk
+520044	52	Sheboygan
+520035	52	Sheboygan
+520102	52	Walworth
+520038	52	Washington
+520063	52	Washington
+520008	52	Waukesha
+520062	52	Waukesha
+520170	52	Waukesha
+520045	52	Winnebago
+520198	52	Winnebago
+520048	52	Winnebago
+520037	52	Wood
+520033	52	Wood
+520103	52	Waukesha
+530025	53	Albany
+530002	53	Campbell
+530009	53	Carbon
+530008	53	Fremont
+530010	53	Fremont
+530014	53	Laramie
+530017	53	Lincoln
+530012	53	Natrona
+530033	53	Natrona
+530006	53	Sheridan
+530011	53	Sweetwater
+530015	53	Teton
+530032	53	Uinta
+660001	66	Mp
+670011	67	Bastrop
+670054	67	Bexar
+670051	67	Brazos
+670025	67	Collin
+670002	67	Dallas
+670049	67	Dallas
+670010	67	Denton
+670033	67	Denton
+670039	67	Denton
+670047	67	El Paso
+670004	67	Fayette
+670053	67	Fort Bend
+670019	67	Harris
+670012	67	Harris
+670040	67	Harris
+670048	67	Harris
+670032	67	Harris
+670024	67	Harris
+670029	67	Harris
+670027	67	Harris
+670031	67	Harris
+670008	67	Harris
+670005	67	Harrist
+670007	67	Jefferson
+670018	67	Liberty
+670050	67	Lubbock
+670038	67	Montgomery
+670044	67	Rockwall
+670046	67	Tarrant
+670042	67	Tarrant
+670023	67	Tarrant
+670045	67	Tarrant
+670006	67	Travis
+670043	67	Travis
+670041	67	Williamson
+670034	67	Williamson
+670052	67	Wise

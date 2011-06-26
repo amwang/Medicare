@@ -1,0 +1,3144 @@
+MSA	PMSA	FIPS	Level	county
+		02013	5	Aleutians East
+		02016	5	Aleutians West
+0380		02020	3	Anchorage
+		02050	5	Bethel
+		02060	5	Bristol Bay
+		02068	5	Denali
+		02070	5	Dillingham
+		02090	5	Fairbanks North Star
+		02100	5	Haines
+		02110	5	Juneau
+		02122	5	Kenai Peninsula
+		02130	5	Ketchikan Gateway
+		02150	5	Kodiak Island
+		02164	5	Lake and Peninsula
+		02170	5	Matanuska-Susitna
+		02180	5	Nome
+		02185	5	North Slope
+		02188	5	Northwest Arctic
+		02201	5	Prince of Wales-Outer Ketchikan
+		02220	5	Sitka
+		02232	5	Skagway-Hoonah-Angoon
+		02240	5	Southeast Fairbanks
+		02261	5	Valdez-Cordova
+		02270	5	Wade Hampton
+		02280	5	Wrangell-Petersburg
+		02282	5	Yakutat
+		02290	5	Yukon-Koyukuk
+5240		01001	3	Autauga
+5160		01003	3	Baldwin
+		01005	5	Barbour
+		01007	5	Bibb
+1000		01009	3	Blount
+		01011	5	Bullock
+		01013	5	Butler
+0450		01015	3	Calhoun
+		01017	5	Chambers
+		01019	5	Cherokee
+		01021	5	Chilton
+		01023	5	Choctaw
+		01025	5	Clarke
+		01027	5	Clay
+		01029	5	Cleburne
+		01031	5	Coffee
+2650		01033	3	Colbert
+		01035	5	Conecuh
+		01037	5	Coosa
+		01039	5	Covington
+		01041	5	Crenshaw
+		01043	5	Cullman
+2180		01045	3	Dale
+		01047	5	Dallas
+		01049	5	De Kalb
+5240		01051	3	Elmore
+		01053	5	Escambia
+2880		01055	3	Etowah
+		01057	5	Fayette
+		01059	5	Franklin
+		01061	5	Geneva
+		01063	5	Greene
+		01065	5	Hale
+		01067	5	Henry
+2180		01069	3	Houston
+		01071	5	Jackson
+1000		01073	3	Jefferson
+		01075	5	Lamar
+2650		01077	3	Lauderdale
+2030		01079	3	Lawrence
+		01081	5	Lee
+3440		01083	3	Limestone
+		01085	5	Lowndes
+		01087	5	Macon
+3440		01089	3	Madison
+		01091	5	Marengo
+		01093	5	Marion
+		01095	5	Marshall
+5160		01097	3	Mobile
+		01099	5	Monroe
+5240		01101	3	Montgomery
+2030		01103	3	Morgan
+		01105	5	Perry
+		01107	5	Pickens
+		01109	5	Pike
+		01111	5	Randolph
+1800		01113	3	Russell
+1000		01115	3	St. Clair
+1000		01117	3	Shelby
+		01119	5	Sumter
+		01121	5	Talladega
+		01123	5	Tallapoosa
+8600		01125	3	Tuscaloosa
+		01127	5	Walker
+		01129	5	Washington
+		01131	5	Wilcox
+		01133	5	Winston
+		04001	5	Apache
+		04003	5	Cochise
+		04005	5	Coconino
+		04007	5	Gila
+		04009	5	Graham
+		04011	5	Greenlee
+		04012	5	La Paz
+6200		04013	3	Maricopa
+4120		04015	3	Mohave
+		04017	5	Navajo
+8520		04019	3	Pima
+6200		04021	3	Pinal
+		04023	5	Santa Cruz
+		04025	5	Yavapai
+9360		04027	3	Yuma
+		05001	5	Arkansas
+		05003	5	Ashley
+		05005	5	Baxter
+2580		05007	3	Benton
+		05009	5	Boone
+		05011	5	Bradley
+		05013	5	Calhoun
+		05015	5	Carroll
+		05017	5	Chicot
+		05019	5	Clark
+		05021	5	Clay
+		05023	5	Cleburne
+		05025	5	Cleveland
+		05027	5	Columbia
+		05029	5	Conway
+		05031	5	Craighead
+2720		05033	3	Crawford
+4920		05035	3	Crittenden
+		05037	5	Cross
+		05039	5	Dallas
+		05041	5	Desha
+		05043	5	Drew
+4400		05045	3	Faulkner
+		05047	5	Franklin
+		05049	5	Fulton
+		05051	5	Garland
+		05053	5	Grant
+		05055	5	Greene
+		05057	5	Hempstead
+		05059	5	Hot Spring
+		05061	5	Howard
+		05063	5	Independence
+		05065	5	Izard
+		05067	5	Jackson
+6240		05069	3	Jefferson
+		05071	5	Johnson
+		05073	5	Lafayette
+		05075	5	Lawrence
+		05077	5	Lee
+		05079	5	Lincoln
+		05081	5	Little River
+		05083	5	Logan
+4400		05085	3	Lonoke
+		05087	5	Madison
+		05089	5	Marion
+8360		05091	3	Miller
+		05093	5	Mississippi
+		05095	5	Monroe
+		05097	5	Montgomery
+		05099	5	Nevada
+		05101	5	Newton
+		05103	5	Ouachita
+		05105	5	Perry
+		05107	5	Phillips
+		05109	5	Pike
+		05111	5	Poinsett
+		05113	5	Polk
+		05115	5	Pope
+		05117	5	Prairie
+4400		05119	3	Pulaski
+		05121	5	Randolph
+		05123	5	St. Francis
+4400		05125	3	Saline
+		05127	5	Scott
+		05129	5	Searcy
+2720		05131	3	Sebastian
+		05133	5	Sevier
+		05135	5	Sharp
+		05137	5	Stone
+		05139	5	Union
+		05141	5	Van Buren
+2580		05143	3	Washington
+		05145	5	White
+		05147	5	Woodruff
+		05149	5	Yell
+7362	5775	06001	2	Alameda
+		06003	5	Alpine
+		06005	5	Amador
+1620		06007	3	Butte
+		06009	5	Calaveras
+		06011	5	Colusa
+7362	5775	06013	2	Contra Costa
+		06015	5	Del Norte
+6922	6920	06017	2	El Dorado
+2840		06019	3	Fresno
+		06021	5	Glenn
+		06023	5	Humboldt
+		06025	5	Imperial
+		06027	5	Inyo
+0680		06029	3	Kern
+		06031	5	Kings
+		06033	5	Lake
+		06035	5	Lassen
+4472	4480	06037	2	Los Angeles
+2840		06039	3	Madera
+7362	7360	06041	2	Marin
+		06043	5	Mariposa
+		06045	5	Mendocino
+4940		06047	3	Merced
+		06049	5	Modoc
+		06051	5	Mono
+7120		06053	3	Monterey
+7362	8720	06055	2	Napa
+		06057	5	Nevada
+4472	5945	06059	2	Orange
+6922	6920	06061	2	Placer
+		06063	5	Plumas
+4472	6780	06065	2	Riverside
+6922	6920	06067	2	Sacramento
+		06069	5	San Benito
+4472	6780	06071	2	San Bernardino
+7320		06073	3	San Diego
+7362	7360	06075	2	San Francisco
+8120		06077	3	San Joaquin
+7460		06079	3	San Luis Obispo
+7362	7360	06081	2	San Mateo
+7480		06083	3	Santa Barbara
+7362	7400	06085	2	Santa Clara
+7362	7485	06087	2	Santa Cruz
+6690		06089	3	Shasta
+		06091	5	Sierra
+		06093	5	Siskiyou
+7362	8720	06095	2	Solano
+7362	7500	06097	2	Sonoma
+5170		06099	3	Stanislaus
+9340		06101	3	Sutter
+		06103	5	Tehama
+		06105	5	Trinity
+8780		06107	3	Tulare
+		06109	5	Tuolumne
+4472	8735	06111	2	Ventura
+6922	9270	06113	2	Yolo
+9340		06115	3	Yuba
+2082	2080	08001	2	Adams
+		08003	5	Alamosa
+2082	2080	08005	2	Arapahoe
+		08007	5	Archuleta
+		08009	5	Baca
+		08011	5	Bent
+2082	1125	08013	2	Boulder
+		08015	5	Chaffee
+		08017	5	Cheyenne
+		08019	5	Clear Creek
+		08021	5	Conejos
+		08023	5	Costilla
+		08025	5	Crowley
+		08027	5	Custer
+		08029	5	Delta
+2082	2080	08031	2	Denver
+		08033	5	Dolores
+2082	2080	08035	2	Douglas
+		08037	5	Eagle
+		08039	5	Elbert
+1720		08041	3	El Paso
+		08043	5	Fremont
+		08045	5	Garfield
+		08047	5	Gilpin
+		08049	5	Grand
+		08051	5	Gunnison
+		08053	5	Hinsdale
+		08055	5	Huerfano
+		08057	5	Jackson
+2082	2080	08059	2	Jefferson
+		08061	5	Kiowa
+		08063	5	Kit Carson
+		08065	5	Lake
+		08067	5	La Plata
+2670		08069	3	Larimer
+		08071	5	Las Animas
+		08073	5	Lincoln
+		08075	5	Logan
+		08077	5	Mesa
+		08079	5	Mineral
+		08081	5	Moffat
+		08083	5	Montezuma
+		08085	5	Montrose
+		08087	5	Morgan
+		08089	5	Otero
+		08091	5	Ouray
+		08093	5	Park
+		08095	5	Phillips
+		08097	5	Pitkin
+		08099	5	Prowers
+6560		08101	3	Pueblo
+		08103	5	Rio Blanco
+		08105	5	Rio Grande
+		08107	5	Routt
+		08109	5	Saguache
+		08111	5	San Juan
+		08113	5	San Miguel
+		08115	5	Sedgwick
+		08117	5	Summit
+		08119	5	Teller
+		08121	5	Washington
+2082	3060	08123	2	Weld
+		08125	5	Yuma
+5483		09001	4	Fairfield
+3283		09003	4	Hartford
+		09005	5	Litchfield
+3283		09007	4	Middlesex
+5483		09009	4	New Haven
+5523		09011	4	New London
+3283		09013	4	Tolland
+		09015	5	Windham
+8872	8840	11001	2	District of Columbia
+2190		10001	3	Kent
+6162	9160	10003	2	New Castle
+		10005	5	Sussex
+2900		12001	3	Alachua
+		12003	5	Baker
+6015		12005	3	Bay
+		12007	5	Bradford
+4900		12009	3	Brevard
+4992	2680	12011	2	Broward
+		12013	5	Calhoun
+6580		12015	3	Charlotte
+		12017	5	Citrus
+3600		12019	3	Clay
+5345		12021	3	Collier
+		12023	5	Columbia
+4992	5000	12025	2	Dade
+		12027	5	De Soto
+		12029	5	Dixie
+3600		12031	3	Duval
+6080		12033	3	Escambia
+2020		12035	3	Flagler
+		12037	5	Franklin
+8240		12039	3	Gadsden
+		12041	5	Gilchrist
+		12043	5	Glades
+		12045	5	Gulf
+		12047	5	Hamilton
+		12049	5	Hardee
+		12051	5	Hendry
+8280		12053	3	Hernando
+		12055	5	Highlands
+8280		12057	3	Hillsborough
+		12059	5	Holmes
+		12061	5	Indian River
+		12063	5	Jackson
+		12065	5	Jefferson
+		12067	5	Lafayette
+5960		12069	3	Lake
+2700		12071	3	Lee
+8240		12073	3	Leon
+		12075	5	Levy
+		12077	5	Liberty
+		12079	5	Madison
+7510		12081	3	Manatee
+5790		12083	3	Marion
+2710		12085	3	Martin
+		12087	5	Monroe
+3600		12089	3	Nassau
+2750		12091	3	Okaloosa
+		12093	5	Okeechobee
+5960		12095	3	Orange
+5960		12097	3	Osceola
+8960		12099	3	Palm Beach
+8280		12101	3	Pasco
+8280		12103	3	Pinellas
+3980		12105	3	Polk
+		12107	5	Putnam
+3600		12109	3	St. Johns
+2710		12111	3	St. Lucie
+6080		12113	3	Santa Rosa
+7510		12115	3	Sarasota
+5960		12117	3	Seminole
+		12119	5	Sumter
+		12121	5	Suwannee
+		12123	5	Taylor
+		12125	5	Union
+2020		12127	3	Volusia
+		12129	5	Wakulla
+		12131	5	Walton
+		12133	5	Washington
+		13001	5	Appling
+		13003	5	Atkinson
+		13005	5	Bacon
+		13007	5	Baker
+		13009	5	Baldwin
+		13011	5	Banks
+0520		13013	3	Barrow
+0520		13015	3	Bartow
+		13017	5	Ben Hill
+		13019	5	Berrien
+4680		13021	3	Bibb
+		13023	5	Bleckley
+		13025	5	Brantley
+		13027	5	Brooks
+7520		13029	3	Bryan
+		13031	5	Bulloch
+		13033	5	Burke
+		13035	5	Butts
+		13037	5	Calhoun
+		13039	5	Camden
+		13043	5	Candler
+0520		13045	3	Carroll
+1560		13047	3	Catoosa
+		13049	5	Charlton
+7520		13051	3	Chatham
+1800		13053	3	Chattahoochee
+		13055	5	Chattooga
+0520		13057	3	Cherokee
+0500		13059	3	Clarke
+		13061	5	Clay
+0520		13063	3	Clayton
+		13065	5	Clinch
+0520		13067	3	Cobb
+		13069	5	Coffee
+		13071	5	Colquitt
+0600		13073	3	Columbia
+		13075	5	Cook
+0520		13077	3	Coweta
+		13079	5	Crawford
+		13081	5	Crisp
+1560		13083	3	Dade
+		13085	5	Dawson
+		13087	5	Decatur
+0520		13089	3	De Kalb
+		13091	5	Dodge
+		13093	5	Dooly
+0120		13095	3	Dougherty
+0520		13097	3	Douglas
+		13099	5	Early
+		13101	5	Echols
+7520		13103	3	Effingham
+		13105	5	Elbert
+		13107	5	Emanuel
+		13109	5	Evans
+		13111	5	Fannin
+0520		13113	3	Fayette
+		13115	5	Floyd
+0520		13117	3	Forsyth
+		13119	5	Franklin
+0520		13121	3	Fulton
+		13123	5	Gilmer
+		13125	5	Glascock
+		13127	5	Glynn
+		13129	5	Gordon
+		13131	5	Grady
+		13133	5	Greene
+0520		13135	3	Gwinnett
+		13137	5	Habersham
+		13139	5	Hall
+		13141	5	Hancock
+		13143	5	Haralson
+1800		13145	3	Harris
+		13147	5	Hart
+		13149	5	Heard
+0520		13151	3	Henry
+4680		13153	3	Houston
+		13155	5	Irwin
+		13157	5	Jackson
+		13159	5	Jasper
+		13161	5	Jeff Davis
+		13163	5	Jefferson
+		13165	5	Jenkins
+		13167	5	Johnson
+4680		13169	3	Jones
+		13171	5	Lamar
+		13173	5	Lanier
+		13175	5	Laurens
+0120		13177	3	Lee
+		13179	5	Liberty
+		13181	5	Lincoln
+		13183	5	Long
+		13185	5	Lowndes
+		13187	5	Lumpkin
+		13189	5	McDuffie
+		13191	5	McIntosh
+		13193	5	Macon
+0500		13195	3	Madison
+		13197	5	Marion
+		13199	5	Meriwether
+		13201	5	Miller
+		13205	5	Mitchell
+		13207	5	Monroe
+		13209	5	Montgomery
+		13211	5	Morgan
+		13213	5	Murray
+1800		13215	3	Muscogee
+0520		13217	3	Newton
+0500		13219	3	Oconee
+		13221	5	Oglethorpe
+0520		13223	3	Paulding
+4680		13225	3	Peach
+0520		13227	3	Pickens
+		13229	5	Pierce
+		13231	5	Pike
+		13233	5	Polk
+		13235	5	Pulaski
+		13237	5	Putnam
+		13239	5	Quitman
+		13241	5	Rabun
+		13243	5	Randolph
+0600		13245	3	Richmond
+0520		13247	3	Rockdale
+		13249	5	Schley
+		13251	5	Screven
+		13253	5	Seminole
+0520		13255	3	Spalding
+		13257	5	Stephens
+		13259	5	Stewart
+		13261	5	Sumter
+		13263	5	Talbot
+		13265	5	Taliaferro
+		13267	5	Tattnall
+		13269	5	Taylor
+		13271	5	Telfair
+		13273	5	Terrell
+		13275	5	Thomas
+		13277	5	Tift
+		13279	5	Toombs
+		13281	5	Towns
+		13283	5	Treutlen
+		13285	5	Troup
+		13287	5	Turner
+4680		13289	3	Twiggs
+		13291	5	Union
+		13293	5	Upson
+1560		13295	3	Walker
+0520		13297	3	Walton
+		13299	5	Ware
+		13301	5	Warren
+		13303	5	Washington
+		13305	5	Wayne
+		13307	5	Webster
+		13309	5	Wheeler
+		13311	5	White
+		13313	5	Whitfield
+		13315	5	Wilcox
+		13317	5	Wilkes
+		13319	5	Wilkinson
+		13321	5	Worth
+		15001	5	Hawaii
+3320		15003	3	Honolulu
+		15005	5	Kalawao
+		15007	5	Kauai
+		15009	5	Maui
+		19001	5	Adair
+		19003	5	Adams
+		19005	5	Allamakee
+		19007	5	Appanoose
+		19009	5	Audubon
+		19011	5	Benton
+8920		19013	3	Black Hawk
+		19015	5	Boone
+		19017	5	Bremer
+		19019	5	Buchanan
+		19021	5	Buena Vista
+		19023	5	Butler
+		19025	5	Calhoun
+		19027	5	Carroll
+		19029	5	Cass
+		19031	5	Cedar
+		19033	5	Cerro Gordo
+		19035	5	Cherokee
+		19037	5	Chickasaw
+		19039	5	Clarke
+		19041	5	Clay
+		19043	5	Clayton
+		19045	5	Clinton
+		19047	5	Crawford
+2120		19049	3	Dallas
+		19051	5	Davis
+		19053	5	Decatur
+		19055	5	Delaware
+		19057	5	Des Moines
+		19059	5	Dickinson
+2200		19061	3	Dubuque
+		19063	5	Emmet
+		19065	5	Fayette
+		19067	5	Floyd
+		19069	5	Franklin
+		19071	5	Fremont
+		19073	5	Greene
+		19075	5	Grundy
+		19077	5	Guthrie
+		19079	5	Hamilton
+		19081	5	Hancock
+		19083	5	Hardin
+		19085	5	Harrison
+		19087	5	Henry
+		19089	5	Howard
+		19091	5	Humboldt
+		19093	5	Ida
+		19095	5	Iowa
+		19097	5	Jackson
+		19099	5	Jasper
+		19101	5	Jefferson
+3500		19103	3	Johnson
+		19105	5	Jones
+		19107	5	Keokuk
+		19109	5	Kossuth
+		19111	5	Lee
+1360		19113	3	Linn
+		19115	5	Louisa
+		19117	5	Lucas
+		19119	5	Lyon
+		19121	5	Madison
+		19123	5	Mahaska
+		19125	5	Marion
+		19127	5	Marshall
+		19129	5	Mills
+		19131	5	Mitchell
+		19133	5	Monona
+		19135	5	Monroe
+		19137	5	Montgomery
+		19139	5	Muscatine
+		19141	5	O'Brien
+		19143	5	Osceola
+		19145	5	Page
+		19147	5	Palo Alto
+		19149	5	Plymouth
+		19151	5	Pocahontas
+2120		19153	3	Polk
+5920		19155	3	Pottawattamie
+		19157	5	Poweshiek
+		19159	5	Ringgold
+		19161	5	Sac
+1960		19163	3	Scott
+		19165	5	Shelby
+		19167	5	Sioux
+		19169	5	Story
+		19171	5	Tama
+		19173	5	Taylor
+		19175	5	Union
+		19177	5	Van Buren
+		19179	5	Wapello
+2120		19181	3	Warren
+		19183	5	Washington
+		19185	5	Wayne
+		19187	5	Webster
+		19189	5	Winnebago
+		19191	5	Winneshiek
+7720		19193	3	Woodbury
+		19195	5	Worth
+		19197	5	Wright
+1080		16001	3	Ada
+		16003	5	Adams
+		16005	5	Bannock
+		16007	5	Bear Lake
+		16009	5	Benewah
+		16011	5	Bingham
+		16013	5	Blaine
+		16015	5	Boise
+		16017	5	Bonner
+		16019	5	Bonneville
+		16021	5	Boundary
+		16023	5	Butte
+		16025	5	Camas
+1080		16027	3	Canyon
+		16029	5	Caribou
+		16031	5	Cassia
+		16033	5	Clark
+		16035	5	Clearwater
+		16037	5	Custer
+		16039	5	Elmore
+		16041	5	Franklin
+		16043	5	Fremont
+		16045	5	Gem
+		16047	5	Gooding
+		16049	5	Idaho
+		16051	5	Jefferson
+		16053	5	Jerome
+		16055	5	Kootenai
+		16057	5	Latah
+		16059	5	Lemhi
+		16061	5	Lewis
+		16063	5	Lincoln
+		16065	5	Madison
+		16067	5	Minidoka
+		16069	5	Nez Perce
+		16071	5	Oneida
+		16073	5	Owyhee
+		16075	5	Payette
+		16077	5	Power
+		16079	5	Shoshone
+		16081	5	Teton
+		16083	5	Twin Falls
+		16085	5	Valley
+		16087	5	Washington
+		17001	5	Adams
+		17003	5	Alexander
+		17005	5	Bond
+6880		17007	3	Boone
+		17009	5	Brown
+		17011	5	Bureau
+		17013	5	Calhoun
+		17015	5	Carroll
+		17017	5	Cass
+1400		17019	3	Champaign
+		17021	5	Christian
+		17023	5	Clark
+		17025	5	Clay
+7040		17027	3	Clinton
+		17029	5	Coles
+1602	1600	17031	2	Cook
+		17033	5	Crawford
+		17035	5	Cumberland
+1602	1600	17037	2	DeKalb
+		17039	5	De Witt
+		17041	5	Douglas
+1602	1600	17043	2	DuPage
+		17045	5	Edgar
+		17047	5	Edwards
+		17049	5	Effingham
+		17051	5	Fayette
+		17053	5	Ford
+		17055	5	Franklin
+		17057	5	Fulton
+		17059	5	Gallatin
+		17061	5	Greene
+1602	1600	17063	2	Grundy
+		17065	5	Hamilton
+		17067	5	Hancock
+		17069	5	Hardin
+		17071	5	Henderson
+1960		17073	3	Henry
+		17075	5	Iroquois
+		17077	5	Jackson
+		17079	5	Jasper
+		17081	5	Jefferson
+7040		17083	3	Jersey
+		17085	5	Jo Daviess
+		17087	5	Johnson
+1602	1600	17089	2	Kane
+1602	3740	17091	2	Kankakee
+1602	1600	17093	2	Kendall
+		17095	5	Knox
+1602	1600	17097	2	Lake
+		17099	5	La Salle
+		17101	5	Lawrence
+		17103	5	Lee
+		17105	5	Livingston
+		17107	5	Logan
+		17109	5	McDonough
+1602	1600	17111	2	McHenry
+1040		17113	3	McLean
+2040		17115	3	Macon
+		17117	5	Macoupin
+7040		17119	3	Madison
+		17121	5	Marion
+		17123	5	Marshall
+		17125	5	Mason
+		17127	5	Massac
+7880		17129	3	Menard
+		17131	5	Mercer
+7040		17133	3	Monroe
+		17135	5	Montgomery
+		17137	5	Morgan
+		17139	5	Moultrie
+6880		17141	3	Ogle
+6120		17143	3	Peoria
+		17145	5	Perry
+		17147	5	Piatt
+		17149	5	Pike
+		17151	5	Pope
+		17153	5	Pulaski
+		17155	5	Putnam
+		17157	5	Randolph
+		17159	5	Richland
+1960		17161	3	Rock Island
+7040		17163	3	St. Clair
+		17165	5	Saline
+7880		17167	3	Sangamon
+		17169	5	Schuyler
+		17171	5	Scott
+		17173	5	Shelby
+		17175	5	Stark
+		17177	5	Stephenson
+6120		17179	3	Tazewell
+		17181	5	Union
+		17183	5	Vermilion
+		17185	5	Wabash
+		17187	5	Warren
+		17189	5	Washington
+		17191	5	Wayne
+		17193	5	White
+		17195	5	Whiteside
+1602	1600	17197	2	Will
+		17199	5	Williamson
+6880		17201	3	Winnebago
+6120		17203	3	Woodford
+2760		18001	3	Adams
+2760		18003	3	Allen
+		18005	5	Bartholomew
+		18007	5	Benton
+		18009	5	Blackford
+3480		18011	3	Boone
+		18013	5	Brown
+		18015	5	Carroll
+		18017	5	Cass
+4520		18019	3	Clark
+8320		18021	3	Clay
+3920		18023	3	Clinton
+		18025	5	Crawford
+		18027	5	Daviess
+1642	1640	18029	2	Dearborn
+		18031	5	Decatur
+2760		18033	3	De Kalb
+5280		18035	3	Delaware
+		18037	5	Dubois
+2330		18039	3	Elkhart
+		18041	5	Fayette
+4520		18043	3	Floyd
+		18045	5	Fountain
+		18047	5	Franklin
+		18049	5	Fulton
+		18051	5	Gibson
+		18053	5	Grant
+		18055	5	Greene
+3480		18057	3	Hamilton
+3480		18059	3	Hancock
+4520		18061	3	Harrison
+3480		18063	3	Hendricks
+		18065	5	Henry
+3850		18067	3	Howard
+2760		18069	3	Huntington
+		18071	5	Jackson
+		18073	5	Jasper
+		18075	5	Jay
+		18077	5	Jefferson
+		18079	5	Jennings
+3480		18081	3	Johnson
+		18083	5	Knox
+		18085	5	Kosciusko
+		18087	5	Lagrange
+1602	2960	18089	2	Lake
+		18091	5	La Porte
+		18093	5	Lawrence
+3480		18095	3	Madison
+3480		18097	3	Marion
+		18099	5	Marshall
+		18101	5	Martin
+		18103	5	Miami
+1020		18105	3	Monroe
+		18107	5	Montgomery
+3480		18109	3	Morgan
+		18111	5	Newton
+		18113	5	Noble
+1642	1640	18115	2	Ohio
+		18117	5	Orange
+		18119	5	Owen
+		18121	5	Parke
+		18123	5	Perry
+		18125	5	Pike
+1602	2960	18127	2	Porter
+2440		18129	3	Posey
+		18131	5	Pulaski
+		18133	5	Putnam
+		18135	5	Randolph
+		18137	5	Ripley
+		18139	5	Rush
+7800		18141	3	St. Joseph
+4520		18143	3	Scott
+3480		18145	3	Shelby
+		18147	5	Spencer
+		18149	5	Starke
+		18151	5	Steuben
+		18153	5	Sullivan
+		18155	5	Switzerland
+3920		18157	3	Tippecanoe
+3850		18159	3	Tipton
+		18161	5	Union
+2440		18163	3	Vanderburgh
+8320		18165	3	Vermillion
+8320		18167	3	Vigo
+		18169	5	Wabash
+		18171	5	Warren
+2440		18173	3	Warrick
+		18175	5	Washington
+		18177	5	Wayne
+2760		18179	3	Wells
+		18181	5	White
+2760		18183	3	Whitley
+		20001	5	Allen
+		20003	5	Anderson
+		20005	5	Atchison
+		20007	5	Barber
+		20009	5	Barton
+		20011	5	Bourbon
+		20013	5	Brown
+9040		20015	3	Butler
+		20017	5	Chase
+		20019	5	Chautauqua
+		20021	5	Cherokee
+		20023	5	Cheyenne
+		20025	5	Clark
+		20027	5	Clay
+		20029	5	Cloud
+		20031	5	Coffey
+		20033	5	Comanche
+		20035	5	Cowley
+		20037	5	Crawford
+		20039	5	Decatur
+		20041	5	Dickinson
+		20043	5	Doniphan
+4150		20045	3	Douglas
+		20047	5	Edwards
+		20049	5	Elk
+		20051	5	Ellis
+		20053	5	Ellsworth
+		20055	5	Finney
+		20057	5	Ford
+		20059	5	Franklin
+		20061	5	Geary
+		20063	5	Gove
+		20065	5	Graham
+		20067	5	Grant
+		20069	5	Gray
+		20071	5	Greeley
+		20073	5	Greenwood
+		20075	5	Hamilton
+		20077	5	Harper
+9040		20079	3	Harvey
+		20081	5	Haskell
+		20083	5	Hodgeman
+		20085	5	Jackson
+		20087	5	Jefferson
+		20089	5	Jewell
+3760		20091	3	Johnson
+		20093	5	Kearny
+		20095	5	Kingman
+		20097	5	Kiowa
+		20099	5	Labette
+		20101	5	Lane
+3760		20103	3	Leavenworth
+		20105	5	Lincoln
+		20107	5	Linn
+		20109	5	Logan
+		20111	5	Lyon
+		20113	5	McPherson
+		20115	5	Marion
+		20117	5	Marshall
+		20119	5	Meade
+3760		20121	3	Miami
+		20123	5	Mitchell
+		20125	5	Montgomery
+		20127	5	Morris
+		20129	5	Morton
+		20131	5	Nemaha
+		20133	5	Neosho
+		20135	5	Ness
+		20137	5	Norton
+		20139	5	Osage
+		20141	5	Osborne
+		20143	5	Ottawa
+		20145	5	Pawnee
+		20147	5	Phillips
+		20149	5	Pottawatomie
+		20151	5	Pratt
+		20153	5	Rawlins
+		20155	5	Reno
+		20157	5	Republic
+		20159	5	Rice
+		20161	5	Riley
+		20163	5	Rooks
+		20165	5	Rush
+		20167	5	Russell
+		20169	5	Saline
+		20171	5	Scott
+9040		20173	3	Sedgwick
+		20175	5	Seward
+8440		20177	3	Shawnee
+		20179	5	Sheridan
+		20181	5	Sherman
+		20183	5	Smith
+		20185	5	Stafford
+		20187	5	Stanton
+		20189	5	Stevens
+		20191	5	Sumner
+		20193	5	Thomas
+		20195	5	Trego
+		20197	5	Wabaunsee
+		20199	5	Wallace
+		20201	5	Washington
+		20203	5	Wichita
+		20205	5	Wilson
+		20207	5	Woodson
+3760		20209	3	Wyandotte
+		21001	5	Adair
+		21003	5	Allen
+		21005	5	Anderson
+		21007	5	Ballard
+		21009	5	Barren
+		21011	5	Bath
+		21013	5	Bell
+1642	1640	21015	2	Boone
+4280		21017	3	Bourbon
+3400		21019	3	Boyd
+		21021	5	Boyle
+		21023	5	Bracken
+		21025	5	Breathitt
+		21027	5	Breckinridge
+4520		21029	3	Bullitt
+		21031	5	Butler
+		21033	5	Caldwell
+		21035	5	Calloway
+1642	1640	21037	2	Campbell
+		21039	5	Carlisle
+		21041	5	Carroll
+		21043	5	Carter
+		21045	5	Casey
+1660		21047	3	Christian
+4280		21049	3	Clark
+		21051	5	Clay
+		21053	5	Clinton
+		21055	5	Crittenden
+		21057	5	Cumberland
+5990		21059	3	Daviess
+		21061	5	Edmonson
+		21063	5	Elliott
+		21065	5	Estill
+4280		21067	3	Fayette
+		21069	5	Fleming
+		21071	5	Floyd
+		21073	5	Franklin
+		21075	5	Fulton
+1642	1640	21077	2	Gallatin
+		21079	5	Garrard
+1642	1640	21081	2	Grant
+		21083	5	Graves
+		21085	5	Grayson
+		21087	5	Green
+3400		21089	3	Greenup
+		21091	5	Hancock
+		21093	5	Hardin
+		21095	5	Harlan
+		21097	5	Harrison
+		21099	5	Hart
+2440		21101	3	Henderson
+		21103	5	Henry
+		21105	5	Hickman
+		21107	5	Hopkins
+		21109	5	Jackson
+4520		21111	3	Jefferson
+4280		21113	3	Jessamine
+		21115	5	Johnson
+1642	1640	21117	2	Kenton
+		21119	5	Knott
+		21121	5	Knox
+		21123	5	Larue
+		21125	5	Laurel
+		21127	5	Lawrence
+		21129	5	Lee
+		21131	5	Leslie
+		21133	5	Letcher
+		21135	5	Lewis
+		21137	5	Lincoln
+		21139	5	Livingston
+		21141	5	Logan
+		21143	5	Lyon
+		21145	5	McCracken
+		21147	5	McCreary
+		21149	5	McLean
+4280		21151	3	Madison
+		21153	5	Magoffin
+		21155	5	Marion
+		21157	5	Marshall
+		21159	5	Martin
+		21161	5	Mason
+		21163	5	Meade
+		21165	5	Menifee
+		21167	5	Mercer
+		21169	5	Metcalfe
+		21171	5	Monroe
+		21173	5	Montgomery
+		21175	5	Morgan
+		21177	5	Muhlenberg
+		21179	5	Nelson
+		21181	5	Nicholas
+		21183	5	Ohio
+4520		21185	3	Oldham
+		21187	5	Owen
+		21189	5	Owsley
+1642	1640	21191	2	Pendleton
+		21193	5	Perry
+		21195	5	Pike
+		21197	5	Powell
+		21199	5	Pulaski
+		21201	5	Robertson
+		21203	5	Rockcastle
+		21205	5	Rowan
+		21207	5	Russell
+4280		21209	3	Scott
+		21211	5	Shelby
+		21213	5	Simpson
+		21215	5	Spencer
+		21217	5	Taylor
+		21219	5	Todd
+		21221	5	Trigg
+		21223	5	Trimble
+		21225	5	Union
+		21227	5	Warren
+		21229	5	Washington
+		21231	5	Wayne
+		21233	5	Webster
+		21235	5	Whitley
+		21237	5	Wolfe
+4280		21239	3	Woodford
+3880		22001	3	Acadia
+		22003	5	Allen
+		22005	5	Ascension
+		22007	5	Assumption
+		22009	5	Avoyelles
+		22011	5	Beauregard
+		22013	5	Bienville
+7680		22015	3	Bossier
+7680		22017	3	Caddo
+3960		22019	3	Calcasieu
+		22021	5	Caldwell
+		22023	5	Cameron
+		22025	5	Catahoula
+		22027	5	Claiborne
+		22029	5	Concordia
+		22031	5	De Soto
+0760		22033	3	East Baton Rouge
+		22035	5	East Carroll
+		22037	5	East Feliciana
+		22039	5	Evangeline
+		22041	5	Franklin
+		22043	5	Grant
+		22045	5	Iberia
+		22047	5	Iberville
+		22049	5	Jackson
+5560		22051	3	Jefferson
+		22053	5	Jefferson Davis
+3880		22055	3	Lafayette
+3350		22057	3	Lafourche
+		22059	5	La Salle
+		22061	5	Lincoln
+0760		22063	3	Livingston
+		22065	5	Madison
+		22067	5	Morehouse
+		22069	5	Natchitoches
+5560		22071	3	Orleans
+5200		22073	3	Ouachita
+5560		22075	3	Plaquemines
+		22077	5	Pointe Coupee
+0220		22079	3	Rapides
+		22081	5	Red River
+		22083	5	Richland
+		22085	5	Sabine
+5560		22087	3	St. Bernard
+5560		22089	3	St. Charles
+		22091	5	St. Helena
+5560		22093	3	St. James
+5560		22095	3	St. John the Baptist
+3880		22097	3	St. Landry
+3880		22099	3	St. Martin
+		22101	5	St. Mary
+5560		22103	3	St. Tammany
+		22105	5	Tangipahoa
+		22107	5	Tensas
+3350		22109	3	Terrebonne
+		22111	5	Union
+		22113	5	Vermilion
+		22115	5	Vernon
+		22117	5	Washington
+7680		22119	3	Webster
+0760		22121	3	West Baton Rouge
+		22123	5	West Carroll
+		22125	5	West Feliciana
+		22127	5	Winn
+0743		25001	4	Barnstable
+6323		25003	4	Berkshire
+1123		25005	4	Bristol
+		25007	5	Dukes
+1123		25009	4	Essex
+		25011	5	Franklin
+8003		25013	4	Hampden
+8003		25015	4	Hampshire
+1123		25017	4	Middlesex
+		25019	5	Nantucket
+1123		25021	4	Norfolk
+1123		25023	4	Plymouth
+1123		25025	4	Suffolk
+1123		25027	4	Worcester
+1900		24001	3	Allegany
+8872	720	24003	2	Anne Arundel
+8872	720	24005	2	Baltimore
+8872	8840	24009	2	Calvert
+		24011	5	Caroline
+8872	720	24013	2	Carroll
+6162	9160	24015	2	Cecil
+8872	8840	24017	2	Charles
+		24019	5	Dorchester
+8872	8840	24021	2	Frederick
+		24023	5	Garrett
+8872	720	24025	2	Harford
+8872	720	24027	2	Howard
+		24029	5	Kent
+8872	8840	24031	2	Montgomery
+8872	8840	24033	2	Prince George's
+8872	720	24035	2	Queen Anne's
+		24037	5	St. Mary's
+		24039	5	Somerset
+		24041	5	Talbot
+8872	3180	24043	2	Washington
+		24045	5	Wicomico
+		24047	5	Worcester
+8872	720	24510	2	Baltimore city
+4243		23001	4	Androscoggin
+		23003	5	Aroostook
+6403		23005	4	Cumberland
+		23007	5	Franklin
+		23009	5	Hancock
+		23011	5	Kennebec
+		23013	5	Knox
+		23015	5	Lincoln
+		23017	5	Oxford
+0733		23019	4	Penobscot
+		23021	5	Piscataquis
+		23023	5	Sagadahoc
+		23025	5	Somerset
+		23027	5	Waldo
+		23029	5	Washington
+		23031	5	York
+		26001	5	Alcona
+		26003	5	Alger
+3000		26005	3	Allegan
+		26007	5	Alpena
+		26009	5	Antrim
+		26011	5	Arenac
+		26013	5	Baraga
+		26015	5	Barry
+6960		26017	3	Bay
+		26019	5	Benzie
+0870		26021	3	Berrien
+		26023	5	Branch
+3720		26025	3	Calhoun
+		26027	5	Cass
+		26029	5	Charlevoix
+		26031	5	Cheboygan
+		26033	5	Chippewa
+		26035	5	Clare
+4040		26037	3	Clinton
+		26039	5	Crawford
+		26041	5	Delta
+		26043	5	Dickinson
+4040		26045	3	Eaton
+		26047	5	Emmet
+2162	2640	26049	2	Genesee
+		26051	5	Gladwin
+		26053	5	Gogebic
+		26055	5	Grand Traverse
+		26057	5	Gratiot
+		26059	5	Hillsdale
+		26061	5	Houghton
+		26063	5	Huron
+4040		26065	3	Ingham
+		26067	5	Ionia
+		26069	5	Iosco
+		26071	5	Iron
+		26073	5	Isabella
+3520		26075	3	Jackson
+3720		26077	3	Kalamazoo
+		26079	5	Kalkaska
+3000		26081	3	Kent
+		26083	5	Keweenaw
+		26085	5	Lake
+2162	2160	26087	2	Lapeer
+		26089	5	Leelanau
+2162	440	26091	2	Lenawee
+2162	440	26093	2	Livingston
+		26095	5	Luce
+		26097	5	Mackinac
+2162	2160	26099	2	Macomb
+		26101	5	Manistee
+		26103	5	Marquette
+		26105	5	Mason
+		26107	5	Mecosta
+		26109	5	Menominee
+6960		26111	3	Midland
+		26113	5	Missaukee
+2162	2160	26115	2	Monroe
+		26117	5	Montcalm
+		26119	5	Montmorency
+3000		26121	3	Muskegon
+		26123	5	Newaygo
+2162	2160	26125	2	Oakland
+		26127	5	Oceana
+		26129	5	Ogemaw
+		26131	5	Ontonagon
+		26133	5	Osceola
+		26135	5	Oscoda
+		26137	5	Otsego
+3000		26139	3	Ottawa
+		26141	5	Presque Isle
+		26143	5	Roscommon
+6960		26145	3	Saginaw
+2162	2160	26147	2	St. Clair
+		26149	5	St. Joseph
+		26151	5	Sanilac
+		26153	5	Schoolcraft
+		26155	5	Shiawassee
+		26157	5	Tuscola
+3720		26159	3	Van Buren
+2162	440	26161	2	Washtenaw
+2162	2160	26163	2	Wayne
+		26165	5	Wexford
+		27001	5	Aitkin
+5120		27003	3	Anoka
+		27005	5	Becker
+		27007	5	Beltrami
+6980		27009	3	Benton
+		27011	5	Big Stone
+		27013	5	Blue Earth
+		27015	5	Brown
+		27017	5	Carlton
+5120		27019	3	Carver
+		27021	5	Cass
+		27023	5	Chippewa
+5120		27025	3	Chisago
+2520		27027	3	Clay
+		27029	5	Clearwater
+		27031	5	Cook
+		27033	5	Cottonwood
+		27035	5	Crow Wing
+5120		27037	3	Dakota
+		27039	5	Dodge
+		27041	5	Douglas
+		27043	5	Faribault
+		27045	5	Fillmore
+		27047	5	Freeborn
+		27049	5	Goodhue
+		27051	5	Grant
+5120		27053	3	Hennepin
+3870		27055	3	Houston
+		27057	5	Hubbard
+5120		27059	3	Isanti
+		27061	5	Itasca
+		27063	5	Jackson
+		27065	5	Kanabec
+		27067	5	Kandiyohi
+		27069	5	Kittson
+		27071	5	Koochiching
+		27073	5	Lac qui Parle
+		27075	5	Lake
+		27077	5	Lake of the Woods
+		27079	5	Le Sueur
+		27081	5	Lincoln
+		27083	5	Lyon
+		27085	5	McLeod
+		27087	5	Mahnomen
+		27089	5	Marshall
+		27091	5	Martin
+		27093	5	Meeker
+		27095	5	Mille Lacs
+		27097	5	Morrison
+		27099	5	Mower
+		27101	5	Murray
+		27103	5	Nicollet
+		27105	5	Nobles
+		27107	5	Norman
+6820		27109	3	Olmsted
+		27111	5	Otter Tail
+		27113	5	Pennington
+		27115	5	Pine
+		27117	5	Pipestone
+2985		27119	3	Polk
+		27121	5	Pope
+5120		27123	3	Ramsey
+		27125	5	Red Lake
+		27127	5	Redwood
+		27129	5	Renville
+		27131	5	Rice
+		27133	5	Rock
+		27135	5	Roseau
+2240		27137	3	St. Louis
+5120		27139	3	Scott
+5120		27141	3	Sherburne
+		27143	5	Sibley
+6980		27145	3	Stearns
+		27147	5	Steele
+		27149	5	Stevens
+		27151	5	Swift
+		27153	5	Todd
+		27155	5	Traverse
+		27157	5	Wabasha
+		27159	5	Wadena
+		27161	5	Waseca
+5120		27163	3	Washington
+		27165	5	Watonwan
+		27167	5	Wilkin
+		27169	5	Winona
+5120		27171	3	Wright
+		27173	5	Yellow Medicine
+		29001	5	Adair
+7000		29003	3	Andrew
+		29005	5	Atchison
+		29007	5	Audrain
+		29009	5	Barry
+		29011	5	Barton
+		29013	5	Bates
+		29015	5	Benton
+		29017	5	Bollinger
+1740		29019	3	Boone
+7000		29021	3	Buchanan
+		29023	5	Butler
+		29025	5	Caldwell
+		29027	5	Callaway
+		29029	5	Camden
+		29031	5	Cape Girardeau
+		29033	5	Carroll
+		29035	5	Carter
+3760		29037	3	Cass
+		29039	5	Cedar
+		29041	5	Chariton
+7920		29043	3	Christian
+		29045	5	Clark
+3760		29047	3	Clay
+3760		29049	3	Clinton
+		29051	5	Cole
+		29053	5	Cooper
+		29055	5	Crawford
+		29057	5	Dade
+		29059	5	Dallas
+		29061	5	Daviess
+		29063	5	De Kalb
+		29065	5	Dent
+		29067	5	Douglas
+		29069	5	Dunklin
+7040		29071	3	Franklin
+		29073	5	Gasconade
+		29075	5	Gentry
+7920		29077	3	Greene
+		29079	5	Grundy
+		29081	5	Harrison
+		29083	5	Henry
+		29085	5	Hickory
+		29087	5	Holt
+		29089	5	Howard
+		29091	5	Howell
+		29093	5	Iron
+3760		29095	3	Jackson
+3710		29097	3	Jasper
+7040		29099	3	Jefferson
+		29101	5	Johnson
+		29103	5	Knox
+		29105	5	Laclede
+3760		29107	3	Lafayette
+		29109	5	Lawrence
+		29111	5	Lewis
+7040		29113	3	Lincoln
+		29115	5	Linn
+		29117	5	Livingston
+		29119	5	McDonald
+		29121	5	Macon
+		29123	5	Madison
+		29125	5	Maries
+		29127	5	Marion
+		29129	5	Mercer
+		29131	5	Miller
+		29133	5	Mississippi
+		29135	5	Moniteau
+		29137	5	Monroe
+		29139	5	Montgomery
+		29141	5	Morgan
+		29143	5	New Madrid
+3710		29145	3	Newton
+		29147	5	Nodaway
+		29149	5	Oregon
+		29151	5	Osage
+		29153	5	Ozark
+		29155	5	Pemiscot
+		29157	5	Perry
+		29159	5	Pettis
+		29161	5	Phelps
+		29163	5	Pike
+3760		29165	3	Platte
+		29167	5	Polk
+		29169	5	Pulaski
+		29171	5	Putnam
+		29173	5	Ralls
+		29175	5	Randolph
+3760		29177	3	Ray
+		29179	5	Reynolds
+		29181	5	Ripley
+7040		29183	3	St. Charles
+		29185	5	St. Clair
+		29186	5	Ste. Genevieve
+		29187	5	St. Francois
+7040		29189	3	St. Louis
+		29195	5	Saline
+		29197	5	Schuyler
+		29199	5	Scotland
+		29201	5	Scott
+		29203	5	Shannon
+		29205	5	Shelby
+		29207	5	Stoddard
+		29209	5	Stone
+		29211	5	Sullivan
+		29213	5	Taney
+		29215	5	Texas
+		29217	5	Vernon
+7040		29219	3	Warren
+		29221	5	Washington
+		29223	5	Wayne
+7920		29225	3	Webster
+		29227	5	Worth
+		29229	5	Wright
+7040		29510	3	St. Louis city
+		28001	5	Adams
+		28003	5	Alcorn
+		28005	5	Amite
+		28007	5	Attala
+		28009	5	Benton
+		28011	5	Bolivar
+		28013	5	Calhoun
+		28015	5	Carroll
+		28017	5	Chickasaw
+		28019	5	Choctaw
+		28021	5	Claiborne
+		28023	5	Clarke
+		28025	5	Clay
+		28027	5	Coahoma
+		28029	5	Copiah
+		28031	5	Covington
+4920		28033	3	DeSoto
+		28035	5	Forrest
+		28037	5	Franklin
+		28039	5	George
+		28041	5	Greene
+		28043	5	Grenada
+0920		28045	3	Hancock
+0920		28047	3	Harrison
+3560		28049	3	Hinds
+		28051	5	Holmes
+		28053	5	Humphreys
+		28055	5	Issaquena
+		28057	5	Itawamba
+0920		28059	3	Jackson
+		28061	5	Jasper
+		28063	5	Jefferson
+		28065	5	Jefferson Davis
+		28067	5	Jones
+		28069	5	Kemper
+		28071	5	Lafayette
+		28073	5	Lamar
+		28075	5	Lauderdale
+		28077	5	Lawrence
+		28079	5	Leake
+		28081	5	Lee
+		28083	5	Leflore
+		28085	5	Lincoln
+		28087	5	Lowndes
+3560		28089	3	Madison
+		28091	5	Marion
+		28093	5	Marshall
+		28095	5	Monroe
+		28097	5	Montgomery
+		28099	5	Neshoba
+		28101	5	Newton
+		28103	5	Noxubee
+		28105	5	Oktibbeha
+		28107	5	Panola
+		28109	5	Pearl River
+		28111	5	Perry
+		28113	5	Pike
+		28115	5	Pontotoc
+		28117	5	Prentiss
+		28119	5	Quitman
+3560		28121	3	Rankin
+		28123	5	Scott
+		28125	5	Sharkey
+		28127	5	Simpson
+		28129	5	Smith
+		28131	5	Stone
+		28133	5	Sunflower
+		28135	5	Tallahatchie
+		28137	5	Tate
+		28139	5	Tippah
+		28141	5	Tishomingo
+		28143	5	Tunica
+		28145	5	Union
+		28147	5	Walthall
+		28149	5	Warren
+		28151	5	Washington
+		28153	5	Wayne
+		28155	5	Webster
+		28157	5	Wilkinson
+		28159	5	Winston
+		28161	5	Yalobusha
+		28163	5	Yazoo
+		30001	5	Beaverhead
+		30003	5	Big Horn
+		30005	5	Blaine
+		30007	5	Broadwater
+		30009	5	Carbon
+		30011	5	Carter
+3040		30013	3	Cascade
+		30015	5	Chouteau
+		30017	5	Custer
+		30019	5	Daniels
+		30021	5	Dawson
+		30023	5	Deer Lodge
+		30025	5	Fallon
+		30027	5	Fergus
+		30029	5	Flathead
+		30031	5	Gallatin
+		30033	5	Garfield
+		30035	5	Glacier
+		30037	5	Golden Valley
+		30039	5	Granite
+		30041	5	Hill
+		30043	5	Jefferson
+		30045	5	Judith Basin
+		30047	5	Lake
+		30049	5	Lewis and Clark
+		30051	5	Liberty
+		30053	5	Lincoln
+		30055	5	McCone
+		30057	5	Madison
+		30059	5	Meagher
+		30061	5	Mineral
+		30063	5	Missoula
+		30065	5	Musselshell
+		30067	5	Park
+		30069	5	Petroleum
+		30071	5	Phillips
+		30073	5	Pondera
+		30075	5	Powder River
+		30077	5	Powell
+		30079	5	Prairie
+		30081	5	Ravalli
+		30083	5	Richland
+		30085	5	Roosevelt
+		30087	5	Rosebud
+		30089	5	Sanders
+		30091	5	Sheridan
+		30093	5	Silver Bow
+		30095	5	Stillwater
+		30097	5	Sweet Grass
+		30099	5	Teton
+		30101	5	Toole
+		30103	5	Treasure
+		30105	5	Valley
+		30107	5	Wheatland
+		30109	5	Wibaux
+0880		30111	3	Yellowstone
+		30113	5	Yellowstone National Park
+3120		37001	3	Alamance
+3290		37003	3	Alexander
+		37005	5	Alleghany
+		37007	5	Anson
+		37009	5	Ashe
+		37011	5	Avery
+		37013	5	Beaufort
+		37015	5	Bertie
+		37017	5	Bladen
+		37019	5	Brunswick
+0480		37021	3	Buncombe
+3290		37023	3	Burke
+1520		37025	3	Cabarrus
+3290		37027	3	Caldwell
+		37029	5	Camden
+		37031	5	Carteret
+		37033	5	Caswell
+3290		37035	3	Catawba
+6640		37037	3	Chatham
+		37039	5	Cherokee
+		37041	5	Chowan
+		37043	5	Clay
+		37045	5	Cleveland
+		37047	5	Columbus
+		37049	5	Craven
+2560		37051	3	Cumberland
+5720		37053	3	Currituck
+		37055	5	Dare
+3120		37057	3	Davidson
+3120		37059	3	Davie
+		37061	5	Duplin
+6640		37063	3	Durham
+6895		37065	3	Edgecombe
+3120		37067	3	Forsyth
+6640		37069	3	Franklin
+1520		37071	3	Gaston
+		37073	5	Gates
+		37075	5	Graham
+		37077	5	Granville
+		37079	5	Greene
+3120		37081	3	Guilford
+		37083	5	Halifax
+		37085	5	Harnett
+		37087	5	Haywood
+		37089	5	Henderson
+		37091	5	Hertford
+		37093	5	Hoke
+		37095	5	Hyde
+		37097	5	Iredell
+		37099	5	Jackson
+6640		37101	3	Johnston
+		37103	5	Jones
+		37105	5	Lee
+		37107	5	Lenoir
+1520		37109	3	Lincoln
+		37111	5	McDowell
+		37113	5	Macon
+0480		37115	3	Madison
+		37117	5	Martin
+1520		37119	3	Mecklenburg
+		37121	5	Mitchell
+		37123	5	Montgomery
+		37125	5	Moore
+6895		37127	3	Nash
+9200		37129	3	New Hanover
+		37131	5	Northampton
+3605		37133	3	Onslow
+6640		37135	3	Orange
+		37137	5	Pamlico
+		37139	5	Pasquotank
+		37141	5	Pender
+		37143	5	Perquimans
+		37145	5	Person
+3150		37147	3	Pitt
+		37149	5	Polk
+3120		37151	3	Randolph
+		37153	5	Richmond
+		37155	5	Robeson
+		37157	5	Rockingham
+1520		37159	3	Rowan
+		37161	5	Rutherford
+		37163	5	Sampson
+		37165	5	Scotland
+		37167	5	Stanly
+3120		37169	3	Stokes
+		37171	5	Surry
+		37173	5	Swain
+		37175	5	Transylvania
+		37177	5	Tyrrell
+1520		37179	3	Union
+		37181	5	Vance
+6640		37183	3	Wake
+		37185	5	Warren
+		37187	5	Washington
+		37189	5	Watauga
+2980		37191	3	Wayne
+		37193	5	Wilkes
+		37195	5	Wilson
+3120		37197	3	Yadkin
+		37199	5	Yancey
+		38001	5	Adams
+		38003	5	Barnes
+		38005	5	Benson
+		38007	5	Billings
+		38009	5	Bottineau
+		38011	5	Bowman
+		38013	5	Burke
+1010		38015	3	Burleigh
+2520		38017	3	Cass
+		38019	5	Cavalier
+		38021	5	Dickey
+		38023	5	Divide
+		38025	5	Dunn
+		38027	5	Eddy
+		38029	5	Emmons
+		38031	5	Foster
+		38033	5	Golden Valley
+2985		38035	3	Grand Forks
+		38037	5	Grant
+		38039	5	Griggs
+		38041	5	Hettinger
+		38043	5	Kidder
+		38045	5	La Moure
+		38047	5	Logan
+		38049	5	McHenry
+		38051	5	McIntosh
+		38053	5	McKenzie
+		38055	5	McLean
+		38057	5	Mercer
+1010		38059	3	Morton
+		38061	5	Mountrail
+		38063	5	Nelson
+		38065	5	Oliver
+		38067	5	Pembina
+		38069	5	Pierce
+		38071	5	Ramsey
+		38073	5	Ransom
+		38075	5	Renville
+		38077	5	Richland
+		38079	5	Rolette
+		38081	5	Sargent
+		38083	5	Sheridan
+		38085	5	Sioux
+		38087	5	Slope
+		38089	5	Stark
+		38091	5	Steele
+		38093	5	Stutsman
+		38095	5	Towner
+		38097	5	Traill
+		38099	5	Walsh
+		38101	5	Ward
+		38103	5	Wells
+		38105	5	Williams
+		31001	5	Adams
+		31003	5	Antelope
+		31005	5	Arthur
+		31007	5	Banner
+		31009	5	Blaine
+		31011	5	Boone
+		31013	5	Box Butte
+		31015	5	Boyd
+		31017	5	Brown
+		31019	5	Buffalo
+		31021	5	Burt
+		31023	5	Butler
+5920		31025	3	Cass
+		31027	5	Cedar
+		31029	5	Chase
+		31031	5	Cherry
+		31033	5	Cheyenne
+		31035	5	Clay
+		31037	5	Colfax
+		31039	5	Cuming
+		31041	5	Custer
+7720		31043	3	Dakota
+		31045	5	Dawes
+		31047	5	Dawson
+		31049	5	Deuel
+		31051	5	Dixon
+		31053	5	Dodge
+5920		31055	3	Douglas
+		31057	5	Dundy
+		31059	5	Fillmore
+		31061	5	Franklin
+		31063	5	Frontier
+		31065	5	Furnas
+		31067	5	Gage
+		31069	5	Garden
+		31071	5	Garfield
+		31073	5	Gosper
+		31075	5	Grant
+		31077	5	Greeley
+		31079	5	Hall
+		31081	5	Hamilton
+		31083	5	Harlan
+		31085	5	Hayes
+		31087	5	Hitchcock
+		31089	5	Holt
+		31091	5	Hooker
+		31093	5	Howard
+		31095	5	Jefferson
+		31097	5	Johnson
+		31099	5	Kearney
+		31101	5	Keith
+		31103	5	Keya Paha
+		31105	5	Kimball
+		31107	5	Knox
+4360		31109	3	Lancaster
+		31111	5	Lincoln
+		31113	5	Logan
+		31115	5	Loup
+		31117	5	McPherson
+		31119	5	Madison
+		31121	5	Merrick
+		31123	5	Morrill
+		31125	5	Nance
+		31127	5	Nemaha
+		31129	5	Nuckolls
+		31131	5	Otoe
+		31133	5	Pawnee
+		31135	5	Perkins
+		31137	5	Phelps
+		31139	5	Pierce
+		31141	5	Platte
+		31143	5	Polk
+		31145	5	Red Willow
+		31147	5	Richardson
+		31149	5	Rock
+		31151	5	Saline
+5920		31153	3	Sarpy
+		31155	5	Saunders
+		31157	5	Scotts Bluff
+		31159	5	Seward
+		31161	5	Sheridan
+		31163	5	Sherman
+		31165	5	Sioux
+		31167	5	Stanton
+		31169	5	Thayer
+		31171	5	Thomas
+		31173	5	Thurston
+		31175	5	Valley
+5920		31177	3	Washington
+		31179	5	Wayne
+		31181	5	Webster
+		31183	5	Wheeler
+		31185	5	York
+		33001	5	Belknap
+		33003	5	Carroll
+		33005	5	Cheshire
+		33007	5	Coos
+		33009	5	Grafton
+1123		33011	4	Hillsborough
+		33013	5	Merrimack
+1123		33015	4	Rockingham
+1123		33017	4	Strafford
+		33019	5	Sullivan
+6162	560	34001	2	Atlantic
+5602	875	34003	2	Bergen
+6162	6160	34005	2	Burlington
+6162	6160	34007	2	Camden
+6162	560	34009	2	Cape May
+6162	8760	34011	2	Cumberland
+5602	5640	34013	2	Essex
+6162	6160	34015	2	Gloucester
+5602	3640	34017	2	Hudson
+5602	5015	34019	2	Hunterdon
+5602	8480	34021	2	Mercer
+5602	5015	34023	2	Middlesex
+5602	5190	34025	2	Monmouth
+5602	5640	34027	2	Morris
+5602	5190	34029	2	Ocean
+5602	875	34031	2	Passaic
+6162	6160	34033	2	Salem
+5602	5015	34035	2	Somerset
+5602	5640	34037	2	Sussex
+5602	5640	34039	2	Union
+5602	5640	34041	2	Warren
+0200		35001	3	Bernalillo
+		35003	5	Catron
+		35005	5	Chaves
+		35006	5	Cibola
+		35007	5	Colfax
+		35009	5	Curry
+		35011	5	De Baca
+4100		35013	3	Dona Ana
+		35015	5	Eddy
+		35017	5	Grant
+		35019	5	Guadalupe
+		35021	5	Harding
+		35023	5	Hidalgo
+		35025	5	Lea
+		35027	5	Lincoln
+7490		35028	3	Los Alamos
+		35029	5	Luna
+		35031	5	McKinley
+		35033	5	Mora
+		35035	5	Otero
+		35037	5	Quay
+		35039	5	Rio Arriba
+		35041	5	Roosevelt
+0200		35043	3	Sandoval
+		35045	5	San Juan
+		35047	5	San Miguel
+7490		35049	3	Santa Fe
+		35051	5	Sierra
+		35053	5	Socorro
+		35055	5	Taos
+		35057	5	Torrance
+		35059	5	Union
+0200		35061	3	Valencia
+		32001	5	Churchill
+4120		32003	3	Clark
+		32005	5	Douglas
+		32007	5	Elko
+		32009	5	Esmeralda
+		32011	5	Eureka
+		32013	5	Humboldt
+		32015	5	Lander
+		32017	5	Lincoln
+		32019	5	Lyon
+		32021	5	Mineral
+4120		32023	3	Nye
+		32027	5	Pershing
+		32029	5	Storey
+6720		32031	3	Washoe
+		32033	5	White Pine
+		32510	5	Carson City city
+0160		36001	3	Albany
+		36003	5	Allegany
+5602	5600	36005	2	Bronx
+0960		36007	3	Broome
+		36009	5	Cattaraugus
+8160		36011	3	Cayuga
+3610		36013	3	Chautauqua
+2335		36015	3	Chemung
+		36017	5	Chenango
+		36019	5	Clinton
+		36021	5	Columbia
+		36023	5	Cortland
+		36025	5	Delaware
+5602	2281	36027	2	Dutchess
+1280		36029	3	Erie
+		36031	5	Essex
+		36033	5	Franklin
+		36035	5	Fulton
+6840		36037	3	Genesee
+		36039	5	Greene
+		36041	5	Hamilton
+8680		36043	3	Herkimer
+		36045	5	Jefferson
+5602	5600	36047	2	Kings
+		36049	5	Lewis
+6840		36051	3	Livingston
+8160		36053	3	Madison
+6840		36055	3	Monroe
+0160		36057	3	Montgomery
+5602	5380	36059	2	Nassau
+5602	5600	36061	2	New York
+1280		36063	3	Niagara
+8680		36065	3	Oneida
+8160		36067	3	Onondaga
+6840		36069	3	Ontario
+5602	5660	36071	2	Orange
+6840		36073	3	Orleans
+8160		36075	3	Oswego
+		36077	5	Otsego
+5602	5600	36079	2	Putnam
+5602	5600	36081	2	Queens
+0160		36083	3	Rensselaer
+5602	5600	36085	2	Richmond
+5602	5600	36087	2	Rockland
+		36089	5	St. Lawrence
+0160		36091	3	Saratoga
+0160		36093	3	Schenectady
+0160		36095	3	Schoharie
+		36097	5	Schuyler
+		36099	5	Seneca
+		36101	5	Steuben
+5602	5380	36103	2	Suffolk
+		36105	5	Sullivan
+0960		36107	3	Tioga
+		36109	5	Tompkins
+		36111	5	Ulster
+2975		36113	3	Warren
+2975		36115	3	Washington
+6840		36117	3	Wayne
+5602	5600	36119	2	Westchester
+		36121	5	Wyoming
+		36123	5	Yates
+		39001	5	Adams
+4320		39003	3	Allen
+		39005	5	Ashland
+1692	1680	39007	2	Ashtabula
+		39009	5	Athens
+4320		39011	3	Auglaize
+9000		39013	3	Belmont
+1642	1640	39015	2	Brown
+1642	3200	39017	2	Butler
+1320		39019	3	Carroll
+		39021	5	Champaign
+2000		39023	3	Clark
+1642	1640	39025	2	Clermont
+		39027	5	Clinton
+9320		39029	3	Columbiana
+		39031	5	Coshocton
+4800		39033	3	Crawford
+1692	1680	39035	2	Cuyahoga
+		39037	5	Darke
+		39039	5	Defiance
+1840		39041	3	Delaware
+		39043	5	Erie
+1840		39045	3	Fairfield
+		39047	5	Fayette
+1840		39049	3	Franklin
+8400		39051	3	Fulton
+		39053	5	Gallia
+1692	1680	39055	2	Geauga
+2000		39057	3	Greene
+		39059	5	Guernsey
+1642	1640	39061	2	Hamilton
+		39063	5	Hancock
+		39065	5	Hardin
+		39067	5	Harrison
+		39069	5	Henry
+		39071	5	Highland
+		39073	5	Hocking
+		39075	5	Holmes
+		39077	5	Huron
+		39079	5	Jackson
+8080		39081	3	Jefferson
+		39083	5	Knox
+1692	1680	39085	2	Lake
+3400		39087	3	Lawrence
+1840		39089	3	Licking
+		39091	5	Logan
+1692	1680	39093	2	Lorain
+8400		39095	3	Lucas
+1840		39097	3	Madison
+9320		39099	3	Mahoning
+		39101	5	Marion
+1692	1680	39103	2	Medina
+		39105	5	Meigs
+		39107	5	Mercer
+2000		39109	3	Miami
+		39111	5	Monroe
+2000		39113	3	Montgomery
+		39115	5	Morgan
+		39117	5	Morrow
+		39119	5	Muskingum
+		39121	5	Noble
+		39123	5	Ottawa
+		39125	5	Paulding
+		39127	5	Perry
+1840		39129	3	Pickaway
+		39131	5	Pike
+1692	80	39133	2	Portage
+		39135	5	Preble
+		39137	5	Putnam
+4800		39139	3	Richland
+		39141	5	Ross
+		39143	5	Sandusky
+		39145	5	Scioto
+		39147	5	Seneca
+		39149	5	Shelby
+1320		39151	3	Stark
+1692	80	39153	2	Summit
+9320		39155	3	Trumbull
+		39157	5	Tuscarawas
+		39159	5	Union
+		39161	5	Van Wert
+		39163	5	Vinton
+1642	1640	39165	2	Warren
+6020		39167	3	Washington
+		39169	5	Wayne
+		39171	5	Williams
+8400		39173	3	Wood
+		39175	5	Wyandot
+		40001	5	Adair
+		40003	5	Alfalfa
+		40005	5	Atoka
+		40007	5	Beaver
+		40009	5	Beckham
+		40011	5	Blaine
+		40013	5	Bryan
+		40015	5	Caddo
+5880		40017	3	Canadian
+		40019	5	Carter
+		40021	5	Cherokee
+		40023	5	Choctaw
+		40025	5	Cimarron
+5880		40027	3	Cleveland
+		40029	5	Coal
+4200		40031	3	Comanche
+		40033	5	Cotton
+		40035	5	Craig
+8560		40037	3	Creek
+		40039	5	Custer
+		40041	5	Delaware
+		40043	5	Dewey
+		40045	5	Ellis
+2340		40047	3	Garfield
+		40049	5	Garvin
+		40051	5	Grady
+		40053	5	Grant
+		40055	5	Greer
+		40057	5	Harmon
+		40059	5	Harper
+		40061	5	Haskell
+		40063	5	Hughes
+		40065	5	Jackson
+		40067	5	Jefferson
+		40069	5	Johnston
+		40071	5	Kay
+		40073	5	Kingfisher
+		40075	5	Kiowa
+		40077	5	Latimer
+		40079	5	Le Flore
+		40081	5	Lincoln
+5880		40083	3	Logan
+		40085	5	Love
+5880		40087	3	McClain
+		40089	5	McCurtain
+		40091	5	McIntosh
+		40093	5	Major
+		40095	5	Marshall
+		40097	5	Mayes
+		40099	5	Murray
+		40101	5	Muskogee
+		40103	5	Noble
+		40105	5	Nowata
+		40107	5	Okfuskee
+5880		40109	3	Oklahoma
+		40111	5	Okmulgee
+8560		40113	3	Osage
+		40115	5	Ottawa
+		40117	5	Pawnee
+		40119	5	Payne
+		40121	5	Pittsburg
+		40123	5	Pontotoc
+5880		40125	3	Pottawatomie
+		40127	5	Pushmataha
+		40129	5	Roger Mills
+8560		40131	3	Rogers
+		40133	5	Seminole
+2720		40135	3	Sequoyah
+		40137	5	Stephens
+		40139	5	Texas
+		40141	5	Tillman
+8560		40143	3	Tulsa
+8560		40145	3	Wagoner
+		40147	5	Washington
+		40149	5	Washita
+		40151	5	Woods
+		40153	5	Woodward
+		41001	5	Baker
+		41003	5	Benton
+6442	6440	41005	2	Clackamas
+		41007	5	Clatsop
+6442	6449	41009	2	Columbia
+		41011	5	Coos
+		41013	5	Crook
+		41015	5	Curry
+		41017	5	Deschutes
+		41019	5	Douglas
+		41021	5	Gilliam
+		41023	5	Grant
+		41025	5	Harney
+		41027	5	Hood River
+4890		41029	3	Jackson
+		41031	5	Jefferson
+		41033	5	Josephine
+		41035	5	Klamath
+		41037	5	Lake
+2400		41039	3	Lane
+		41041	5	Lincoln
+		41043	5	Linn
+		41045	5	Malheur
+6442	7080	41047	2	Marion
+		41049	5	Morrow
+6442	6440	41051	2	Multnomah
+6442	7080	41053	2	Polk
+		41055	5	Sherman
+		41057	5	Tillamook
+		41059	5	Umatilla
+		41061	5	Union
+		41063	5	Wallowa
+		41065	5	Wasco
+6442	6440	41067	2	Washington
+		41069	5	Wheeler
+6442	6440	41071	2	Yamhill
+		42001	5	Adams
+6280		42003	3	Allegheny
+		42005	5	Armstrong
+6280		42007	3	Beaver
+		42009	5	Bedford
+6680		42011	3	Berks
+0280		42013	3	Blair
+		42015	5	Bradford
+6162	6160	42017	2	Bucks
+6280		42019	3	Butler
+3680		42021	3	Cambria
+		42023	5	Cameron
+0240		42025	3	Carbon
+8050		42027	3	Centre
+6162	6160	42029	2	Chester
+		42031	5	Clarion
+		42033	5	Clearfield
+		42035	5	Clinton
+7560		42037	3	Columbia
+		42039	5	Crawford
+3240		42041	3	Cumberland
+3240		42043	3	Dauphin
+6162	6160	42045	2	Delaware
+		42047	5	Elk
+2360		42049	3	Erie
+6280		42051	3	Fayette
+		42053	5	Forest
+		42055	5	Franklin
+		42057	5	Fulton
+		42059	5	Greene
+		42061	5	Huntingdon
+		42063	5	Indiana
+		42065	5	Jefferson
+		42067	5	Juniata
+7560		42069	3	Lackawanna
+4000		42071	3	Lancaster
+		42073	5	Lawrence
+3240		42075	3	Lebanon
+0240		42077	3	Lehigh
+7560		42079	3	Luzerne
+9140		42081	3	Lycoming
+		42083	5	McKean
+7610		42085	3	Mercer
+		42087	5	Mifflin
+		42089	5	Monroe
+6162	6160	42091	2	Montgomery
+		42093	5	Montour
+0240		42095	3	Northampton
+		42097	5	Northumberland
+3240		42099	3	Perry
+6162	6160	42101	2	Philadelphia
+5602	5660	42103	2	Pike
+		42105	5	Potter
+		42107	5	Schuylkill
+		42109	5	Snyder
+3680		42111	3	Somerset
+		42113	5	Sullivan
+		42115	5	Susquehanna
+		42117	5	Tioga
+		42119	5	Union
+		42121	5	Venango
+		42123	5	Warren
+6280		42125	3	Washington
+		42127	5	Wayne
+6280		42129	3	Westmoreland
+7560		42131	3	Wyoming
+9280		42133	3	York
+6483		44001	4	Bristol
+6483		44003	4	Kent
+		44005	5	Newport
+6483		44007	4	Providence
+6483		44009	4	Washington
+		45001	5	Abbeville
+0600		45003	3	Aiken
+		45005	5	Allendale
+3160		45007	3	Anderson
+		45009	5	Bamberg
+		45011	5	Barnwell
+		45013	5	Beaufort
+1440		45015	3	Berkeley
+		45017	5	Calhoun
+1440		45019	3	Charleston
+3160		45021	3	Cherokee
+		45023	5	Chester
+		45025	5	Chesterfield
+		45027	5	Clarendon
+		45029	5	Colleton
+		45031	5	Darlington
+		45033	5	Dillon
+1440		45035	3	Dorchester
+0600		45037	3	Edgefield
+		45039	5	Fairfield
+2655		45041	3	Florence
+		45043	5	Georgetown
+3160		45045	3	Greenville
+		45047	5	Greenwood
+		45049	5	Hampton
+5330		45051	3	Horry
+		45053	5	Jasper
+		45055	5	Kershaw
+		45057	5	Lancaster
+		45059	5	Laurens
+		45061	5	Lee
+1760		45063	3	Lexington
+		45065	5	McCormick
+		45067	5	Marion
+		45069	5	Marlboro
+		45071	5	Newberry
+		45073	5	Oconee
+		45075	5	Orangeburg
+3160		45077	3	Pickens
+1760		45079	3	Richland
+		45081	5	Saluda
+3160		45083	3	Spartanburg
+8140		45085	3	Sumter
+		45087	5	Union
+		45089	5	Williamsburg
+1520		45091	3	York
+		46003	5	Aurora
+		46005	5	Beadle
+		46007	5	Bennett
+		46009	5	Bon Homme
+		46011	5	Brookings
+		46013	5	Brown
+		46015	5	Brule
+		46017	5	Buffalo
+		46019	5	Butte
+		46021	5	Campbell
+		46023	5	Charles Mix
+		46025	5	Clark
+		46027	5	Clay
+		46029	5	Codington
+		46031	5	Corson
+		46033	5	Custer
+		46035	5	Davison
+		46037	5	Day
+		46039	5	Deuel
+		46041	5	Dewey
+		46043	5	Douglas
+		46045	5	Edmunds
+		46047	5	Fall River
+		46049	5	Faulk
+		46051	5	Grant
+		46053	5	Gregory
+		46055	5	Haakon
+		46057	5	Hamlin
+		46059	5	Hand
+		46061	5	Hanson
+		46063	5	Harding
+		46065	5	Hughes
+		46067	5	Hutchinson
+		46069	5	Hyde
+		46071	5	Jackson
+		46073	5	Jerauld
+		46075	5	Jones
+		46077	5	Kingsbury
+		46079	5	Lake
+		46081	5	Lawrence
+7760		46083	3	Lincoln
+		46085	5	Lyman
+		46087	5	McCook
+		46089	5	McPherson
+		46091	5	Marshall
+		46093	5	Meade
+		46095	5	Mellette
+		46097	5	Miner
+7760		46099	3	Minnehaha
+		46101	5	Moody
+6660		46103	3	Pennington
+		46105	5	Perkins
+		46107	5	Potter
+		46109	5	Roberts
+		46111	5	Sanborn
+		46113	5	Shannon
+		46115	5	Spink
+		46117	5	Stanley
+		46119	5	Sully
+		46121	5	Todd
+		46123	5	Tripp
+		46125	5	Turner
+		46127	5	Union
+		46129	5	Walworth
+		46135	5	Yankton
+		46137	5	Ziebach
+3840		47001	3	Anderson
+		47003	5	Bedford
+		47005	5	Benton
+		47007	5	Bledsoe
+3840		47009	3	Blount
+		47011	5	Bradley
+		47013	5	Campbell
+		47015	5	Cannon
+		47017	5	Carroll
+3660		47019	3	Carter
+5360		47021	3	Cheatham
+		47023	5	Chester
+		47025	5	Claiborne
+		47027	5	Clay
+		47029	5	Cocke
+		47031	5	Coffee
+		47033	5	Crockett
+		47035	5	Cumberland
+5360		47037	3	Davidson
+		47039	5	Decatur
+		47041	5	DeKalb
+5360		47043	3	Dickson
+		47045	5	Dyer
+4920		47047	3	Fayette
+		47049	5	Fentress
+		47051	5	Franklin
+		47053	5	Gibson
+		47055	5	Giles
+		47057	5	Grainger
+		47059	5	Greene
+		47061	5	Grundy
+		47063	5	Hamblen
+1560		47065	3	Hamilton
+		47067	5	Hancock
+		47069	5	Hardeman
+		47071	5	Hardin
+3660		47073	3	Hawkins
+		47075	5	Haywood
+		47077	5	Henderson
+		47079	5	Henry
+		47081	5	Hickman
+		47083	5	Houston
+		47085	5	Humphreys
+		47087	5	Jackson
+		47089	5	Jefferson
+		47091	5	Johnson
+3840		47093	3	Knox
+		47095	5	Lake
+		47097	5	Lauderdale
+		47099	5	Lawrence
+		47101	5	Lewis
+		47103	5	Lincoln
+3840		47105	3	Loudon
+		47107	5	McMinn
+		47109	5	McNairy
+		47111	5	Macon
+		47113	5	Madison
+		47115	5	Marion
+		47117	5	Marshall
+		47119	5	Maury
+		47121	5	Meigs
+		47123	5	Monroe
+1660		47125	3	Montgomery
+		47127	5	Moore
+		47129	5	Morgan
+		47131	5	Obion
+		47133	5	Overton
+		47135	5	Perry
+		47137	5	Pickett
+		47139	5	Polk
+		47141	5	Putnam
+		47143	5	Rhea
+		47145	5	Roane
+5360		47147	3	Robertson
+5360		47149	3	Rutherford
+		47151	5	Scott
+		47153	5	Sequatchie
+3840		47155	3	Sevier
+4920		47157	3	Shelby
+		47159	5	Smith
+		47161	5	Stewart
+3660		47163	3	Sullivan
+5360		47165	3	Sumner
+4920		47167	3	Tipton
+		47169	5	Trousdale
+3660		47171	3	Unicoi
+3840		47173	3	Union
+		47175	5	Van Buren
+		47177	5	Warren
+3660		47179	3	Washington
+		47181	5	Wayne
+		47183	5	Weakley
+		47185	5	White
+5360		47187	3	Williamson
+5360		47189	3	Wilson
+		48001	5	Anderson
+		48003	5	Andrews
+		48005	5	Angelina
+		48007	5	Aransas
+9080		48009	3	Archer
+		48011	5	Armstrong
+		48013	5	Atascosa
+		48015	5	Austin
+		48017	5	Bailey
+		48019	5	Bandera
+0640		48021	3	Bastrop
+		48023	5	Baylor
+		48025	5	Bee
+3810		48027	3	Bell
+7240		48029	3	Bexar
+		48031	5	Blanco
+		48033	5	Borden
+		48035	5	Bosque
+8360		48037	3	Bowie
+3362	1145	48039	2	Brazoria
+1260		48041	3	Brazos
+		48043	5	Brewster
+		48045	5	Briscoe
+		48047	5	Brooks
+		48049	5	Brown
+		48051	5	Burleson
+		48053	5	Burnet
+0640		48055	3	Caldwell
+		48057	5	Calhoun
+		48059	5	Callahan
+1240		48061	3	Cameron
+		48063	5	Camp
+		48065	5	Carson
+		48067	5	Cass
+		48069	5	Castro
+3362	3360	48071	2	Chambers
+		48073	5	Cherokee
+		48075	5	Childress
+		48077	5	Clay
+		48079	5	Cochran
+		48081	5	Coke
+		48083	5	Coleman
+1922	1920	48085	2	Collin
+		48087	5	Collingsworth
+		48089	5	Colorado
+7240		48091	3	Comal
+		48093	5	Comanche
+		48095	5	Concho
+		48097	5	Cooke
+3810		48099	3	Coryell
+		48101	5	Cottle
+		48103	5	Crane
+		48105	5	Crockett
+		48107	5	Crosby
+		48109	5	Culberson
+		48111	5	Dallam
+1922	1920	48113	2	Dallas
+		48115	5	Dawson
+		48117	5	Deaf Smith
+		48119	5	Delta
+1922	1920	48121	2	Denton
+		48123	5	De Witt
+		48125	5	Dickens
+		48127	5	Dimmit
+		48129	5	Donley
+		48131	5	Duval
+		48133	5	Eastland
+5800		48135	3	Ector
+		48137	5	Edwards
+1922	1920	48139	2	Ellis
+2320		48141	3	El Paso
+		48143	5	Erath
+		48145	5	Falls
+		48147	5	Fannin
+		48149	5	Fayette
+		48151	5	Fisher
+		48153	5	Floyd
+		48155	5	Foard
+3362	3360	48157	2	Fort Bend
+		48159	5	Franklin
+		48161	5	Freestone
+		48163	5	Frio
+		48165	5	Gaines
+3362	2920	48167	2	Galveston
+		48169	5	Garza
+		48171	5	Gillespie
+		48173	5	Glasscock
+		48175	5	Goliad
+		48177	5	Gonzales
+		48179	5	Gray
+7640		48181	3	Grayson
+4420		48183	3	Gregg
+		48185	5	Grimes
+7240		48187	3	Guadalupe
+		48189	5	Hale
+		48191	5	Hall
+		48193	5	Hamilton
+		48195	5	Hansford
+		48197	5	Hardeman
+0840		48199	3	Hardin
+3362	3360	48201	2	Harris
+4420		48203	3	Harrison
+		48205	5	Hartley
+		48207	5	Haskell
+0640		48209	3	Hays
+		48211	5	Hemphill
+1922	1920	48213	2	Henderson
+4880		48215	3	Hidalgo
+		48217	5	Hill
+		48219	5	Hockley
+1922	2800	48221	2	Hood
+		48223	5	Hopkins
+		48225	5	Houston
+		48227	5	Howard
+		48229	5	Hudspeth
+1922	1920	48231	2	Hunt
+		48233	5	Hutchinson
+		48235	5	Irion
+		48237	5	Jack
+		48239	5	Jackson
+		48241	5	Jasper
+		48243	5	Jeff Davis
+0840		48245	3	Jefferson
+		48247	5	Jim Hogg
+		48249	5	Jim Wells
+1922	2800	48251	2	Johnson
+		48253	5	Jones
+		48255	5	Karnes
+1922	1920	48257	2	Kaufman
+		48259	5	Kendall
+		48261	5	Kenedy
+		48263	5	Kent
+		48265	5	Kerr
+		48267	5	Kimble
+		48269	5	King
+		48271	5	Kinney
+		48273	5	Kleberg
+		48275	5	Knox
+		48277	5	Lamar
+		48279	5	Lamb
+		48281	5	Lampasas
+		48283	5	La Salle
+		48285	5	Lavaca
+		48287	5	Lee
+		48289	5	Leon
+3362	3360	48291	2	Liberty
+		48293	5	Limestone
+		48295	5	Lipscomb
+		48297	5	Live Oak
+		48299	5	Llano
+		48301	5	Loving
+4600		48303	3	Lubbock
+		48305	5	Lynn
+		48307	5	McCulloch
+8800		48309	3	McLennan
+		48311	5	McMullen
+		48313	5	Madison
+		48315	5	Marion
+		48317	5	Martin
+		48319	5	Mason
+		48321	5	Matagorda
+		48323	5	Maverick
+		48325	5	Medina
+		48327	5	Menard
+5800		48329	3	Midland
+		48331	5	Milam
+		48333	5	Mills
+		48335	5	Mitchell
+		48337	5	Montague
+3362	3360	48339	2	Montgomery
+		48341	5	Moore
+		48343	5	Morris
+		48345	5	Motley
+		48347	5	Nacogdoches
+		48349	5	Navarro
+		48351	5	Newton
+		48353	5	Nolan
+1880		48355	3	Nueces
+		48357	5	Ochiltree
+		48359	5	Oldham
+0840		48361	3	Orange
+		48363	5	Palo Pinto
+		48365	5	Panola
+1922	2800	48367	2	Parker
+		48369	5	Parmer
+		48371	5	Pecos
+		48373	5	Polk
+0320		48375	3	Potter
+		48377	5	Presidio
+		48379	5	Rains
+0320		48381	3	Randall
+		48383	5	Reagan
+		48385	5	Real
+		48387	5	Red River
+		48389	5	Reeves
+		48391	5	Refugio
+		48393	5	Roberts
+		48395	5	Robertson
+1922	1920	48397	2	Rockwall
+		48399	5	Runnels
+		48401	5	Rusk
+		48403	5	Sabine
+		48405	5	San Augustine
+		48407	5	San Jacinto
+1880		48409	3	San Patricio
+		48411	5	San Saba
+		48413	5	Schleicher
+		48415	5	Scurry
+		48417	5	Shackelford
+		48419	5	Shelby
+		48421	5	Sherman
+8640		48423	3	Smith
+		48425	5	Somervell
+		48427	5	Starr
+		48429	5	Stephens
+		48431	5	Sterling
+		48433	5	Stonewall
+		48435	5	Sutton
+		48437	5	Swisher
+1922	2800	48439	2	Tarrant
+0040		48441	3	Taylor
+		48443	5	Terrell
+		48445	5	Terry
+		48447	5	Throckmorton
+		48449	5	Titus
+7200		48451	3	Tom Green
+0640		48453	3	Travis
+		48455	5	Trinity
+		48457	5	Tyler
+4420		48459	3	Upshur
+		48461	5	Upton
+		48463	5	Uvalde
+		48465	5	Val Verde
+		48467	5	Van Zandt
+8750		48469	3	Victoria
+		48471	5	Walker
+3362	3360	48473	2	Waller
+		48475	5	Ward
+		48477	5	Washington
+4080		48479	3	Webb
+		48481	5	Wharton
+		48483	5	Wheeler
+9080		48485	3	Wichita
+		48487	5	Wilbarger
+		48489	5	Willacy
+0640		48491	3	Williamson
+7240		48493	3	Wilson
+		48495	5	Winkler
+		48497	5	Wise
+		48499	5	Wood
+		48501	5	Yoakum
+		48503	5	Young
+		48505	5	Zapata
+		48507	5	Zavala
+		49001	5	Beaver
+		49003	5	Box Elder
+		49005	5	Cache
+		49007	5	Carbon
+		49009	5	Daggett
+7160		49011	3	Davis
+		49013	5	Duchesne
+		49015	5	Emery
+		49017	5	Garfield
+		49019	5	Grand
+		49021	5	Iron
+		49023	5	Juab
+		49025	5	Kane
+		49027	5	Millard
+		49029	5	Morgan
+		49031	5	Piute
+		49033	5	Rich
+7160		49035	3	Salt Lake
+		49037	5	San Juan
+		49039	5	Sanpete
+		49041	5	Sevier
+		49043	5	Summit
+		49045	5	Tooele
+		49047	5	Uintah
+6520		49049	3	Utah
+		49051	5	Wasatch
+		49053	5	Washington
+		49055	5	Wayne
+7160		49057	3	Weber
+		51001	5	Accomack
+1540		51003	3	Albemarle
+		51005	5	Alleghany
+		51007	5	Amelia
+4640		51009	3	Amherst
+		51011	5	Appomattox
+8872	8840	51013	2	Arlington
+		51015	5	Augusta
+		51017	5	Bath
+4640		51019	3	Bedford
+		51021	5	Bland
+6800		51023	3	Botetourt
+		51025	5	Brunswick
+		51027	5	Buchanan
+		51029	5	Buckingham
+4640		51031	3	Campbell
+		51033	5	Caroline
+		51035	5	Carroll
+6760		51036	3	Charles City
+		51037	5	Charlotte
+6760		51041	3	Chesterfield
+8872	8840	51043	2	Clarke
+		51045	5	Craig
+8872	8840	51047	2	Culpeper
+		51049	5	Cumberland
+		51051	5	Dickenson
+6760		51053	3	Dinwiddie
+		51057	5	Essex
+8872	8840	51059	2	Fairfax
+8872	8840	51061	2	Fauquier
+		51063	5	Floyd
+1540		51065	3	Fluvanna
+		51067	5	Franklin
+		51069	5	Frederick
+		51071	5	Giles
+5720		51073	3	Gloucester
+6760		51075	3	Goochland
+		51077	5	Grayson
+1540		51079	3	Greene
+		51081	5	Greensville
+		51083	5	Halifax
+6760		51085	3	Hanover
+6760		51087	3	Henrico
+		51089	5	Henry
+		51091	5	Highland
+5720		51093	3	Isle of Wight
+5720		51095	3	James City
+		51097	5	King and Queen
+8872	8840	51099	2	King George
+		51101	5	King William
+		51103	5	Lancaster
+		51105	5	Lee
+8872	8840	51107	2	Loudoun
+		51109	5	Louisa
+		51111	5	Lunenburg
+		51113	5	Madison
+5720		51115	3	Mathews
+		51117	5	Mecklenburg
+		51119	5	Middlesex
+		51121	5	Montgomery
+		51125	5	Nelson
+6760		51127	3	New Kent
+		51131	5	Northampton
+		51133	5	Northumberland
+		51135	5	Nottoway
+		51137	5	Orange
+		51139	5	Page
+		51141	5	Patrick
+1950		51143	3	Pittsylvania
+6760		51145	3	Powhatan
+		51147	5	Prince Edward
+6760		51149	3	Prince George
+8872	8840	51153	2	Prince William
+		51155	5	Pulaski
+		51157	5	Rappahannock
+		51159	5	Richmond
+6800		51161	3	Roanoke
+		51163	5	Rockbridge
+		51165	5	Rockingham
+		51167	5	Russell
+3660		51169	3	Scott
+		51171	5	Shenandoah
+		51173	5	Smyth
+		51175	5	Southampton
+8872	8840	51177	2	Spotsylvania
+8872	8840	51179	2	Stafford
+		51181	5	Surry
+		51183	5	Sussex
+		51185	5	Tazewell
+8872	8840	51187	2	Warren
+3660		51191	3	Washington
+		51193	5	Westmoreland
+		51195	5	Wise
+		51197	5	Wythe
+5720		51199	3	York
+8872	8840	51510	2	Alexandria
+4640		51515	3	Bedford
+3660		51520	3	Bristol
+		51530	5	Buena Vista
+1540		51540	3	Charlottesville
+5720		51550	3	Chesapeake
+		51560	5	Clifton Forge
+6760		51570	3	Colonial Heights
+		51580	5	Covington
+1950		51590	3	Danville
+		51595	5	Emporia
+8872	8840	51600	2	Fairfax
+8872	8840	51610	2	Falls Church
+		51620	5	Franklin
+8872	8840	51630	2	Fredericksburg
+		51640	5	Galax
+5720		51650	3	Hampton
+		51660	5	Harrisonburg
+6760		51670	3	Hopewell
+		51678	5	Lexington
+4640		51680	3	Lynchburg
+8872	8840	51683	2	Manassas
+8872	8840	51685	2	Manassas Park
+		51690	5	Martinsville
+5720		51700	3	Newport News
+5720		51710	3	Norfolk
+		51720	5	Norton
+6760		51730	3	Petersburg
+5720		51735	3	Poquoson
+5720		51740	3	Portsmouth
+		51750	5	Radford
+6760		51760	3	Richmond
+6800		51770	3	Roanoke
+6800		51775	3	Salem
+		51780	5	South Boston
+		51790	5	Staunton
+5720		51800	3	Suffolk
+5720		51810	3	Virginia Beach
+		51820	5	Waynesboro
+5720		51830	3	Williamsburg
+		51840	5	Winchester
+		50001	5	Addison
+		50003	5	Bennington
+		50005	5	Caledonia
+1303		50007	4	Chittenden
+		50009	5	Essex
+1303		50011	4	Franklin
+1303		50013	4	Grand Isle
+		50015	5	Lamoille
+		50017	5	Orange
+		50019	5	Orleans
+		50021	5	Rutland
+		50023	5	Washington
+		50025	5	Windham
+		50027	5	Windsor
+		53001	5	Adams
+		53003	5	Asotin
+6740		53005	3	Benton
+		53007	5	Chelan
+		53009	5	Clallam
+6442	6440	53011	2	Clark
+		53013	5	Columbia
+		53015	5	Cowlitz
+		53017	5	Douglas
+		53019	5	Ferry
+6740		53021	3	Franklin
+		53023	5	Garfield
+		53025	5	Grant
+		53027	5	Grays Harbor
+7602	7600	53029	2	Island
+		53031	5	Jefferson
+7602	7600	53033	2	King
+7602	1150	53035	2	Kitsap
+		53037	5	Kittitas
+		53039	5	Klickitat
+		53041	5	Lewis
+		53043	5	Lincoln
+		53045	5	Mason
+		53047	5	Okanogan
+		53049	5	Pacific
+		53051	5	Pend Oreille
+7602	8200	53053	2	Pierce
+		53055	5	San Juan
+		53057	5	Skagit
+		53059	5	Skamania
+7602	7600	53061	2	Snohomish
+7840		53063	3	Spokane
+		53065	5	Stevens
+7602	5910	53067	2	Thurston
+		53069	5	Wahkiakum
+		53071	5	Walla Walla
+0860		53073	3	Whatcom
+		53075	5	Whitman
+9260		53077	3	Yakima
+		55001	5	Adams
+		55003	5	Ashland
+		55005	5	Barron
+		55007	5	Bayfield
+3080		55009	3	Brown
+		55011	5	Buffalo
+		55013	5	Burnett
+0460		55015	3	Calumet
+2290		55017	3	Chippewa
+		55019	5	Clark
+		55021	5	Columbia
+		55023	5	Crawford
+4720		55025	3	Dane
+		55027	5	Dodge
+		55029	5	Door
+2240		55031	3	Douglas
+		55033	5	Dunn
+2290		55035	3	Eau Claire
+		55037	5	Florence
+		55039	5	Fond du Lac
+		55041	5	Forest
+		55043	5	Grant
+		55045	5	Green
+		55047	5	Green Lake
+		55049	5	Iowa
+		55051	5	Iron
+		55053	5	Jackson
+		55055	5	Jefferson
+		55057	5	Juneau
+1602	3800	55059	2	Kenosha
+		55061	5	Kewaunee
+3870		55063	3	La Crosse
+		55065	5	Lafayette
+		55067	5	Langlade
+		55069	5	Lincoln
+		55071	5	Manitowoc
+8940		55073	3	Marathon
+		55075	5	Marinette
+		55077	5	Marquette
+		55078	5	Menominee
+5082	5080	55079	2	Milwaukee
+		55081	5	Monroe
+		55083	5	Oconto
+		55085	5	Oneida
+0460		55087	3	Outagamie
+5082	5080	55089	2	Ozaukee
+		55091	5	Pepin
+5120		55093	3	Pierce
+		55095	5	Polk
+		55097	5	Portage
+		55099	5	Price
+5082	6600	55101	2	Racine
+		55103	5	Richland
+3620		55105	3	Rock
+		55107	5	Rusk
+5120		55109	3	St. Croix
+		55111	5	Sauk
+		55113	5	Sawyer
+		55115	5	Shawano
+7620		55117	3	Sheboygan
+		55119	5	Taylor
+		55121	5	Trempealeau
+		55123	5	Vernon
+		55125	5	Vilas
+		55127	5	Walworth
+		55129	5	Washburn
+5082	5080	55131	2	Washington
+5082	5080	55133	2	Waukesha
+		55135	5	Waupaca
+		55137	5	Waushara
+0460		55139	3	Winnebago
+		55141	5	Wood
+		54001	5	Barbour
+8872	8840	54003	2	Berkeley
+		54005	5	Boone
+		54007	5	Braxton
+8080		54009	3	Brooke
+3400		54011	3	Cabell
+		54013	5	Calhoun
+		54015	5	Clay
+		54017	5	Doddridge
+		54019	5	Fayette
+		54021	5	Gilmer
+		54023	5	Grant
+		54025	5	Greenbrier
+		54027	5	Hampshire
+8080		54029	3	Hancock
+		54031	5	Hardy
+		54033	5	Harrison
+		54035	5	Jackson
+8872	8840	54037	2	Jefferson
+1480		54039	3	Kanawha
+		54041	5	Lewis
+		54043	5	Lincoln
+		54045	5	Logan
+		54047	5	McDowell
+		54049	5	Marion
+9000		54051	3	Marshall
+		54053	5	Mason
+		54055	5	Mercer
+1900		54057	3	Mineral
+		54059	5	Mingo
+		54061	5	Monongalia
+		54063	5	Monroe
+		54065	5	Morgan
+		54067	5	Nicholas
+9000		54069	3	Ohio
+		54071	5	Pendleton
+		54073	5	Pleasants
+		54075	5	Pocahontas
+		54077	5	Preston
+1480		54079	3	Putnam
+		54081	5	Raleigh
+		54083	5	Randolph
+		54085	5	Ritchie
+		54087	5	Roane
+		54089	5	Summers
+		54091	5	Taylor
+		54093	5	Tucker
+		54095	5	Tyler
+		54097	5	Upshur
+3400		54099	3	Wayne
+		54101	5	Webster
+		54103	5	Wetzel
+		54105	5	Wirt
+6020		54107	3	Wood
+		54109	5	Wyoming
+		56001	5	Albany
+		56003	5	Big Horn
+		56005	5	Campbell
+		56007	5	Carbon
+		56009	5	Converse
+		56011	5	Crook
+		56013	5	Fremont
+		56015	5	Goshen
+		56017	5	Hot Springs
+		56019	5	Johnson
+1580		56021	3	Laramie
+		56023	5	Lincoln
+1350		56025	3	Natrona
+		56027	5	Niobrara
+		56029	5	Park
+		56031	5	Platte
+		56033	5	Sheridan
+		56035	5	Sublette
+		56037	5	Sweetwater
+		56039	5	Teton
+		56041	5	Uinta
+		56043	5	Washakie
+		56045	5	Weston
