@@ -14,7 +14,7 @@ output: stata1.dta-stata14.dta
 ***/
 
 local size 100
-local path /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata/`size'/statanew
+local path [file location]
 
 clear
 clear matrix
