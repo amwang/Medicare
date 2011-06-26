@@ -5,9 +5,13 @@ create zip-to-region xwalk
 
 author: Angela Wang amwang@stanford.edu
 
-input: iv_rcc.dta
+input: 	hrr_to_zip.txt
+		hrr_to_region.txt
 		
-output: iv_rcc.ster
+output: hrr_to_zip.dta
+		hrr_to_region.dta
+		zip_to_region.dta
+		zip_to_region.xpt
 
 ***/
 

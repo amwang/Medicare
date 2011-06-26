@@ -5,9 +5,13 @@ create zip-to-fips xwalk
 
 author: Angela Wang amwang@stanford.edu
 
-input: iv_rcc.dta
+input: 	DMA_ZIP_2007.csv
+		FIPS Coes.csv
 		
-output: iv_rcc.ster
+output: zip_ctyfips.dta
+		state_ctyfips.dta
+		zip_fips.dta
+		zip_fips.txt
 
 ***/
 
