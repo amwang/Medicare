@@ -38,7 +38,7 @@ drop ma_hat_hosp_char_3_pat_k_star ma_hosp_char_3_pat_k_star hosp_char_3_pat_k_s
 drop ma_hat_hosp_char_6_pat_k_star ma_hosp_char_6_pat_k_star hosp_char_6_pat_k_star
 
 foreach dep of varlist `dep_var' {
-ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight], first vce(cluster zip5)
+ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight], first vce(cluster pzip)
 estimates save iv_rcc, append
 
 reg `dep' `demo_ctrl' `mrkt', vce(cluster zip5)
