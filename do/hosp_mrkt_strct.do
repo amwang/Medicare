@@ -1,10 +1,3 @@
-*
-*do file for constructing hospital market structure variables and intermediaries:
-
-*last updated: 
-*author: Angela Wang amwang@stanford.edu
-*note: delete all files with prefix "tmp" after run
-
 /***
 hosp_mrkt_strct.do
 

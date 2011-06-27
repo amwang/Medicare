@@ -1,7 +1,7 @@
 /***
 IV.do
 
-do file for running first-pass IVs of MA choice on hospital market structure variables.
+do file for running first-pass IVs of MA choice on hospital market structure variables
 
 last updated: 23Jun2011
 author: Angela Wang amwang@stanford.edu
