@@ -13,7 +13,8 @@ Our data is stored on the NBER servers. Jean Roth (jroth@nber.org), one of the t
 See construct\_denom\.sas and construct\_medpar\_.sas for code. Liberal comments are used in the denom file. These personal CMS working files are used heavily in the construction of other intermediary datasets further on in the project. After you have these constructed to your liking, make sure you have a backup stored somewhere as this is a processing intensive step.  
 
 ###Medicare hospitals 
-####Hospital Location. The raw file (/disk/homes2b/nber/cafendul/hosp_prices/Hospital_Geocoding_Result2.dbf) for this part of the project was obtained from Chris. We sent a file with hospitals and hospital addresses to Scott, our map library contact, who helped geocode them into latitude and longitude coordinates. This file is imported into SAS and saved as "hosp_geocodes.sas7bdat". The cleaned version, "hosp_geocode_clean.sas7bdat" has a total of 3560 unique hospitals.
+####Hospital Location.
+The raw file (/disk/homes2b/nber/cafendul/hosp_prices/Hospital_Geocoding_Result2.dbf) for this part of the project was obtained from Chris. We sent a file with hospitals and hospital addresses to Scott, our map library contact, who helped geocode them into latitude and longitude coordinates. This file is imported into SAS and saved as "hosp_geocodes.sas7bdat". The cleaned version, "hosp_geocode_clean.sas7bdat" has a total of 3560 unique hospitals.
 clean\_hosp\_geocode.sas is used to clean up issues with this dataset to get to the clean dataset .
 Hospital data was checked against their listing on the [Medicare Data website](http://data.medicare.gov/dataset/Hospital-General-Information/v287-28n3).
 Some hospitals have miscoded zip codes. These zipcodes are corrected using the data step.
