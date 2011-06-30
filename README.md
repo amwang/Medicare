@@ -5,8 +5,8 @@
 ##Piece-by-Piece: building our dataset
 ###CMS data (Center for Medicare & Medicaid Services) construct\_denom\.sas and construct\_medpar\_.sas
 One should begin by understanding the anatomy of the Medicare utilization and enrollment data from CMS. The [RESDAC (Research Data Assistance Center) website](http://www.resdac.org/ddvh/Index.asp) provides detailed codebook info regarding all the datasets that are available to researchers. The pertinent files for this project are the "Medicare Denominator File" (commonly referred to as "denom"), which is a enrollment/summary file, and the "Medicare MedPAR file" (referred to as "MedPAR"), which is the utilization file. These files are **big**. New programmers should take a look at the RESDAC documentation to get acquainted with the data and determine what variables are available and where they are located.  
-*The denominator file contains all enrollees (aka beneficiary, eligible, or member) in Medicare for the calendar year and their demographic information including: date of birth, date of death, zip code of residence, sex, ethnicity, monthly indicators for hmo enrollment, monthly indicators eligibility for medicare, etc. For 2008 this file contains 45+ million observations.  
-*The MedPAR File contains inpatient hospital and skilled nursing facility (SNF) final action stay records. Each MedPAR record represents a stay in an inpatient hospital or SNF. An inpatient "stay" record summarizes all services rendered to a beneficiary from the time of admission to a facility through discharge. Each MedPAR record may represent one claim or multiple claims, depending on the length of a beneficiary's stay and the amount of inpatient services used throughout the stay. For 2008, this file contains 13+ million observations.  
+-The denominator file contains all enrollees (aka beneficiary, eligible, or member) in Medicare for the calendar year and their demographic information including: date of birth, date of death, zip code of residence, sex, ethnicity, monthly indicators for hmo enrollment, monthly indicators eligibility for medicare, etc. For 2008 this file contains 45+ million observations.  
+-The MedPAR File contains inpatient hospital and skilled nursing facility (SNF) final action stay records. Each MedPAR record represents a stay in an inpatient hospital or SNF. An inpatient "stay" record summarizes all services rendered to a beneficiary from the time of admission to a facility through discharge. Each MedPAR record may represent one claim or multiple claims, depending on the length of a beneficiary's stay and the amount of inpatient services used throughout the stay. For 2008, this file contains 13+ million observations.  
 
 Our data is stored on the NBER servers. Jean Roth (jroth@nber.org), one of the two data/server managers at the NBER, processes the yearly data that comes from the government every year. For 2008, the denom and MedPAR files are split into 100 files that need to be appended back together to form your personal working dataset. There are several sample sizes that you can use ranging from 1% (maybe smaller available as well) to the full 100% file. Working with a smaller file, will allow you to cut down on processing time during a debugging phase. Ultimately though all analysis will be run on the 100% files.  
 
@@ -15,8 +15,38 @@ See construct\_denom\.sas and construct\_medpar\_.sas for code. Liberal comments
 ###Hospital info
 
 
-##The power of SQL
-Learn to run queries(aka chop up your dataset(s), combine, reshuffle your data) in SQL. Any DATA step can pretty much be replaced with a more efficient and cleaner SQL step. The [handbook](http://support.sas.com/documentation/onlinedoc/91pdf/sasdoc_91/base_sqlproc_6992.pdf) provides lots of examples is a great go-to for any sql coding questions. The code for this project also has plenty examples.
+##Working in the Unix environment
+
+###SAS Tips
+Learning to love SAS will take time.
+###If your SAS program doesn't run:
+-Make sure that you have a **libname** specified. Unlike STATA, SAS wants you to tell it exactly where it can find the datasets it will work on. 
+-Single vs. double quotes matter a lot.
+-Commas make a big difference, check to see if you need or don't need them when listing variables.
+-Shell commands: cd, rm, bunzip (things that your bash terminal will understand) can be evoked.
+
+###The power of SQL
+Learn to run queries(aka chop up your dataset(s), combine, reshuffle your data) in SQL will save you tons of time and headaches in the long run. Any DATA step can pretty much be replaced with a more efficient and cleaner SQL step. The [handbook](http://support.sas.com/documentation/onlinedoc/91pdf/sasdoc_91/base_sqlproc_6992.pdf) provides lots of examples is a great go-to for any sql coding questions. The code for this project also has plenty examples.
+
+###Most used Terminal/Bash commands
+If all else fails, just close the window and start up a new session. :-)
+- kill -9 PID: bring the process to the highest priority (-9) and then kill it. PID is the process number which you can look up by using 'top' or 'ps' (only if you are still in the same bash session)  
+- ls -lha: show all(-a) files in long(-l), human(-h)-readable format  
+- rm -rf: remove a file without prompt(-f) and all child directories (-r)
+- top: list the top process of all users that are currently running on a machine. You can also kill a process while in top by hitting 'k' and then typing the PID.
+- ps: list all of the running process for the current session  
+- tail -f: monitor the tail end of an output .log. I use this _all_ the time to check how regressions are running  
+- cat: open and read a document in the screen  
+- pico or vim: to edit documents on the fly  
+- cd: change directories
+	cd ..: go up a level
+	cd: go to home dir
+	cd -: go to last dir
+- Most used shortcut keys: 
+ctrl+c: escape from current line/start a new line
+ctrl+c, ctrl+x: exit out of current program
+ctrl+u: delete everything ahead of the cursor on this line
+up/down arrows: recall and cycle through previous commands
 
 
 ##Code contents:
