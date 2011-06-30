@@ -5,8 +5,8 @@ We begin by understanding the anatomy of the Medicare utilization and enrollment
 
 Our data is stored on the NBER servers. Jean Roth (jroth@nber.org), one of the two data/server managers at the NBER, processes the yearly data that comes from the government every year. For 2008, the files are split into 100 files that need to be appended back together to get your personal working dataset.
 
-
-##SAS files:  
+##Code contents:
+###SAS files:  
 -analysis_denom.sas: duplicate observation and collapse TM/MA weights to weight variable, add hicbic characteristics  
 -analysis\_rcc\_byhicbic.sas: match cost reports to medpar stays, calculating artificial costs for MA stays and revenue.  
 collapse to the hicbic, MA level for a regression-ready file  
@@ -21,7 +21,7 @@ collapse to the hicbic, MA level for a regression-ready file
 -npr\_ccr\_bymprovno.sas: construct net payment ratio(npr) and cost to charge ratio(ccr) from cost reports  
 -tables.sas: [sample] code for creating various summary/frequency tables throughout the project  
 
-##STATA files:  
+###STATA files:  
 -analysis.do: construct and run choice regressions  
 -HHI\_mprovno\_sys.do: construct NEW HHI hospital market stucture variables and intermediaries that takes into account hospital systems  
 -hosp\_mrkt\_strct.do: do file for constructing hospital market structure variables and intermediaries: HHI\_pat\_k\_star, CAP\_pat\_k\_star, hosp\_char\_h\_pat\_k\_star  
@@ -30,7 +30,6 @@ collapse to the hicbic, MA level for a regression-ready file
 -zip_fips.do: create zip-to-fips xwalk  
 -zip_to_region.do: create zip-to-region xwalk  
 
-##Other files:
 ###proc contents:  
 lists of variables in datasets
 
