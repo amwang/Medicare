@@ -10,7 +10,7 @@ One should begin by understanding the anatomy of the Medicare utilization and en
 
 Our data is stored on the NBER servers. Jean Roth (jroth@nber.org), one of the two data/server managers at the NBER, processes the yearly data that comes from the government every year. For 2008, the denom and MedPAR files are split into 100 files that need to be appended back together to form your personal working dataset. There are several sample sizes that you can use ranging from 1% (maybe smaller available as well) to the full 100% file. Working with a smaller file, will allow you to cut down on processing time during a debugging phase. Ultimately though all analysis will be run on the 100% files.  
 
-See construct\_denom\.sas and construct\_medpar\_.sas for code. Liberal comments are used in the denom file. These personal CMS working files are used heavily in the construction of other intermediary datasets further on in the project. After you have these constructed to your liking, make sure you have a backup stored somewhere as this is a processing intensive step.  
+See construct\_denom.sas and construct\_medpar.sas for code. Liberal comments are used in the denom file. These personal CMS working files are used heavily in the construction of other intermediary datasets further on in the project. After you have these constructed to your liking, make sure you have a backup stored somewhere as this is a processing intensive step.  
 
 ###Medicare hospitals 
 ####Hospital Location
@@ -23,7 +23,7 @@ Hospital duplicates come in several flavors:
 - Miscoded zip codes: one entry has the wrong address/zipcode, the duplicate entry which was coded using the wrong zip was dropped  
 - Conflicting address: 
 	1) Hospitals that have multiple campuses but only one hospital code. We take the main campus to be the location for our geocode. 
-	2) Hospitals with two addresses, we take the average of these geocodes to be our final geocode. Usually these geocodes are similar and have a difference of less than 0.001deg.
+	2) Hospitals with two addresses, we take the average of these geocodes to be our final geocode. Usually these geocodes are similar and have a difference of less than 0.01deg.
 
 To further validate our hospital data we compare it to the geocodes provided by the AHA (American Hospital Association) hospital files. We don't use these files straight up because they only cover a portion of the hospitals we need geocodes for. That said only 147 hospitals appear in the cost reports but not the AHA. If lat and long differ by more than 0.5deg, the lat and long were updated to what was reported in the AHA. 
 Note about AHA files: You'll need to sign a consent form through NBER/Jean to work with these files.  
@@ -32,7 +32,8 @@ Note about AHA files: You'll need to sign a consent form through NBER/Jean to wo
 Chris provides the hospital characteristic file. (/disk/homes2b/nber/cafendul/hosp_prices/hosp_chars.sas7bdat.gz)
 The hospital characteristics include size (small, med, large) based on the number of beds, ownership (non-profit, for-profit, and teaching) and whether or not it is a teaching hospital.
 
-####Cost reports
+####CMS Cost reports
+CMS Cost reports provide overall spending data.
 
 ###Patient characteristics
 ####Demographics
@@ -44,37 +45,37 @@ The hospital characteristics include size (small, med, large) based on the numbe
 ##Working in the Unix environment
 
 ###If your SAS program doesn't run:
-Learning to love SAS will take time. Breath.
--Semicolon delimiter. Is it at the end of every proc/data step?
--Make sure that you have a **libname** specified. Unlike STATA, SAS wants you to tell it exactly where it can find the datasets it will work on. 
--Single vs. double quotes matter a lot.
--Commas make a big difference, check to see if you need or don't need them when listing variables.
--Shell commands: cd, rm, bunzip (things that your bash terminal will understand) can be evoked.
+Learning to love SAS will take time. Breath.  
+-Semicolon delimiter. Is it at the end of every proc/data step?  
+-Make sure that you have a **libname** specified. Unlike STATA, SAS wants you to tell it exactly where it can find the datasets it will work on.  
+-Single vs. double quotes matter a lot.  
+-Commas make a big difference, check to see if you need or don't need them when listing variables.  
+-Shell commands: cd, rm, bunzip (things that your bash terminal will understand) can be evoked.  
 
 ###The power of SQL
 Learn to run queries(aka chop up your dataset(s), combine, reshuffle your data) in SQL will save you tons of time and headaches in the long run. Any DATA step can pretty much be replaced with a more efficient and cleaner SQL step. The [handbook](http://support.sas.com/documentation/onlinedoc/91pdf/sasdoc_91/base_sqlproc_6992.pdf) provides lots of examples is a great go-to for any sql coding questions. The code for this project also has plenty examples.
 
 ###Most used Terminal/Bash commands
-If all else fails, just close the window and start up a new session. :-)
+If all else fails, just close the window and start up a new session. :-)  
 - kill -9 PID: bring the process to the highest priority (-9) and then kill it. PID is the process number which you can look up by using 'top' or 'ps' (only if you are still in the same bash session). You can kill any process that belongs to you  
 - ls -lha: show all(-a) files in long(-l), human(-h)-readable format  
-- exit: exit the program or session
-- rm -rf: remove a file without prompt(-f) and all child directories (-r)
-- top: list the top process of all users that are currently running on a machine. You can also kill a process while in top by hitting 'k' and then typing the PID.
+- exit: exit the program or session  
+- rm -rf: remove a file without prompt(-f) and all child directories (-r)  
+- top: list the top process of all users that are currently running on a machine. You can also kill a process while in top by hitting 'k' and then typing the PID.  
 - ps: list all of the running process for the current session  
 - tail -f: monitor the tail end of an output .log. I use this _all_ the time to check how regressions are running  
 - cat: open and read a document in the screen  
 - pico or vim: to edit documents on the fly  
-- cd: change directories
-	cd ..: go up a level
-	cd: go to home dir
-	cd -: go to last dir
-- bzip, bunzip and gzip, gunzip: zip and unzip files using these two utilities
-- Most used shortcut keys: 
-ctrl+c: escape from current line/start a new line
-ctrl+c, ctrl+x: exit out of current program
-ctrl+u: delete everything ahead of the cursor on this line
-up/down arrows: recall and cycle through previous commands
+- cd: change directories  
+	cd ..: go up a level  
+	cd: go to home dir  
+	cd -: go to last dir  
+- bzip, bunzip and gzip, gunzip: zip and unzip files using these two utilities  
+- Most used shortcut keys:  
+	ctrl+c: escape from current line/start a new line  
+	ctrl+c, ctrl+x: exit out of current program  
+	ctrl+u: delete everything ahead of the cursor on this line  
+	up/down arrows: recall and cycle through previous commands  
 
 
 ##Code contents:
