@@ -36,7 +36,7 @@ use iv_rcc, clear
 
 drop ma_hat_hosp_char_3_pat_k_star ma_hosp_char_3_pat_k_star hosp_char_3_pat_k_star
 drop ma_hat_hosp_char_6_pat_k_star ma_hosp_char_6_pat_k_star hosp_char_6_pat_k_star
-
+/*
 foreach dep of varlist `dep_var' {
 ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight], first cluster(pzip)
 estimates save iv_rcc, append
@@ -45,3 +45,21 @@ reg `dep' `demo_ctrl' `mrkt', vce(cluster pzip)
 estimates save iv_rcc, append
 
 }
+*/
+foreach dep of varlist `dep_var' {
+*Pr(totchrg=1)
+ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight] if totchrg<=1, cluster(pzip)
+estimates save iv_rcc, append
+*Pr(totchrg>1)
+ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight] if totchrg>1, cluster(pzip)
+estimates save iv_rcc, append
+}
+
+/*
+*Pr(cost>1|totchrg>1)
+ivreg lncost `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight] if totchrg>1 and cost>1, cluster(pzip)
+estimates save iv_rcc, append
+*Pr(revenue>1|totchrg>1)
+ivreg lnrevenue `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight] if totchrg>1 and revenue>1, cluster(pzip)
+estimates save iv_rcc, append
+*/
