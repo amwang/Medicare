@@ -72,10 +72,10 @@ If all else fails, just close the window and start up a new session. :-)
 	cd -: go to last dir  
 - bzip, bunzip and gzip, gunzip: zip and unzip files using these two utilities  
 - Most used shortcut keys:  
-	ctrl+c: escape from current line/start a new line  
+<blockquote><p>ctrl+c: escape from current line/start a new line  
 	ctrl+c, ctrl+x: exit out of current program  
 	ctrl+u: delete everything ahead of the cursor on this line  
-	up/down arrows: recall and cycle through previous commands  
+	up/down arrows: recall and cycle through previous commands</p></blockquote>
 
 
 ##Code contents:
