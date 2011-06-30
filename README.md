@@ -19,8 +19,8 @@ clean\_hosp\_geocode.sas is used to clean up issues with this dataset to get to 
 Hospital data was checked against their listing on the [Medicare Data website](http://data.medicare.gov/dataset/Hospital-General-Information/v287-28n3).
 Some hospitals have miscoded zip codes. These zipcodes are corrected using the data step.
 Exact duplicates are dropped, but many hospitals still contained multiple entries with conflicting geocodes.
-Hospital duplicates come in several flavors:
-- Miscoded zip codes: one entry has the wrong address/zipcode, the duplicate entry which was coded using the wrong zip was dropped
+Hospital duplicates come in several flavors:  
+- Miscoded zip codes: one entry has the wrong address/zipcode, the duplicate entry which was coded using the wrong zip was dropped  
 - Conflicting address: 
 	1) Hospitals that have multiple campuses but only one hospital code. We take the main campus to be the location for our geocode. 
 	2) Hospitals with two addresses, we take the average of these geocodes to be our final geocode. Usually these geocodes are similar and have a difference of less than 0.001deg.
