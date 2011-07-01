@@ -12,6 +12,30 @@ Our data is stored on the NBER servers. Jean Roth (jroth@nber.org), one of the t
 
 See construct\_denom.sas and construct\_medpar.sas for code to construct these files. Liberal comments are used in the denom file. These personal CMS working files are used heavily in the construction of other intermediary datasets further on in the project. After you have these constructed to your liking, make sure you have a backup stored somewhere as this is a processing intensive step.  
 
+###Patient characteristics
+####Demographics
+Age, male, and black indicators can be constructed directly from the denominator file. Code to implement this appears at various points throughout the project (eg. analysis\_denom.sas line 41-62 and )
+
+####Patient location/geocode
+5-digit zip-codes are also constructed directly from bene_zip in the denominator file. SAS has a handy zipcode-to-geocode crosswalk(sashelp.zipcode.sas7bdat) which will geocode any valid zipcode to the centroid of the zipcode and some [handy documentation](http://support.sas.com/resources/papers/proceedings10/219-2010.pdf).
+
+We also create a complete 5-digit SSA(social security administration) state-county code by concatenating the SSA state-code and SSA county-codes from the denominator so that we can later merge in our IV: the Medicare Advantage benchmark payment rate.
+Note that the SSA state-county code is different from the more commonly used FIPS(federal info processing stds) state-county codes. There are plenty of crosswalks available if any merging needs to be done.
+
+####HCC (hazard characteristic code) (variables: p1_max-p177_max)
+The HCC risk model is used to adjust Medicare capitation payments to private health care plans for the health expenditure risk of their enrollees. We are using the HCC in a different capacity: as binary controls for disease conditions.  
+We recode ICD-9 (int'l classification of disease codes/diagnosis codes) from MedPAR to HCC using the CMS-HCC model that was in place in 2008, the [2007 HCC model software](https://www.cms.gov/MedicareAdvtgSpecRateStats/06a_Risk_adjustment_prior.asp). Note that the HCC scheme we use is not exhaustive, so not all of our diagnosis codes will have a matching HCC. CMS uses a modified version of the model which has 70 indicators in 2007, while the true HCC model has 180 or so. The percentage of ICD-9 codes that do not have a match are not worrisome.
+
+HCC\_byhicbic.sas is used to recode the 10 diagnosis codes by stay in MedPAR to 70 HCC indicators by hicbic.  
+The HCC indicators for each hicbic represents a summary of all HCCs that the beneficiary was diagnosed with over the calendar year. We map the 10 diagnosis codes to their respective HCCs for each stay and then reshape to obtain 70 indicator dummies for each stay.  We then take the maximum value of each HCC indicator by hicbic to obtain the hicbic level file.  
+
+####MA indicator
+[ResDAC provides a nice write up on GHO/HMO encoding in MedPAR files](http://www.resdac.org/tools/TBs/TN-009_MedicareManagedCareEnrolleesandUtilFiles_508.pdf)
+The MedPAR file contains a variable called the MedPAR GHO Paid Code. This code indicate whether or not a Group Health Organization (MCO) has paid the provider for the claim. However, an empirical analysis conducted by ResDAC showed that the indictor was correct over 95% of the time, so they recommend that researchers use the monthly HMO indicators from the denominator data.
+
+So we go about constructing our own MA indicator...
+
+
 ###Medicare hospitals (unique identifier: mprovno)
 ####Hospital Location/geocode
 The raw file (/disk/homes2b/nber/cafendul/hosp_prices/Hospital_Geocoding_Result2.dbf) for this part of the project was obtained from Chris. We sent a file with hospitals and hospital addresses to Scott, our map library contact, who helped geocode them into latitude and longitude coordinates. This file is imported into SAS and saved as "hosp_geocodes.sas7bdat". The cleaned version, "hosp_geocode_clean.sas7bdat" has a total of 3560 unique hospitals.
@@ -35,29 +59,6 @@ The hospital characteristics include size (small, med, large) based on the numbe
 ####CMS Cost reports
 Chris provides us with CMS cost reports (/disk/homes2b/nber/cafendul/hosp_prices/hosp_chars_new.sas7bdat.gz). We calculate net 
 npr_ccr_bymprovno.sas
-
-###Patient characteristics
-####Demographics
-Age, male, and black indicators can be constructed directly from the denominator file. Code to implement this appears at various points throughout the project (eg. analysis\_denom.sas line 41-62 and )
-
-####Patient location/geocode
-5-digit zip-codes are also constructed directly from bene_zip in the denominator file. SAS has a handy zipcode-to-geocode crosswalk(sashelp.zipcode.sas7bdat) which will geocode any valid zipcode to the centroid of the zipcode and some [handy documentation](http://support.sas.com/resources/papers/proceedings10/219-2010.pdf).
-
-We also create a complete 5-digit SSA(social security administration) state-county code by concatenating the SSA state-code and SSA county-codes from the denominator so that we can later merge in our IV: the Medicare Advantage benchmark payment rate.
-Note that the SSA state-county code is different from the more commonly used FIPS(federal info processing stds) state-county codes. There are plenty of crosswalks available if any merging needs to be done.
-
-####HCC (hazard characteristic code) (variables: p1_max-p177_max)
-The HCC risk model is used to adjust Medicare capitation payments to private health care plans for the health expenditure risk of their enrollees. We are using the HCC in a different capacity: as binary controls for disease conditions.  
-We recode ICD-9 (int'l classification of disease codes/diagnosis codes) from MedPAR to HCC using the CMS-HCC model that was in place in 2008, the [2007 HCC model software](https://www.cms.gov/MedicareAdvtgSpecRateStats/06a_Risk_adjustment_prior.asp). Note that the HCC scheme we use is not exhaustive, so not all of our diagnosis codes will have a matching HCC. CMS uses a modified version of the model which has 70 indicators in 2007, while the true HCC model has 180 or so. The percentage of ICD-9 codes that do not have a match are not worrisome.
-
-HCC\_byhicbic.sas is used to recode the 10 diagnosis codes by stay in MedPAR to 70 HCC indicators by hicbic.  
-The HCC indicators for each hicbic represents a summary of all HCCs that the beneficiary was diagnosed with over the calendar year. We map the 10 diagnosis codes to their respective HCCs for each stay and then reshape to obtain 70 indicator dummies for each stay.  We then take the maximum value of each HCC indicator by hicbic to obtain the hicbic level file.  
-
-####MA indicator
-[ResDAC provides a nice write up on GHO/HMO encoding in MedPAR files](http://www.resdac.org/tools/TBs/TN-009_MedicareManagedCareEnrolleesandUtilFiles_508.pdf)
-The MedPAR file contains a variable called the MedPAR GHO Paid Code. This code indicate whether or not a Group Health Organization (MCO) has paid the provider for the claim. However, an empirical analysis conducted by ResDAC showed that the indictor was correct over 95% of the time, so they recommend that researchers use the monthly HMO indicators from the denominator data.
-
-So we go about constructing our own MA indicator...
 
 
 ##Working in the Unix environment
