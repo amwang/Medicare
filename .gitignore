@@ -2,3 +2,5 @@
 .cshrc
 *.log
 variable.txt
+*.tex
+*.key

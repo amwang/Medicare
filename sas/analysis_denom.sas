@@ -8,6 +8,7 @@ author: Angela Wang amwang@stanford.edu
 
 input: 	denom100_2008.sas7bdat
 		hicbic.sas7bdat
+		cty_risk.sas7bdat
 		
 output: trans.sas7bdat
 		denom.sas7bdat

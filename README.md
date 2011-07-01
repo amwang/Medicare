@@ -1,11 +1,11 @@
 #Readme for Medicare project
-*The current project deals only with 2008 data, but the code can be modified so that subsequent years can be added. The macro %year is used in all code.
+*The current project deals only with 2008 data, but the code can be modified so that subsequent years can be added. The macro %year. is used in all code.
 *Change working directories to correspond to your own.
 
 ##Piece-by-Piece: building our dataset
 ###Medicare beneficiary data (unique identifier: hicbic)
 One should begin by understanding the contents of the Medicare utilization and enrollment data from CMS (Center for Medicare & Medicaid Services). The [RESDAC (Research Data Assistance Center) website](http://www.resdac.org/ddvh/Index.asp) provides detailed codebook info regarding all the datasets that are available to researchers. The pertinent files for this project are the "Medicare Denominator File" (commonly referred to as "denom"), which is a enrollment/summary file, and the "Medicare MedPAR file" (referred to as "MedPAR"), which is the utilization file. These files are **big**. New programmers should take a look at the RESDAC documentation to get acquainted with the data and determine what variables are available and where they are located.  
--The denominator file contains all enrollees (aka beneficiary, eligible, or member) in Medicare for the calendar year and their demographic information including: date of birth, date of death, zip code of residence, sex, ethnicity, monthly indicators for hmo enrollment, monthly indicators eligibility for medicare, etc. For 2008 this file contains 45+ million observations.  
+-The denominator file contains all enrollees (aka beneficiary, eligible, or member) in Medicare for the calendar year and their demographic information including: date of birth, date of death, zip code of residence, sex, ethnicity, monthly indicators for hmo enrollment, monthly indicators eligibility for medicare, etc. For 2008 this file contains 46+ million observations.  
 -The MedPAR File contains inpatient hospital and skilled nursing facility (SNF) final action stay records. Each MedPAR record represents a stay in an inpatient hospital or SNF. An inpatient "stay" record summarizes all services rendered to a beneficiary from the time of admission to a facility through discharge. Each MedPAR record may represent one claim or multiple claims, depending on the length of a beneficiary's stay and the amount of inpatient services used throughout the stay. For 2008, this file contains 13+ million observations.  
 
 Our data is stored on the NBER servers. Jean Roth (jroth@nber.org), one of the two data/server managers at the NBER, processes the yearly data that comes from the CMS every year. For 2008, the denom and MedPAR files are split into 100 files that need to be appended back together to form your personal working dataset. There are several sample sizes that you can use ranging from 1% (maybe smaller available as well) to the full 100% file. Working with a smaller file will allow you to cut down on processing time during a debugging phase. Ultimately though, all analysis will be run on the 100% files.  
@@ -17,7 +17,7 @@ See "construct\_denom.sas" and "construct\_medpar.sas" for code to construct the
 Age, female, black, and interaction indicators can be constructed directly from the denominator file. Code to implement this appears at various points throughout the project when needed (eg. "analysis\_denom.sas" lines 41-62)
 
 ####Patient location/geocode (variables: pzip, SSA)
-5-digit zip-codes are also constructed directly from bene_zip in the denominator file. SAS has a handy zipcode-to-geocode crosswalk(sashelp.zipcode.sas7bdat) which will geocode any valid zip-code to the centroid of the zip-code and some [handy documentation](http://support.sas.com/resources/papers/proceedings10/219-2010.pdf). There was some consideration of using 9-digit or 3-digit zips, but ultimately we decided that this type of analysis would be respectively too granular or too coarse. 
+5-digit zip-codes are also constructed directly from bene_zip in the denominator file. SAS has a handy zipcode-to-geocode crosswalk(sashelp.zipcode.sas7bdat) which will geocode any valid zip-code to the centroid of the zip-code and they also have some [handy documentation](http://support.sas.com/resources/papers/proceedings10/219-2010.pdf). There was some consideration of using 9-digit or 3-digit zips, but ultimately we decided that this type of analysis would be respectively too granular or too coarse. 
 
 We also create a complete 5-digit SSA (Social Security Administration) state-county code by concatenating the SSA state-code and SSA county-codes from the denominator so that we can later merge in our IV: the Medicare Advantage benchmark payment rate.  
 Note that the SSA state-county code is different from the more commonly used FIPS(federal info processing stds) state-county codes. There are plenty of SSA-FIPS crosswalks available if any merging needs to be done.
@@ -30,11 +30,11 @@ We recode ICD-9 (int'l classification of disease codes/diagnosis codes) from Med
 The HCC indicators for each hicbic represents a summary of all HCCs that the beneficiary was diagnosed with over the calendar year. We map the 10 diagnosis codes to their respective HCCs for each stay and then reshape to obtain 70 indicator dummies for each stay.  We then take the maximum value of each HCC indicator by hicbic to obtain the hicbic level file.  
 
 ####MA indicator and weight (variables: MA, weight)
-#####HMO/GHO/MCO what's the difference?  
+HMO/GHO/MCO what's the difference?  
 An HMO (health maintenance organization) or a GHO (group health organization) is a type of MCO (managed care organization) that provide some form of health care coverage. The terms "HMO" and "GHO" are used interchangeably to indicate a managed care plan/Medicare Advantage.  
-The MedPAR file contains a variable called the MedPAR GHO Paid Code. [ResDAC provides a nice write up on GHO/HMO encoding in MedPAR files](http://www.resdac.org/tools/TBs/TN-009_MedicareManagedCareEnrolleesandUtilFiles_508.pdf). This code indicate whether or not a Group Health Organization (MCO) has paid the provider for the claim. However, an empirical analysis conducted by ResDAC showed that the indictor was correct only 95% of the time, so they recommend that researchers use the monthly HMO indicators from the denominator data. 
+The MedPAR file contains a variable called the MedPAR GHO Paid Code. [ResDAC provides a nice write up on GHO/HMO encoding in MedPAR files](http://www.resdac.org/tools/TBs/TN-009_MedicareManagedCareEnrolleesandUtilFiles_508.pdf). This code indicate whether or not a Group Health Organization (MCO) has paid the provider for the claim. However, an empirical analysis conducted by ResDAC showed that the indictor was correct only 95% of the time, so they recommend that researchers use the monthly HMO indicators from the denominator data. So that's what we do.
 
-#####Constructing and assigning our MA (Medicare Advantage) indicator and weights "hmo\_status\_byhicbic.sas"  
+#####Constructing our MA (Medicare Advantage) indicator and weights "hmo\_status\_byhicbic.sas"  
 We use two sets hmo1-hmo12 and buy1-buy12 monthly indicator variables and the death date (if applicable) to construct a hicbic-level monthly MA indicator.  
 
 Establish monthly eligibility for Medicare:  
@@ -51,27 +51,29 @@ Since some proportion of benes switch plans during the year, we construct weight
 1) weightMA = months MA/12 and weightTM = months TM/12; weightTM and weightMA should sum to 1 since we only keep benes who have continuous eligibility for the entire year.  
 2) If bene dies in 2008, weightMA = months MA/months eligible and weightTM = months TM/ months eligible; we do this so as to prevent down-weighting benes who die.  
 
+#####Assigning our MA indicator 
+
 
 
 ###Medicare hospitals (unique identifier: mprovno)
 ####Hospital Location/geocode (variable: hzip)
 The raw file (/disk/homes2b/nber/cafendul/hosp\_prices/Hospital\_Geocoding\_Result2.dbf) for this part of the project was obtained from Chris. We sent a file with hospitals and hospital addresses to Scott, our map library contact, who helped geocode them into latitude and longitude coordinates. This file is imported into SAS and saved as "hosp\_geocodes.sas7bdat". The cleaned version, "hosp\_geocode\_clean.sas7bdat" has a total of 3560 unique hospitals.
-clean\_hosp\_geocode.sas is used to clean up issues with this dataset to get to the clean dataset.  
+"clean\_hosp\_geocode.sas" is used to clean up the raw data and process it to an analysis ready file.  
 Hospital data was checked against their listing on the [Medicare Data website](http://data.medicare.gov/dataset/Hospital-General-Information/v287-28n3).  
 Some hospitals have miscoded zip codes. These zipcodes are corrected using the data step.
 Exact duplicates are dropped, but many hospitals still contained multiple entries with conflicting geocodes.  
 Hospital duplicates come in several flavors:  
 - Miscoded zip codes: one entry has the wrong address/zipcode, the duplicate entry which was coded using the wrong zip was dropped  
 - Conflicting address: 
-	1) Hospitals that have multiple campuses but only one hospital code. We take the main campus to be the location for our geocode. 
+	1) Hospitals that have multiple campuses but only one hospital code. We take the main campus to be the location for our geocode.  
 	2) Hospitals with two addresses, we take the average of these geocodes to be our final geocode. Usually these geocodes are similar and have a difference of less than 0.01deg.
 
-To further validate our hospital data we compare it to the geocodes provided by the AHA (American Hospital Association) hospital files. We don't use these files straight up because they only cover a portion of the hospitals we need geocodes for. That said only 147 hospitals appear in the cost reports but not the AHA. If lat and long differ by more than 0.5deg, the lat and long were updated to what was reported in the AHA. 
+To further validate our hospital data we compare it to the geocodes provided by the AHA (American Hospital Association) hospital files. We don't use these files straight up because they only cover a portion of the hospitals we need geocodes for. That said, only 147 hospitals appear in the cost reports but not the AHA. If lat and long differ by more than 0.5deg, the lat and long were updated to what was reported in the AHA.  
 Note about AHA files: You'll need to sign a consent form through NBER/Jean to work with these files.  
 
 ####Hospital characteristics (variables: hchar1-hchar7, beds)
 Chris provides the hospital characteristic file. (/disk/homes2b/nber/cafendul/hosp_prices/hosp_chars.sas7bdat.gz)
-The hospital characteristics include size (small, med, large) based on the number of beds, ownership (non-profit, for-profit, and teaching) and whether or not it is a teaching hospital.  
+The hospital characteristics include size (small, med, large) based on the number of beds, ownership (non-profit, for-profit, and teaching) and whether or not it is a teaching hospital. This dataset can be used as is.  
 
 ####CMS Cost reports
 Chris provides us with CMS cost reports (/disk/homes2b/nber/cafendul/hosp_prices/hosp_chars_new.sas7bdat.gz). 

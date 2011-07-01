@@ -10,6 +10,7 @@ input: 	medpar_hcc_byhicbic.dta
 		rcc_byhicbic.dta
 		denom.dta
 		HHI_mprovno_sys.dta
+		hosp_mrkt_strct.dta
 		
 		
 output: probit0.ster
