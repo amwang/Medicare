@@ -5,10 +5,10 @@
 ##Piece-by-Piece: building our dataset
 ###Medicare beneficiary data (unique identifier: hicbic)
 One should begin by understanding the contents of the Medicare utilization and enrollment data from CMS (Center for Medicare & Medicaid Services). The [RESDAC (Research Data Assistance Center) website](http://www.resdac.org/ddvh/Index.asp) provides detailed codebook info regarding all the datasets that are available to researchers. The pertinent files for this project are the "Medicare Denominator File" (commonly referred to as "denom"), which is a enrollment/summary file, and the "Medicare MedPAR file" (referred to as "MedPAR"), which is the utilization file. These files are **big**. New programmers should take a look at the RESDAC documentation to get acquainted with the data and determine what variables are available and where they are located.  
--The denominator file contains all enrollees (aka beneficiary, eligible, or member) in Medicare for the calendar year and their demographic information including: date of birth, date of death, zip code of residence, sex, ethnicity, monthly indicators for hmo enrollment, monthly indicators eligibility for medicare, etc. For 2008 this file contains 45+ million observations. 
+-The denominator file contains all enrollees (aka beneficiary, eligible, or member) in Medicare for the calendar year and their demographic information including: date of birth, date of death, zip code of residence, sex, ethnicity, monthly indicators for hmo enrollment, monthly indicators eligibility for medicare, etc. For 2008 this file contains 45+ million observations.  
 -The MedPAR File contains inpatient hospital and skilled nursing facility (SNF) final action stay records. Each MedPAR record represents a stay in an inpatient hospital or SNF. An inpatient "stay" record summarizes all services rendered to a beneficiary from the time of admission to a facility through discharge. Each MedPAR record may represent one claim or multiple claims, depending on the length of a beneficiary's stay and the amount of inpatient services used throughout the stay. For 2008, this file contains 13+ million observations.  
 
-Our data is stored on the NBER servers. Jean Roth (jroth@nber.org), one of the two data/server managers at the NBER, processes the yearly data that comes from the government every year. For 2008, the denom and MedPAR files are split into 100 files that need to be appended back together to form your personal working dataset. There are several sample sizes that you can use ranging from 1% (maybe smaller available as well) to the full 100% file. Working with a smaller file, will allow you to cut down on processing time during a debugging phase. Ultimately though, all analysis will be run on the 100% files.  
+Our data is stored on the NBER servers. Jean Roth (jroth@nber.org), one of the two data/server managers at the NBER, processes the yearly data that comes from the CMS every year. For 2008, the denom and MedPAR files are split into 100 files that need to be appended back together to form your personal working dataset. There are several sample sizes that you can use ranging from 1% (maybe smaller available as well) to the full 100% file. Working with a smaller file will allow you to cut down on processing time during a debugging phase. Ultimately though, all analysis will be run on the 100% files.  
 
 See "construct\_denom.sas" and "construct\_medpar.sas" for code to construct these files. Liberal comments are used in the denom file. These personal CMS working files are used heavily in the construction of other intermediary datasets further on in the project. After you have these constructed to your liking, make sure you have a backup stored somewhere as this is a processing intensive step.  
 
@@ -16,78 +16,46 @@ See "construct\_denom.sas" and "construct\_medpar.sas" for code to construct the
 ####Demographics (variables: a6569, a7074, a7579, a8089, a9099, female, black)
 Age, female, black, and interaction indicators can be constructed directly from the denominator file. Code to implement this appears at various points throughout the project when needed (eg. "analysis\_denom.sas" lines 41-62)
 
-####Patient location/geocode (variable: pzip, SSA)
-5-digit zip-codes are also constructed directly from bene_zip in the denominator file. SAS has a handy zipcode-to-geocode crosswalk(sashelp.zipcode.sas7bdat) which will geocode any valid zipcode to the centroid of the zip-code and some [handy documentation](http://support.sas.com/resources/papers/proceedings10/219-2010.pdf). There was some consideration of using 9-digit or 3-digit zips, but ultimately we decided that this type of analysis would be respectively too granular or too coarse. 
+####Patient location/geocode (variables: pzip, SSA)
+5-digit zip-codes are also constructed directly from bene_zip in the denominator file. SAS has a handy zipcode-to-geocode crosswalk(sashelp.zipcode.sas7bdat) which will geocode any valid zip-code to the centroid of the zip-code and some [handy documentation](http://support.sas.com/resources/papers/proceedings10/219-2010.pdf). There was some consideration of using 9-digit or 3-digit zips, but ultimately we decided that this type of analysis would be respectively too granular or too coarse. 
 
-We also create a complete 5-digit SSA(social security administration) state-county code by concatenating the SSA state-code and SSA county-codes from the denominator so that we can later merge in our IV: the Medicare Advantage benchmark payment rate.
+We also create a complete 5-digit SSA (Social Security Administration) state-county code by concatenating the SSA state-code and SSA county-codes from the denominator so that we can later merge in our IV: the Medicare Advantage benchmark payment rate.  
 Note that the SSA state-county code is different from the more commonly used FIPS(federal info processing stds) state-county codes. There are plenty of SSA-FIPS crosswalks available if any merging needs to be done.
 
 ####HCC (hazard characteristic code) (variables: p1_max-p177_max)
-The HCC risk model is used to adjust Medicare capitation payments to private health care plans for the health expenditure risk of their enrollees. We are using the HCC in a different capacity: as binary controls for disease conditions.  
-We recode ICD-9 (int'l classification of disease codes/diagnosis codes) from MedPAR to HCC using the CMS-HCC model that was in place in 2008, the [2007 HCC model software](https://www.cms.gov/MedicareAdvtgSpecRateStats/06a_Risk_adjustment_prior.asp). Note that the HCC scheme we use is not exhaustive, so not all of our diagnosis codes will have a matching HCC. CMS uses a modified version of the model which has 70 indicators in 2007, while the true HCC model has 180 or so. The percentage of ICD-9 codes that do not have a match are not worrisome.
+The HCC risk model is used to adjust Medicare capitation payments to private health care plans for the health expenditure risk of their enrollees. We are using the HCC in a different capacity: as binary controls for disease conditions. Essentially, we are binning the 6000+ different ICD-9 codes into 70 disease categories for control purposes.  
+We recode ICD-9 (int'l classification of disease codes/diagnosis codes) from MedPAR to HCC using the CMS-HCC model that was in place in 2008, the [2007 HCC model software](https://www.cms.gov/MedicareAdvtgSpecRateStats/06a_Risk_adjustment_prior.asp). Note that the CMS-HCC scheme we use is not exhaustive, so not all of our diagnosis codes will have a matching HCC. CMS uses a modified version of the model which has 70 indicators in 2007, while the true HCC model has 180 or so. The percentage of ICD-9 codes <5% that do not have a match are not worrisome.
 
 "analysis\_medpar\_HCC\_byhicbic.sas" is used to recode the 10 diagnosis codes by stay in MedPAR to 70 HCC indicators by hicbic.  
 The HCC indicators for each hicbic represents a summary of all HCCs that the beneficiary was diagnosed with over the calendar year. We map the 10 diagnosis codes to their respective HCCs for each stay and then reshape to obtain 70 indicator dummies for each stay.  We then take the maximum value of each HCC indicator by hicbic to obtain the hicbic level file.  
 
 ####MA indicator and weight (variables: MA, weight)
--HMO/GHO/MCO what's the difference?  
-HMO (health maintenance organization) or a GHO (group health organization) are a type of MCO (managed care organization) that provide some form of health care coverage. The terms "HMO" and "GHO" are used interchangeably to indicate a managed care plan/Medicare Advantage.  
-The MedPAR file contains a variable called the MedPAR GHO Paid Code. [ResDAC provides a nice write up on GHO/HMO encoding in MedPAR files](http://www.resdac.org/tools/TBs/TN-009_MedicareManagedCareEnrolleesandUtilFiles_508.pdf). This code indicate whether or not a Group Health Organization (MCO) has paid the provider for the claim. However, an empirical analysis conducted by ResDAC showed that the indictor was correct over 95% of the time, so they recommend that researchers use the monthly HMO indicators from the denominator data. 
+#####HMO/GHO/MCO what's the difference?  
+An HMO (health maintenance organization) or a GHO (group health organization) is a type of MCO (managed care organization) that provide some form of health care coverage. The terms "HMO" and "GHO" are used interchangeably to indicate a managed care plan/Medicare Advantage.  
+The MedPAR file contains a variable called the MedPAR GHO Paid Code. [ResDAC provides a nice write up on GHO/HMO encoding in MedPAR files](http://www.resdac.org/tools/TBs/TN-009_MedicareManagedCareEnrolleesandUtilFiles_508.pdf). This code indicate whether or not a Group Health Organization (MCO) has paid the provider for the claim. However, an empirical analysis conducted by ResDAC showed that the indictor was correct only 95% of the time, so they recommend that researchers use the monthly HMO indicators from the denominator data. 
 
-Constructing our MA indicator "hmo\_status\_byhicbic.sas"  
-We use two sets hmo1-hmo12 and buy1-buy12 monthly indicator variables and the death date (if applicable) to determine each beneficiary's monthly Medicare eligibility and hmo status.
-1) Determine eligibility in each month using
+#####Constructing and assigning our MA (Medicare Advantage) indicator and weights "hmo\_status\_byhicbic.sas"  
+We use two sets hmo1-hmo12 and buy1-buy12 monthly indicator variables and the death date (if applicable) to construct a hicbic-level monthly MA indicator.  
 
-*determine eligibility and death;
-do i = 1 to 12;
-	*create true hmo status;
-	*dummies for months after death;
-	*dummies for eligibility: buyin yes and not dead;
-	*recode hmo to missing if not eligible;
-	*create MA dummy for month;
-end;
+Establish monthly eligibility for Medicare:  
+1) Eligibility ends the first full month after month of death. Benes received benefits up to the date of death which implies that they are eligible for Medicare during their month of death.  
+2) Buyin indicator must be 1 and you must be living/died during that month.  
 
-*count switches and eligibility changes;
-do i = 1 to 11;
-	*switch into MA;
-	iMA{i}=(MA{i}=0 and MA{i+1}=1);
-	*switch out of MA;
-	oMA{i}=(MA{i}=1 and MA{i+1}=0);
-	*eligibility:no->yes;
-	ie{i}=(e{i}=0 and e{i+1}=1);
-	*eligibility:yes->no;
-	oe{i}=(e{i}=1 and e{i+1}=0);
-end;
+Keep valid beneficiaries with valid eligibility data:  
+1) Benes must have either zero or only 1 switch between MA and TM plans  
+2) Benes must have continuous eligibility for the entire year (or until death if applicable)  
+3) Benes must not have "aged" into Medicare: eligibility switch from noneligible-->eligible  
 
-*total switches and eligibility changes;
-switch=sum(of iMA2-iMA12)+sum(of oMA2-oMA12);
-enroll=sum(of ie2-ie12)+sum(of oe2-oe12);
-e_months=sum(of e1-e12);
+Assign TM and MA weights to each bene:  
+Since some proportion of benes switch plans during the year, we construct weights so that we can utilize both the TM and MA part of their data.  
+1) weightMA = months MA/12 and weightTM = months TM/12; weightTM and weightMA should sum to 1 since we only keep benes who have continuous eligibility for the entire year.  
+2) If bene dies in 2008, weightMA = months MA/months eligible and weightTM = months TM/ months eligible; we do this so as to prevent down-weighting benes who die.  
 
-*create categorical variable for drops;
-*1+ MA/TM switches;
-*noncontinous eligibility;
-*never eligibile;
-*aged into medicare;
-*drop;
-drop=(xswitch=1 or xenroll=1 or noenroll=1 or agein=1);
-
-*create weights;
-if death_yr=2008 then 
-	do;
-		weightMA=sum(of MA1-MA12)/n(of MA1-MA12);
-		weightTM=1-weightMA;
-	end;
-else 
-	do;
-		weightMA=sum(of MA1-MA12)/12;
-		weightTM=n(of MA1-MA12)/12-weightMA;
-	end;
 
 
 ###Medicare hospitals (unique identifier: mprovno)
 ####Hospital Location/geocode (variable: hzip)
-The raw file (/disk/homes2b/nber/cafendul/hosp_prices/Hospital_Geocoding_Result2.dbf) for this part of the project was obtained from Chris. We sent a file with hospitals and hospital addresses to Scott, our map library contact, who helped geocode them into latitude and longitude coordinates. This file is imported into SAS and saved as "hosp_geocodes.sas7bdat". The cleaned version, "hosp_geocode_clean.sas7bdat" has a total of 3560 unique hospitals.
+The raw file (/disk/homes2b/nber/cafendul/hosp\_prices/Hospital\_Geocoding\_Result2.dbf) for this part of the project was obtained from Chris. We sent a file with hospitals and hospital addresses to Scott, our map library contact, who helped geocode them into latitude and longitude coordinates. This file is imported into SAS and saved as "hosp\_geocodes.sas7bdat". The cleaned version, "hosp\_geocode\_clean.sas7bdat" has a total of 3560 unique hospitals.
 clean\_hosp\_geocode.sas is used to clean up issues with this dataset to get to the clean dataset.  
 Hospital data was checked against their listing on the [Medicare Data website](http://data.medicare.gov/dataset/Hospital-General-Information/v287-28n3).  
 Some hospitals have miscoded zip codes. These zipcodes are corrected using the data step.
