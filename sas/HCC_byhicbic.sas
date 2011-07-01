@@ -49,37 +49,37 @@ data medpar (keep=hicbic id dschrgdt mprovno dgnscd1-dgnscd10);
 run;
 
 proc datasets nolist;
-delete dgnscd;
+	delete dgnscd;
 run;
 
 *loop through dgnscds and match to hcc;
 %macro hcc();
 %do num=&d1. %to &d2.;
 *create table with id, dgnscd, and hcc;
-proc sql;
-	create table medpar&num. as
-	select id, dgnscd&num., hcc as hcc&num.
-	from medpar a left join tmp.hcc b on a.DGNSCD&num.=b.ICD9;
-quit;
-
-%if &num.=1 %then %do;
-	data medpar_hcc;
-	set medpar&num.;
-	run;
-%end;
-%else %do;
 	proc sql;
-	create table medpar_hcc as
-	select a.*, dgnscd&num., hcc&num.
-	from medpar_hcc a left join medpar&num. b
-	on a.id=b.id;
+		create table medpar&num. as
+		select id, dgnscd&num., hcc as hcc&num.
+		from medpar a left join tmp.hcc b on a.DGNSCD&num.=b.ICD9;
 	quit;
-%end;
-run;
 
-proc datasets nolist;
-	delete medpar&num.;
-run;
+	%if &num.=1 %then %do;
+		data medpar_hcc;
+		set medpar&num.;
+		run;
+	%end;
+	%else %do;
+		proc sql;
+		create table medpar_hcc as
+		select a.*, dgnscd&num., hcc&num.
+		from medpar_hcc a left join medpar&num. b
+		on a.id=b.id;
+		quit;
+	%end;
+	run;
+
+	proc datasets nolist;
+		delete medpar&num.;
+	run;
 
 %end;
 %mend;
@@ -174,10 +174,10 @@ run;
 
 *merge hcc dummies to medpar using id;
 proc sql;
-create table medpar_hcc_id as
-select a.*, b.*
-from medpar a, hcc b
-where a.id=b.id;
+	create table medpar_hcc_id as
+	select a.*, b.*
+	from medpar a, hcc b
+	where a.id=b.id;
 quit;
 
 *collapse to form beneficiary level file;
@@ -189,7 +189,7 @@ proc means data=medpar_hcc_id noprint;
 run;
 
 proc datasets nolist;
-delete hcc medpar_hcc_id medpar_hcc;
+	delete hcc medpar_hcc_id medpar_hcc;
 run;
 
 *stat-transfer;
