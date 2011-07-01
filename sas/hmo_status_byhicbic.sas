@@ -1,7 +1,7 @@
 /***
 hmo_status_byhicbic.sas
 
-sas file for assigns TM or MA status and weights to all benes based on hmo, buy-in, and death status from denom
+sas file for assigning TM or MA status and weights to all benes based on hmo, buy-in, and death status from denom
 
 last updated: 08Jun2011
 author: Angela Wang amwang@stanford.edu

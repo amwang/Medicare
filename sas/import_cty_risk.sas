@@ -20,7 +20,7 @@ libname tmp "/space/wanga/test/&size.";
 x "cd /space/wanga/test/&size.";
 
 *copy for use;
-x "mv /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata/cty_risk.sas7bdat /space/wanga/test/&size.";
+x "mv /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata/cty_risk.xpt /space/wanga/test/&size.";
 
 libname tranfile xport '/space/wanga/test/100/cty_risk.xpt';
 data tmp.cty_risk;

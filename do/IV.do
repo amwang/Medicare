@@ -45,14 +45,19 @@ reg `dep' `demo_ctrl' `mrkt', vce(cluster pzip)
 estimates save iv_rcc, append
 
 }
-*/
+
 foreach dep of varlist `dep_var' {
-*Pr(totchrg=1)
-ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight] if totchrg<=1, cluster(pzip)
-estimates save iv_rcc, append
 *Pr(totchrg>1)
 ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight] if totchrg>1, cluster(pzip)
 estimates save iv_rcc, append
+}
+*/
+gen charge0 = (totchrg==1)
+
+foreach dep of varlist `dep_var' {
+display `dep'
+ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight] if charge0==1, cluster(pzip)
+estimates save iv_rcc, append	
 }
 
 /*
