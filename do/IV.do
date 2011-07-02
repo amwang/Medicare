@@ -31,11 +31,17 @@ local demo_ctrl `ages' `case' `age_x_case' `hcc'
 local ma_hat_IV ma_hat ma_hat_HHI_sys ma_hat_CAP_pat_k_star ma_hat_hosp_char*
 local ma_mrkt ma_HHI_sys ma_CAP_pat_k_star ma_hosp_char*
 local dep_var lntotchrg lncost lnrevenue
+local cont `mrkt' `ma_hat_IV' `ma_mrkt'
+local dummy `demo_ctrl'
 
 use iv_rcc, clear
 
 drop ma_hat_hosp_char_3_pat_k_star ma_hosp_char_3_pat_k_star hosp_char_3_pat_k_star
 drop ma_hat_hosp_char_6_pat_k_star ma_hosp_char_6_pat_k_star hosp_char_6_pat_k_star
+
+gen charge0 = (totchrg==1)
+gen posy = (totchrg>1)
+
 /*
 foreach dep of varlist `dep_var' {
 ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight], first cluster(pzip)
@@ -50,21 +56,44 @@ foreach dep of varlist `dep_var' {
 *Pr(totchrg>1)
 ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight] if totchrg>1, cluster(pzip)
 estimates save iv_rcc, append
+ivreg `dep' `demo_ctrl' `mrkt' charge0 (ma `ma_mrkt' = `ma_hat_IV') [pw=weight], cluster(pzip)
+estimates save iv_rcc, append
 }
 */
-gen charge0 = (totchrg==1)
 
-foreach dep of varlist `dep_var' {
-display `dep'
-ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight] if charge0==1, cluster(pzip)
-estimates save iv_rcc, append	
-}
+logit posy `demo_ctrl' `mrkt' ma `ma_mrkt' `ma_hat_IV' [pw=weight], cluster(pzip)
+local rsqv = e(b)
 
-/*
-*Pr(cost>1|totchrg>1)
-ivreg lncost `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight] if totchrg>1 and cost>1, cluster(pzip)
-estimates save iv_rcc, append
-*Pr(revenue>1|totchrg>1)
-ivreg lnrevenue `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight] if totchrg>1 and revenue>1, cluster(pzip)
-estimates save iv_rcc, append
-*/
+ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight] if totchrg>1, cluster(pzip)
+
+*first define the program used to calculate marginal effects and bootstrap standard errors
+
+capture program drop tpm_ols_mfx
+program define tpm_ols_mfx, rclass
+
+	preserve
+	probit lntotexpgt0 $indv, robust
+	mfx, var(lninc unins) at(median)
+	sca prgt0 = e(Xmfx_y)
+	mat mfx1 = e(Xmfx_dydx)
+	mat mfx11 = mfx1["r1","lninc"]
+	mat mfx12 = mfx1["r1","unins"]
+
+	reg lntotexp $indv if lntotexp>0, robust
+	mfx, var(lninc unins) at(median)
+	sca ey = e(Xmfx_y)
+	mat mfx2 = e(Xmfx_dydx)
+	mat mfx21 = mfx2["r1","lninc"]
+	mat mfx22 = mfx2["r1","unins"]
+
+	mat t1 = (prgt0*mfx21)
+	mat t2 = (ey*mfx11)
+	return scalar m1 = t1[1,1] + t2[1,1]
+	mat t1 = prgt0*mfx22
+	mat t2 = ey*mfx12
+	return scalar m2 = t1[1,1] + t2[1,1]
+	restore
+
+end
+
+*end of program

@@ -1,0 +1,202 @@
+------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata/100/statan
+> ew/variables.txt
+  log type:  text
+ opened on:   1 Jul 2011, 18:09:55
+
+. desc, fullnames
+
+Contains data from iv_rcc.dta
+  obs:    36,502,960                          
+ vars:           129                          23 Jun 2011 03:54
+ size:10,768,373,200 (75.3% of memory free)
+------------------------------------------------------------------------------------------
+              storage  display     value
+variable name   type   format      label      variable label
+------------------------------------------------------------------------------------------
+a6569           byte   %8.0g                  
+a7074           byte   %8.0g                  
+a7579           byte   %8.0g                  
+a8089           byte   %8.0g                  
+a9099           byte   %8.0g                  
+female          byte   %8.0g                  
+black           byte   %8.0g                  
+pzip            long   %10.0g                 
+benchmar        float  %9.0g                  
+switch          byte   %8.0g                  
+ma              byte   %8.0g                  
+weight          float  %9.0g                  
+p1_max          byte   %8.0g                  hiv/aids infection
+p2_max          byte   %8.0g                  septicemia/shock infection
+p5_max          byte   %8.0g                  opportunistic infections infection
+p7_max          byte   %8.0g                  metastatic cancer and acute leukemia
+                                                neoplasm
+p8_max          byte   %8.0g                  lung, upper digestive tract, and other
+                                                severe cancers neoplasm
+p9_max          byte   %8.0g                  lymphatic, head and neck, brain, and other
+                                                major cancers neoplasm
+p10_max         byte   %8.0g                  breast, prostate, colorectal and other
+                                                cancers and tumors neoplasm
+p15_max         byte   %8.0g                  diabetes with renal or peripheral
+                                                circulatory manifestation diabetes
+p16_max         byte   %8.0g                  diabetes with neurologic or other specified
+                                                manifestation diabetes
+p17_max         byte   %8.0g                  diabetes with acute complications diabetes
+p18_max         byte   %8.0g                  diabetes with ophthalmologic or unspecified
+                                                manifestation diabetes
+p19_max         byte   %8.0g                  diabetes without complication diabetes
+p21_max         byte   %8.0g                  protein-calorie malnutrition metabolic
+p25_max         byte   %8.0g                  end-stage liver disease liver
+p26_max         byte   %8.0g                  cirrhosis of liver liver
+p27_max         byte   %8.0g                  chronic hepatitis liver
+p31_max         byte   %8.0g                  intestinal obstruction/perforation
+                                                gastrointestinal
+p32_max         byte   %8.0g                  pancreatic disease gastrointestinal
+p33_max         byte   %8.0g                  inflammatory bowel disease gastrointestinal
+p37_max         byte   %8.0g                  bone/joint/muscle infections/necrosis
+                                                musculoskeletal
+p38_max         byte   %8.0g                  rheumatoid arthritis and inflammatory
+                                                connective tissue disease musculoskeletal
+p44_max         byte   %8.0g                  severe hematological disorders blood
+p45_max         byte   %8.0g                  disorders of immunity blood
+p51_max         byte   %8.0g                  drug/alcohol psychosis substance
+p52_max         byte   %8.0g                  drug/alcohol dependence substance
+p54_max         byte   %8.0g                  schizophrenia psych
+p55_max         byte   %8.0g                  major depressive, bipolar, and paranoid
+                                                disorders psych
+p67_max         byte   %8.0g                  quadriplegia, other extensive paralysis
+                                                spinal
+p68_max         byte   %8.0g                  paraplegia spinal
+p69_max         byte   %8.0g                  spinal cord disorders/injuries spinal
+p70_max         byte   %8.0g                  muscular dystrophy neuro
+p71_max         byte   %8.0g                  polyneuropathy neuro
+p72_max         byte   %8.0g                  multiple sclerosis neuro
+p73_max         byte   %8.0g                  parkinson's and huntington's diseases neuro
+p74_max         byte   %8.0g                  seizure disorders and convulsions neuro
+p75_max         byte   %8.0g                  coma, brain compression/anoxic damage neuro
+p77_max         byte   %8.0g                  respirator dependence/tracheostomy status
+                                                arrest
+p78_max         byte   %8.0g                  respiratory arrest arrest
+p79_max         byte   %8.0g                  cardio-respiratory failure and shock arrest
+p80_max         byte   %8.0g                  congestive heart failure heart
+p81_max         byte   %8.0g                  acute myocardial infarction heart
+p82_max         byte   %8.0g                  unstable angina and other acute ischemic
+                                                heart disease heart
+p83_max         byte   %8.0g                  angina pectoris/old myocardial infarction
+                                                heart
+p92_max         byte   %8.0g                  specified heart arrhythmias heart
+p95_max         byte   %8.0g                  cerebral hemorrhage cvd
+p96_max         byte   %8.0g                  ischemic or unspecified stroke cvd
+p100_max        byte   %8.0g                  hemiplegia/hemiparesis cvd
+p101_max        byte   %8.0g                  cerebral palsy and other paralytic syndromes
+                                                cvd
+p104_max        byte   %8.0g                  vascular disease with complications vascular
+p105_max        byte   %8.0g                  vascular disease vascular
+p107_max        byte   %8.0g                  cystic fibrosis lung
+p108_max        byte   %8.0g                  chronic obstructive pulmonary disease lung
+p111_max        byte   %8.0g                  aspiration and specified bacterial
+                                                pneumonias lung
+p112_max        byte   %8.0g                  pneumococcal pneumonia, emphysema, lung
+                                                abscess lung
+p119_max        byte   %8.0g                  proliferative diabetic retinopathy and
+                                                vitreous hemorrhage eye
+p130_max        byte   %8.0g                  dialysis status urinary
+p131_max        byte   %8.0g                  renal failure urinary
+p132_max        byte   %8.0g                  nephritis urinary
+p148_max        byte   %8.0g                  decubitus ulcer of skin skin
+p149_max        byte   %8.0g                  chronic ulcer of skin, except decubitus skin
+p150_max        byte   %8.0g                  extensive third-degree burns skin
+p154_max        byte   %8.0g                  severe head injury injury
+p155_max        byte   %8.0g                  major head injury injury
+p157_max        byte   %8.0g                  vertebral fractures without spinal cord
+                                                injury injury
+p158_max        byte   %8.0g                  hip fracture/dislocation injury
+p161_max        byte   %8.0g                  traumatic amputation injury
+p164_max        byte   %8.0g                  major complications of medical care and
+                                                trauma complications
+p174_max        byte   %8.0g                  major organ transplant status transplant
+p176_max        byte   %8.0g                  artificial openings for feeding or
+                                                elimination openings
+p177_max        byte   %8.0g                  amputation status, lower limb/amputation
+                                                complications run
+revenue         double %10.0g                 
+cost            double %10.0g                 
+totchrg         long   %12.0g                 
+HHI_sys         double %9.0g                  (sum) HHI_pat_jk_star
+fb              float  %9.0g                  
+female_a7074    byte   %8.0g                  
+black_a7074     byte   %8.0g                  
+fb_a7074        byte   %8.0g                  
+female_a7579    byte   %8.0g                  
+black_a7579     byte   %8.0g                  
+fb_a7579        byte   %8.0g                  
+female_a8089    byte   %8.0g                  
+black_a8089     byte   %8.0g                  
+fb_a8089        byte   %8.0g                  
+female_a9099    byte   %8.0g                  
+black_a9099     byte   %8.0g                  
+fb_a9099        byte   %8.0g                  
+CAP_pat_k_star  double %9.0g                  (sum) CAP_pat_jk_star
+hosp_char_1_pat_k_star
+                double %9.0g                  (sum) hosp_char_1_pat_jk_star
+hosp_char_2_pat_k_star
+                double %9.0g                  (sum) hosp_char_2_pat_jk_star
+hosp_char_3_pat_k_star
+                double %9.0g                  (sum) hosp_char_3_pat_jk_star
+hosp_char_4_pat_k_star
+                double %9.0g                  (sum) hosp_char_4_pat_jk_star
+hosp_char_5_pat_k_star
+                double %9.0g                  (sum) hosp_char_5_pat_jk_star
+hosp_char_6_pat_k_star
+                double %9.0g                  (sum) hosp_char_6_pat_jk_star
+hosp_char_7_pat_k_star
+                double %9.0g                  (sum) hosp_char_7_pat_jk_star
+ma_hat          float  %9.0g                  Pr(ma)
+ma_hat_HHI_sys  float  %9.0g                  
+ma_HHI_sys      float  %9.0g                  
+ma_hat_CAP_pat_k_star
+                float  %9.0g                  
+ma_CAP_pat_k_star
+                float  %9.0g                  
+ma_hat_hosp_char_1_pat_k_star
+                float  %9.0g                  
+ma_hosp_char_1_pat_k_star
+                float  %9.0g                  
+ma_hat_hosp_char_2_pat_k_star
+                float  %9.0g                  
+ma_hosp_char_2_pat_k_star
+                float  %9.0g                  
+ma_hat_hosp_char_3_pat_k_star
+                float  %9.0g                  
+ma_hosp_char_3_pat_k_star
+                float  %9.0g                  
+ma_hat_hosp_char_4_pat_k_star
+                float  %9.0g                  
+ma_hosp_char_4_pat_k_star
+                float  %9.0g                  
+ma_hat_hosp_char_5_pat_k_star
+                float  %9.0g                  
+ma_hosp_char_5_pat_k_star
+                float  %9.0g                  
+ma_hat_hosp_char_6_pat_k_star
+                float  %9.0g                  
+ma_hosp_char_6_pat_k_star
+                float  %9.0g                  
+ma_hat_hosp_char_7_pat_k_star
+                float  %9.0g                  
+ma_hosp_char_7_pat_k_star
+                float  %9.0g                  
+lntotchrg       float  %9.0g                  
+lncost          float  %9.0g                  
+lnrevenue       float  %9.0g                  
+------------------------------------------------------------------------------------------
+Sorted by:  
+
+. log close
+      name:  <unnamed>
+       log:  /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata/100/statan
+> ew/variables.txt
+  log type:  text
+ closed on:   1 Jul 2011, 18:10:03
+------------------------------------------------------------------------------------------
