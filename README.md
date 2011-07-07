@@ -3,6 +3,9 @@
 *Change working directories to correspond to your own.
 
 ##Piece-by-Piece: building our dataset
+All dataset processing for this project is done in SAS. All regression analysis is done in STATA. STAT-Transfer (available on the servers) can be used to convert files from .sas7bdat to .dta. 
+
+This section describes each raw dataset, the SAS
 ###Medicare beneficiary data (unique identifier: hicbic)
 One should begin by understanding the contents of the Medicare utilization and enrollment data from CMS (Center for Medicare & Medicaid Services). The [RESDAC (Research Data Assistance Center) website](http://www.resdac.org/ddvh/Index.asp) provides detailed codebook info regarding all the datasets that are available to researchers. The pertinent files for this project are the "Medicare Denominator File" (commonly referred to as "denom"), which is a enrollment/summary file, and the "Medicare MedPAR file" (referred to as "MedPAR"), which is the utilization file. These files are **big**. New programmers should take a look at the RESDAC documentation to get acquainted with the data and determine what variables are available and where they are located.  
 -The denominator file contains all enrollees (aka beneficiary, eligible, or member) in Medicare for the calendar year and their demographic information including: date of birth, date of death, zip code of residence, sex, ethnicity, monthly indicators for hmo enrollment, monthly indicators eligibility for medicare, etc. For 2008 this file contains 46+ million observations.  
@@ -17,7 +20,7 @@ See "construct\_denom.sas" and "construct\_medpar.sas" for code to construct the
 Age, female, black, and interaction indicators can be constructed directly from the denominator file. Code to implement this appears at various points throughout the project when needed (eg. "analysis\_denom.sas" lines 41-62)
 
 ####Patient location/geocode (variables: pzip, SSA)
-5-digit zip-codes are also constructed directly from bene_zip in the denominator file. SAS has a handy zipcode-to-geocode crosswalk(sashelp.zipcode.sas7bdat) which will geocode any valid zip-code to the centroid of the zip-code and they also have some [handy documentation](http://support.sas.com/resources/papers/proceedings10/219-2010.pdf). There was some consideration of using 9-digit or 3-digit zips, but ultimately we decided that this type of analysis would be respectively too granular or too coarse. 
+5-digit zip-codes are also constructed directly from bene_zip in the denominator file. SAS has a handy zipcode-to-geocode crosswalk(sashelp.zipcode.sas7bdat) which will geocode any valid zip-code to the centroid of the zip-code and they also have some [handy documentation](http://support.sas.com/resources/papers/proceedings10/219-2010.pdf) on this process. We considered using 9-digit or 3-digit zips, but ultimately we decided that analysis on those levels would be respectively too granular or too coarse. 
 
 We also create a complete 5-digit SSA (Social Security Administration) state-county code by concatenating the SSA state-code and SSA county-codes from the denominator so that we can later merge in our IV: the Medicare Advantage benchmark payment rate.  
 Note that the SSA state-county code is different from the more commonly used FIPS(federal info processing stds) state-county codes. There are plenty of SSA-FIPS crosswalks available if any merging needs to be done.

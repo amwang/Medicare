@@ -1,5 +1,5 @@
 /***
-IV.do
+IV_bydischarge.do
 
 do file for running first-pass IVs of MA choice on hospital market structure variables
 
@@ -18,7 +18,7 @@ set more off
 set mem 40g
 set matsize 11000
 pause on
-log using "IV.log", replace
+log using "IV_bydischarge.log", replace
 
 local path /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata/100/statanew
 cd `path'
@@ -40,7 +40,7 @@ local cond2 ma `ma_mrkt'
 local iv1 ma = ma_hat
 local iv2 ma `ma_mrkt' = `ma_hat_IV'
 
-use iv_rcc, clear
+use iv_rcc_bydischarge, clear
 
 drop ma_hat_hosp_char_3_pat_k_star ma_hosp_char_3_pat_k_star hosp_char_3_pat_k_star
 drop ma_hat_hosp_char_6_pat_k_star ma_hosp_char_6_pat_k_star hosp_char_6_pat_k_star
@@ -51,56 +51,30 @@ gen rev0 = (revenue==1)
 gen poschrg = (totchrg>1)
 gen poscost = (cost>1)
 gen posrev = (revenue>1)
-drop if cost>1 & revenue==1
 
-*first pass
-foreach dep of varlist `dep_var' {
-ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight], first cluster(pzip)
-estimates save iv_rcc, append
-
-reg `dep' `demo_ctrl' `mrkt', vce(cluster pzip) 
-estimates save iv_rcc, append
-
-}
-
-
-*TPM-1
-foreach pos of varlist `pos_var' {
-ivreg `pos' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight], cluster(pzip)
-estimates save tpm, append
-}
-foreach dep of varlist `dep_var' {
-ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight] if poschrg==1, cluster(pzip)
-estimates save tpm, append
-}
-
-
-capture erase "tpm.xml"
-capture erase "tpm_ols.ster"
+capture erase "tpm_discharge.xml"
+capture erase "tpm_ols_dis.ster"
+capture erase "tpm_iv_dis.ster"
 
 *OLS TPM
 forval x=0/2 {
-	reg poschrg `demo_ctrl' `mrkt' `cond`x'' [pw=weight], cluster(pzip)
-	estimates save tpm_ols, append
-	outreg2 using tpm, excel ctitle(ols_tmp1_cond`x')
-	
 	foreach dep of varlist `dep_var' {
 	reg `dep' `demo_ctrl' `mrkt' `cond`x'' [pw=weight] if poschrg==1, cluster(pzip)
-	estimates save tpm_ols, append
-	outreg2 using tpm, excel ctitle(ols_tmp2_`dep'_cond`x')
+	estimates save tpm_ols_dis, append
+	outreg2 using tpm_discharge, excel ctitle(ols_tmp2_`dep'_cond`x')
 	}
 }
 
-capture erase "tpm_iv.ster"
 *IV TPM
 forval x=1/2 {
-	ivreg poschrg `demo_ctrl' `mrkt' (`iv`x'') [pw=weight], cluster(pzip)
-	estimates save tpm_iv, append
-	outreg2 using tpm, excel ctitle(iv_tmp1_cond`x')
-	
 	foreach dep of varlist `dep_var' {
 	ivreg `dep' `demo_ctrl' `mrkt' (`iv`x'') [pw=weight] if poschrg==1, cluster(pzip)
-	estimates save tpm_iv, append
-	outreg2 using tpm, excel ctitle(iv_tmp2_`dep'_cond`x')
+	estimates save tpm_iv_dis, append
+	outreg2 using tpm_discharge, excel ctitle(iv_tmp2_`dep'_cond`x')
 	}
 }
+
+estpost sum
+esttab using sum.rtf, cells("count(fmt(0)) mean(fmt(3)) sd(fmt(3)) min(fmt(0)) max(fmt(0))") nomtitle nonumber append
+estpost sum if poschrg==1
+esttab using sum.rtf, cells("count(fmt(0)) mean(fmt(3)) sd(fmt(3)) min(fmt(1)) max(fmt(0))") nomtitle nonumber append
