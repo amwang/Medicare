@@ -52,24 +52,27 @@ quit;
 
 *import zip-to-region xwalk;
 data tmp.zip_to_r;
-	%let _EFIERR_ = 0;
-	infile 'zip_to_region_xwalk.txt' delimiter='09'x MISSOVER DSD lrecl=32767 firstobs=2 ;
-	informat hrr 3. ;
-	informat region 2. ;
-	informat zip5 $5. ;
-	format hrr 3. ;
-	format region 2. ;
-	format zip5 $5. ;
-	input hrr region zip5 $;
-	if _ERROR_ then call symputx('_EFIERR_',1);
+%let _EFIERR_ = 0;
+infile 'zip_to_region_xwalk.txt' delimiter='09'x MISSOVER DSD lrecl=32767 firstobs=2 ;
+informat hrr 3. ;
+informat region 2. ;
+informat zip5 $5. ;
+format hrr 3. ;
+format region 2. ;
+format zip5 $5. ;
+input hrr
+region
+zip5 $
+;
+if _ERROR_ then call symputx('_EFIERR_',1);
 run;
 
 *assign regions to hospitals based on zip;
 proc sql;
 	create table tmp.hosp_region as
-		select a.mprovno, a.zip as zip5, lat2, long2, b.REGION as region, b.HRR as hrr
-		from tmp.hosp a, tmp.zip_to_r b
-		where a.zip=b.zip5;
+	select a.mprovno, a.zip as zip5, lat2, long2, b.REGION as region, b.HRR as hrr
+	from tmp.hosp a, tmp.zip_to_r b
+	where a.zip=b.zip5;
 quit;
 
 *create working denominator file;
@@ -100,7 +103,7 @@ data denomchar (keep= hicbic bthdate dthdate female black zip5 state_cd cnty_cd)
 run;
 
 proc sort nodupkey;
-	by hicbic;
+by hicbic;
 run;
 
 *create working medpar file;
@@ -113,50 +116,50 @@ run;
 *generate age dummies;
 proc sql;
 	create table medpar_age as
-		select a.hicbic, mprovno, zip5, state_cd || cnty_cd as SSA, female, black, dschrgdt, admsndt,
-		floor((intck('month',bthdate,admsndt)- (day(admsndt) < day(bthdate))) / 12) as ageadmit,
-		floor((intck('month',bthdate,'01JAN2008'd)- (day('01JAN2008'd) < day(bthdate))) / 12) as agejan08,
-		(calculated ageadmit<65) as a_less65admit length=3,
-		(65<=calculated ageadmit<70) as a6569admit length=3,
-		(70<=calculated ageadmit<75) as a7074admit length=3,
-		(75<=calculated ageadmit<80) as a7579admit length=3,
-		(80<=calculated ageadmit<90) as a8089admit length=3,
-		(90<=calculated ageadmit<100) as a9099admit length=3,
-		(calculated ageadmit>=100) as a100admit length=3,
-		(calculated agejan08<65) as a_less65jan08 length=3,
-		(65<=calculated agejan08<70) as a6569jan08 length=3,
-		(70<=calculated agejan08<75) as a7074jan08 length=3,
-		(75<=calculated agejan08<80) as a7579jan08 length=3,
-		(80<=calculated agejan08<90) as a8089jan08 length=3,
-		(90<=calculated agejan08<100) as a9099jan08 length=3,
-		(calculated agejan08>=100) as a100jan08 length=3
-		from age a, denomchar b
-		where a.hicbic=b.hicbic
-		order by zip5;
+	select a.hicbic, mprovno, zip5, state_cd || cnty_cd as SSA, female, black, dschrgdt, admsndt,
+	floor((intck('month',bthdate,admsndt)- (day(admsndt) < day(bthdate))) / 12) as ageadmit,
+	floor((intck('month',bthdate,'01JAN2008'd)- (day('01JAN2008'd) < day(bthdate))) / 12) as agejan08,
+	(calculated ageadmit<65) as a_less65admit length=3,
+	(65<=calculated ageadmit<70) as a6569admit length=3,
+	(70<=calculated ageadmit<75) as a7074admit length=3,
+	(75<=calculated ageadmit<80) as a7579admit length=3,
+	(80<=calculated ageadmit<90) as a8089admit length=3,
+	(90<=calculated ageadmit<100) as a9099admit length=3,
+	(calculated ageadmit>=100) as a100admit length=3,
+	(calculated agejan08<65) as a_less65jan08 length=3,
+	(65<=calculated agejan08<70) as a6569jan08 length=3,
+	(70<=calculated agejan08<75) as a7074jan08 length=3,
+	(75<=calculated agejan08<80) as a7579jan08 length=3,
+	(80<=calculated agejan08<90) as a8089jan08 length=3,
+	(90<=calculated agejan08<100) as a9099jan08 length=3,
+	(calculated agejan08>=100) as a100jan08 length=3
+	from age a, denomchar b
+	where a.hicbic=b.hicbic
+	order by zip5;
 quit;
 
 *reduce individual hicbics to collapsed hospital-choice-demographics by zip;
 proc sql;
 	create table tmp.medpar_group as
-		select distinct zip5, mprovno, female, black, a6569jan08, a7074jan08, a7579jan08, a8089jan08, a9099jan08,
-		count(hicbic) as count, count(distinct hicbic) as bene
-		from medpar_age
-		where (a_less65jan08~=1 and a100jan08~=1)
-		group by zip5, mprovno, female, black, a6569jan08, a7074jan08, a7579jan08, a8089jan08;
+	select distinct zip5, mprovno, female, black, a6569jan08, a7074jan08, a7579jan08, a8089jan08, a9099jan08,
+	count(hicbic) as count, count(distinct hicbic) as bene
+	from medpar_age
+	where (a_less65jan08~=1 and a100jan08~=1)
+	group by zip5, mprovno, female, black, a6569jan08, a7074jan08, a7579jan08, a8089jan08;
 quit;
 
 proc sql;
 	create table tmp.medpar_age as
-		select a.*, monotonic() as id
-		from tmp.medpar_group a;
+	select a.*, monotonic() as id
+	from tmp.medpar_group a;
 quit;
 
 *assign regions to cases based on zip;
 proc sql;
 	create table tmp.medpar_region as
-		select a.*, b.REGION as region, b.HRR as hrr
-		from tmp.medpar_age a, tmp.zip_to_r b
-		where a.zip5=b.zip5;
+	select a.*, b.REGION as region, b.HRR as hrr
+	from tmp.medpar_age a, tmp.zip_to_r b
+	where a.zip5=b.zip5;
 quit;
 
 *reformat zipcode;
@@ -169,8 +172,8 @@ run;
 *create zip-to-region xwalk;
 proc sql;
 	create table tmp.zip_region as
-		select distinct ZIP, hrr, region, zip5
-		from tmp.medpar_age;
+	select distinct ZIP, hrr, region, zip5
+	from tmp.medpar_age;
 quit;
 
 data tmp.hosp_chars (rename=(own_fp=hchar1 own_np=hchar2 own_gv=hchar3 small_beds=hchar4 med_beds=hchar5 large_beds=hchar6 teaching=hchar7));
@@ -181,85 +184,85 @@ run;
 %macro analysis();
 %do j=&r1. %to &r2.;
 
-	data zip_geocode;
-		set sashelp.zipcode (keep = X Y ZIP);
-	run;
+data zip_geocode;
+set sashelp.zipcode (keep = X Y ZIP);
+run;
 
-	*region hospitals;
-	data hosp&j.;
-		set tmp.hosp_region;
-		if region="&j.";
-		ZIP=input(zip5,BEST5.);
-		format ZIP z5.;
-	run;
-	proc sort nodupkey;
-		by mprovno;
-	run;
+*region hospitals;
+data hosp&j.;
+	set tmp.hosp_region;
+	if region="&j.";
+	ZIP=input(zip5,BEST5.);
+	format ZIP z5.;
+run;
+proc sort nodupkey;
+	by mprovno;
+run;
 
-	*region zipcodes;
-	data zip&j.;
-		set tmp.zip_region (keep=ZIP hrr region);
-		if region="&j.";
-	run;
-	proc sort nodupkey;
-		by ZIP;
-	run;
+*region zipcodes;
+data zip&j.;
+	set tmp.zip_region (keep=ZIP hrr region);
+	if region="&j.";
+run;
+proc sort nodupkey;
+	by ZIP;
+run;
 
-	*valid MedPAR records (both hospital and zipcode in region);
-	proc sql;
-		create table medpar_region&j. as
-			select c.*
-			from (select a.* from tmp.medpar_region a, hosp&j. b where a.mprovno=b.mprovno) c, zip&j. d
-			where c.ZIP=d.ZIP;
-	quit;
+*valid MedPAR records (both hospital and zipcode in region);
+proc sql;
+	create table medpar_region&j. as
+	select c.*
+	from (select a.* from tmp.medpar_region a, hosp&j. b where a.mprovno=b.mprovno) c, zip&j. d
+	where c.ZIP=d.ZIP;
+quit;
 
-	*add geocodes and convert to radians;
-	proc sql;
-		create table zip&j._geocode as
-			select a.ZIP, X*&d_to_r. as long1, Y*&d_to_r. as lat1
-			from zip&j. a, zip_geocode b
-			where a.ZIP=b.ZIP;
-	quit;
+*add geocodes and convert to radians;
+proc sql;
+	create table zip&j._geocode as
+		select a.ZIP, X*&d_to_r. as long1, Y*&d_to_r. as lat1
+		from zip&j. a, zip_geocode b
+		where a.ZIP=b.ZIP;
+quit;
 
-	proc sql;
-		create table hosp&j._geocode as
-			select mprovno, a.ZIP, lat2*&d_to_r. as lat2, long2*&d_to_r. as long2
-			from hosp&j. a;
-	quit;
+proc sql;
+	create table hosp&j._geocode as
+		select mprovno, a.ZIP, lat2*&d_to_r. as lat2, long2*&d_to_r. as long2
+		from hosp&j. a;
+quit;
 
-	*cross join hicbic and hosptial lat/lon, calculate distance and keep patient/hospital pairs <100miles;
-	proc sql;
-		create table zip_hospital_dist&j. as
-				select a.ZIP as pzip, lat1, long1, mprovno, b.ZIP as hzip, lat2, long2,
-				3949.99 * arcos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(long2 - long1)) as dist format=6.4
-				from zip&j._geocode a, hosp&j._geocode b
-				where calculated dist<100
-				order by a.ZIP;
-	quit;
+*cross join hicbic and hosptial lat/lon, calculate distance and keep patient/hospital pairs <100miles;
+proc sql;
+	create table zip_hospital_dist&j. as
+		select a.ZIP as pzip, lat1, long1, mprovno, b.ZIP as hzip, lat2, long2,
+			3949.99 * arcos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(long2 - long1)) as dist format=6.4
+		from zip&j._geocode a, hosp&j._geocode b
+		where calculated dist<100
+		order by a.ZIP;
+quit;
 
-	*drop any duplicates;
-	proc sort nodupkey data=zip_hospital_dist&j.;
-		by lat1 long1 lat2 long2;
-	run;
+*drop any duplicates;
+proc sort nodupkey data=zip_hospital_dist&j.;
+	by lat1 long1 lat2 long2;
+run;
 
-	proc sql;
-		create table tmp.analysis&j. as 
-			select a.*, beds,
-			hchar1 label='ownership for-profit', hchar2 label='ownership non-profit', 
-			hchar3 label='ownership government', hchar4 label='small', 
-			hchar5 label='medium', hchar6 label='large', hchar7 label='teaching'
-			from zip_hospital_dist&j. a, tmp.hosp_chars b
-		  	where a.mprovno=b.mprovno
-			order by mprovno;
-	quit;
+proc sql;
+	create table tmp.analysis&j. as 
+	select a.*, beds,
+	hchar1 label='ownership for-profit', hchar2 label='ownership non-profit', 
+	hchar3 label='ownership government', hchar4 label='small', 
+	hchar5 label='medium', hchar6 label='large', hchar7 label='teaching'
+	from zip_hospital_dist&j. a, tmp.hosp_chars b
+  	where a.mprovno=b.mprovno
+	order by mprovno;
+quit;
 
-	proc sort nodupkey data=tmp.analysis&j.;
-		by lat1 long1 lat2 long2;
-	run;
+proc sort nodupkey data=tmp.analysis&j.;
+	by lat1 long1 lat2 long2;
+run;
 
-	*clean up;
-	proc datasets lib=work kill;
-	run;
+*clean up;
+proc datasets lib=work kill;
+run;
 	
 %end;
 %mend;
@@ -283,7 +286,7 @@ run;
 	 types pzip * (hchar1 hchar2 hchar3 hchar4 hchar5 hchar6 hchar7);
 	 var dist;
 	 output out=product
-		 idgroup (min(dist) out[2] (dist mprovno) =dist mprovno);
+	 idgroup (min(dist) out[2] (dist mprovno) =dist mprovno);
 	run;
 
 	proc sort data=product;
@@ -301,13 +304,13 @@ run;
 		*find dsame for each zip-characteristic;
 		proc sql;
 			create table analysis&k. as
-		select mprovno, a.pzip,
-		case
-			when mprovno ne mprovno_1 then dist_1
-			else dist_2
-			end as dsame&k.
-		from analysis a, product&k. b
-		where (a.pzip=b.pzip) and (a.hchar&k.=b.hchar&k.);
+			select mprovno, a.pzip,
+			case
+				when mprovno ne mprovno_1 then dist_1
+				else dist_2
+				end as dsame&k.
+			from analysis a, product&k. b
+			where (a.pzip=b.pzip) and (a.hchar&k.=b.hchar&k.);
 		quit;
 	%end;
 	%mend;

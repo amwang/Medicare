@@ -31,14 +31,8 @@ local demo_ctrl `ages' `case' `age_x_case' `hcc'
 local ma_hat_IV ma_hat ma_hat_HHI_sys ma_hat_CAP_pat_k_star ma_hat_hosp_char*
 local ma_mrkt ma_HHI_sys ma_CAP_pat_k_star ma_hosp_char*
 local dep_var lntotchrg lncost lnrevenue
-local pos_var poschrg poscost posrev
 local cont `mrkt' `ma_hat_IV' `ma_mrkt'
 local dummy `demo_ctrl'
-local cond0
-local cond1 ma
-local cond2 ma `ma_mrkt'
-local iv1 ma = ma_hat
-local iv2 ma `ma_mrkt' = `ma_hat_IV'
 
 use iv_rcc, clear
 
@@ -46,14 +40,9 @@ drop ma_hat_hosp_char_3_pat_k_star ma_hosp_char_3_pat_k_star hosp_char_3_pat_k_s
 drop ma_hat_hosp_char_6_pat_k_star ma_hosp_char_6_pat_k_star hosp_char_6_pat_k_star
 
 gen charge0 = (totchrg==1)
-gen cost0 = (cost==1)
-gen rev0 = (revenue==1)
-gen poschrg = (totchrg>1)
-gen poscost = (cost>1)
-gen posrev = (revenue>1)
-drop if cost>1 & revenue==1
+gen posy = (totchrg>1)
 
-*first pass
+/*
 foreach dep of varlist `dep_var' {
 ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight], first cluster(pzip)
 estimates save iv_rcc, append
@@ -63,44 +52,48 @@ estimates save iv_rcc, append
 
 }
 
-
-*TPM-1
-foreach pos of varlist `pos_var' {
-ivreg `pos' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight], cluster(pzip)
-estimates save tpm, append
-}
 foreach dep of varlist `dep_var' {
-ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight] if poschrg==1, cluster(pzip)
-estimates save tpm, append
+*Pr(totchrg>1)
+ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight] if totchrg>1, cluster(pzip)
+estimates save iv_rcc, append
+ivreg `dep' `demo_ctrl' `mrkt' charge0 (ma `ma_mrkt' = `ma_hat_IV') [pw=weight], cluster(pzip)
+estimates save iv_rcc, append
 }
+*/
 
+logit posy `demo_ctrl' `mrkt' ma `ma_mrkt' `ma_hat_IV' [pw=weight], cluster(pzip)
+local rsqv = e(b)
 
-capture erase "tpm.xml"
-capture erase "tpm_ols.ster"
+ivreg `dep' `demo_ctrl' `mrkt' (ma `ma_mrkt' = `ma_hat_IV') [pw=weight] if totchrg>1, cluster(pzip)
 
-*OLS TPM
-forval x=0/2 {
-	reg poschrg `demo_ctrl' `mrkt' `cond`x'' [pw=weight], cluster(pzip)
-	estimates save tpm_ols, append
-	outreg2 using tpm, excel ctitle(ols_tmp1_cond`x')
-	
-	foreach dep of varlist `dep_var' {
-	reg `dep' `demo_ctrl' `mrkt' `cond`x'' [pw=weight] if poschrg==1, cluster(pzip)
-	estimates save tpm_ols, append
-	outreg2 using tpm, excel ctitle(ols_tmp2_`dep'_cond`x')
-	}
-}
+*first define the program used to calculate marginal effects and bootstrap standard errors
 
-capture erase "tpm_iv.ster"
-*IV TPM
-forval x=1/2 {
-	ivreg poschrg `demo_ctrl' `mrkt' (`iv`x'') [pw=weight], cluster(pzip)
-	estimates save tpm_iv, append
-	outreg2 using tpm, excel ctitle(iv_tmp1_cond`x')
-	
-	foreach dep of varlist `dep_var' {
-	ivreg `dep' `demo_ctrl' `mrkt' (`iv`x'') [pw=weight] if poschrg==1, cluster(pzip)
-	estimates save tpm_iv, append
-	outreg2 using tpm, excel ctitle(iv_tmp2_`dep'_cond`x')
-	}
-}
+capture program drop tpm_ols_mfx
+program define tpm_ols_mfx, rclass
+
+	preserve
+	probit lntotexpgt0 $indv, robust
+	mfx, var(lninc unins) at(median)
+	sca prgt0 = e(Xmfx_y)
+	mat mfx1 = e(Xmfx_dydx)
+	mat mfx11 = mfx1["r1","lninc"]
+	mat mfx12 = mfx1["r1","unins"]
+
+	reg lntotexp $indv if lntotexp>0, robust
+	mfx, var(lninc unins) at(median)
+	sca ey = e(Xmfx_y)
+	mat mfx2 = e(Xmfx_dydx)
+	mat mfx21 = mfx2["r1","lninc"]
+	mat mfx22 = mfx2["r1","unins"]
+
+	mat t1 = (prgt0*mfx21)
+	mat t2 = (ey*mfx11)
+	return scalar m1 = t1[1,1] + t2[1,1]
+	mat t1 = prgt0*mfx22
+	mat t2 = ey*mfx12
+	return scalar m2 = t1[1,1] + t2[1,1]
+	restore
+
+end
+
+*end of program
