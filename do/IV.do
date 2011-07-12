@@ -78,14 +78,14 @@ foreach type in `level' {
 		forval x=0/2 {
 			if `type'=="byhicbic" {
 				reg poschrg `demo_ctrl' `mrkt' `cond`x'' [pw=weight], cluster(pzip)
-				estimates save tpm_ols, append
-				outreg2 using tpm, excel ctitle(ols_tmp1_cond`x')
+				estimates save tpm, append
+				outreg2 using tpm, excel ctitle(ols_tpm1_cond`x'_`bench'_`type')
 			}
 
 			foreach dep of varlist `dep_var' {
 				reg `dep' `demo_ctrl' `mrkt' `cond`x'' [pw=weight] if poschrg==1, cluster(pzip)
-				estimates save tpm_ols, append
-				outreg2 using tpm, excel ctitle(ols_tmp2_`dep'_cond`x')
+				estimates save tpm, append
+				outreg2 using tpm, excel ctitle(ols_tpm2_`dep'_cond`x'_`bench'_`type')
 			}
 		}
 		
@@ -94,13 +94,13 @@ foreach type in `level' {
 			if `type'=="byhicbic" {
 				ivreg poschrg `demo_ctrl' `mrkt' (`iv`x'') [pw=weight], cluster(pzip)
 				estimates save tpm_iv, append
-				outreg2 using tpm, excel ctitle(iv_tmp1_cond`x')
+				outreg2 using tpm, excel ctitle(iv_tpm1_cond`x'_`bench'_`type')
 			}
 
 			foreach dep of varlist `dep_var' {
 				ivreg `dep' `demo_ctrl' `mrkt' (`iv`x'') [pw=weight] if poschrg==1, cluster(pzip)
 				estimates save tpm_iv, append
-				outreg2 using tpm, excel ctitle(iv_tmp2_`dep'_cond`x')
+				outreg2 using tpm, excel ctitle(iv_tpm2_`dep'_cond`x'_`bench'_`type')
 			}
 		}
 	}

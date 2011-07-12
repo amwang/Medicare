@@ -14,7 +14,7 @@ output: stata1.dta-stata14.dta
 ***/
 
 local size 100
-local path [file location]
+local path /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata/`size'/statanew
 
 clear
 clear matrix
@@ -23,12 +23,20 @@ set more off
 set mem 8g
 set matsize 11000
 cd `path'
+capture erase "analysis.ster"
 
 forval r=1/14	{
 	fdause stata`r'
 	compress
 	save stata`r', replace
 	use stata`r', clear
+	*drop all alaska observations
+	drop if pzip>=99000 & pzip<100000
+	drop if substr(mprovno,1,2)=="02"
+	
+	merge m:1 mprovno using aha_sysid, norep nogen keep(1 3) keepusing(sysid)
+	gen hchar8 = (sysid~="")
+	drop sysid
 
 	*construct interaction variables
 	local ages a7074jan a7579jan a8089jan a9099jan
@@ -41,7 +49,7 @@ forval r=1/14	{
 	gen fb = female*black
 
 	foreach var of varlist `age_or_case' {
-		forval n=1/7 {
+		forval n=1/8 {
 		gen byte ctrl1_hchar`n'_`var' = `var'*hchar`n'
 		}
 	}
@@ -53,11 +61,10 @@ forval r=1/14	{
 	}
 
 	foreach var of varlist `age_x_case' {
-		forval n=1/7 {
+		forval n=1/8 {
 		gen byte ctrl2_hchar`n'_`var' = `var'*hchar`n'
 		}
 	}
-
 
 	local diffdist dd*
 	*construct differential distance percentile
@@ -80,6 +87,7 @@ forval r=1/14	{
 
 	*beginning of regressions
 	clogit choice pdd* `ctrl1' `ctrl2' [fw=count], group(id)
+	predict phat_ij, pc1
 	estimates save analysis, append
 
 }

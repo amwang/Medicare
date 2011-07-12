@@ -117,7 +117,7 @@ forval r=1/14 {
 	save tmp_hosp`r'_ahat_jk, replace
 
 	*1. calculate sum_ahat_jk_Z_`h'_j for each hospital characteristic
-	forval h=1/7 {
+	forval h=1/8 {
 		use tmp_hosp`r'_ahat_jk, clear
 		*a. calculate ahat_jk_Z_`h'_j (zip hosptial level)
 		rename hchar`h' Z_`h'_j
@@ -140,7 +140,7 @@ forval r=1/14 {
 	merge 1:m pzip using tmp_bhat_kj, keepusing(bhat_kj count_kj mprovno) nogen norep
 	save tmp_hosp`r'_ahat_jk_bhat_kj, replace
 
-	forval h=1/7 {
+	forval h=1/8 {
 		use tmp_hosp`r'_ahat_jk_bhat_kj, clear
 		*a. calculate bhat_kj_sum_ahat_jk_Z_`h'_j (zip hospital level)
 		gen bhat_kj_sum_ahat_jk_Z_`h'_j = bhat_kj*sum_ahat_jk_Z_`h'_j
@@ -162,7 +162,7 @@ forval r=1/14 {
 	merge 1:m mprovno using tmp_ahat_jk, keepusing(ahat_jk count_kj pzip) nogen norep
 	save tmp_hosp`r'_ahat_jk_bhat_kj_ahat_jk, replace
 
-	forval h=1/7 {
+	forval h=1/8 {
 		use tmp_hosp`r'_ahat_jk_bhat_kj_ahat_jk, clear
 		*a. calculate hosp_char_`h'_pat_jk_star (zip hospital level)
 		gen hosp_char_`h'_pat_jk_star = ahat_jk*sum_bhat_kj_sum_ahat_jk_Z_`h'_j
@@ -181,7 +181,7 @@ forval r=1/14 {
 	}
 
 	**create master file with all calculated variables
-	restore
+/*	restore
 	merge m:1 pzip mprovno using tmp_ahat_jk, keepusing(sum_phat_kj sum_phat_k count_kj count_k ahat_jk sq_ahat_jk) nogen norep
 	merge m:1 pzip mprovno using tmp_bhat_kj, keepusing(sum_phat_j count_j bhat_kj) nogen norep
 	merge m:1 pzip using tmp_HHI_pat_k, keepusing(HHI_pat_k) nogen norep
@@ -190,14 +190,13 @@ forval r=1/14 {
 	merge m:1 pzip using tmp_hosp_char_pat_k_star, keepusing(hosp_char*) nogen norep
 	merge m:1 mprovno using tmp_HHI_hosp_j, keepusing(HHI_hosp_j) nogen norep
 	compress
-	save master`r', replace
+	save master`r', replace*/
 	
 	**create zip-level market structure file
 	use tmp_HHI_pat_k_star, clear
 	merge 1:1 pzip using tmp_CAP_pat_k_star, keepusing(CAP_pat_k_star) nogen
 	merge 1:1 pzip using tmp_hosp_char_pat_k_star, keepusing(hosp_char*) nogen
 	keep pzip HHI_pat_k_star CAP_pat_k_star hosp_char*
-	duplicates drop pzip, force
 	if `r'==1 {
 		save hosp_mrkt_zip, replace
 	}

@@ -2,7 +2,7 @@ clear all
 cd /Users/Angela/Desktop/ANG/Desktop/Medicare/xwalks
 insheet using "AGED08.txt", tab
 
-gen ffs_spend=partapercapitawoimedshgme+partadsh/partaenrollment+partbpercapita
+gen ffs_spend=partapercapitawoimedshgme+partadsh/(partaenrollment*12)+partbpercapita
 rename partapercapitawoimedshgme parta
 rename partaenrollment partaenroll
 rename partbpercapita partb
@@ -41,4 +41,3 @@ merge 1:1 ssa using ffs, nogen
 gsort -ffs_spend
 save benchmark_new, replace
 outsheet using "benchmark_new.txt", replace
-

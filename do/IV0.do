@@ -41,7 +41,7 @@ local ma_mrkt ma_HHI* ma_CAP_pat_k_star ma_hosp_char*
 local dep_var lntotchrg lncost lnrevenue
 local level byhicbic bydischarge
 local benchmark b_minus_ffs b_div_ffs
-
+/*
 *prep datasets for merge
 use medpar_hcc_byhicbic, clear
 keep hicbic `hcc'
@@ -63,7 +63,7 @@ drop if dup==1
 drop dup
 drop if hicbic=="mmmmmmmUfWWsfGW"|hicbic=="mmmmmmmWDsDWWfD"|hicbic=="mmmmmmmsDWGDfXW"|hicbic=="mmmmmmmsGaDGamD"|hicbic=="mmmmmmmsXfsJDJX"
 save denom_clean, replace
-
+*/
 *start merging
 use denom_clean, clear
 *merge hccs
@@ -75,7 +75,6 @@ merge m:1 pzip using hosp_mrkt_zip, keep(3) nogen
 
 *merge new benchmark variables
 merge m:1 ssa using benchmark_new, keep(3) keepusing(benchmark b_minus_ffs b_div_ffs) nogen
-compress
 save base, replace
 
 *construct two different datasets for hicbic-level and discharged based analysis
@@ -127,5 +126,3 @@ foreach type in `level' {
 		save iv_`type'_`bench', replace
 	}
 }
-
-do IV.do
