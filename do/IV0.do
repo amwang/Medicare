@@ -31,73 +31,101 @@ pause on
 log using "IV0.log", replace
 
 local hcc p1_max-p177_max
-local mrkt HHI_sys CAP_pat_k_star hosp_char*
+local mrkt HHI* CAP_pat_k_star hosp_char*
 local ages a7074 a7579 a8089 a9099 
 local case female black fb
 local age_x_case female_* black_* fb_*
 local demo_ctrl `ages' `case' `age_x_case' `hcc'
-local ma_hat_IV ma_hat ma_hat_HHI_sys ma_hat_CAP_pat_k_star ma_hat_hosp_char*
-local ma_mrkt ma_HHI_sys ma_CAP_pat_k_star ma_hosp_char*
+local ma_hat_IV ma_hat ma_hat_HHI* ma_hat_CAP_pat_k_star ma_hat_hosp_char*
+local ma_mrkt ma_HHI* ma_CAP_pat_k_star ma_hosp_char*
 local dep_var lntotchrg lncost lnrevenue
+local level byhicbic bydischarge
+local benchmark b_minus_ffs b_div_ffs
 
+*prep datasets for merge
 use medpar_hcc_byhicbic, clear
 keep hicbic `hcc'
-compress
 save hcc, replace
 
 use rcc_byhicbic, clear
-gen drop = (revenue==.)|(cost==.)|(revenue<0)
-save rcc, replace
+gen drop = (revenue==.)|(cost==.)|(revenue<0)|(cost>0 & revenue==0)
+save rcc_byhicbic, replace
+
+use rcc_bydischarge, clear
+gen drop = (revenue==.)|(cost==.)|(revenue<0)|(cost>0 & revenue==0)|(price==.)
+save rcc_bydischarge, replace
 
 use denom, clear
 destring(zip5), gen(pzip)
-*merge hospital market variables by zip
-
-merge m:1 hicbic using hcc, keep(1 3) nogen
-mvencode `hcc', mv(0) override
 duplicates drop
 duplicates tag hicbic ma, gen(dup)
 drop if dup==1
 drop dup
 drop if hicbic=="mmmmmmmUfWWsfGW"|hicbic=="mmmmmmmWDsDWWfD"|hicbic=="mmmmmmmsDWGDfXW"|hicbic=="mmmmmmmsGaDGamD"|hicbic=="mmmmmmmsXfsJDJX"
+save denom_clean, replace
 
-merge 1:1 hicbic ma using rcc, keep(1 3) keepusing(revenue cost totchrg drop) nogen
+*start merging
+use denom_clean, clear
+*merge hccs
+merge m:1 hicbic using hcc, keep(1 3) nogen
+mvencode `hcc', mv(0) override
+
+*merge hospital structure variables
+merge m:1 pzip using hosp_mrkt_zip, keep(3) nogen
+
+*merge new benchmark variables
+merge m:1 ssa using benchmark_new, keep(3) keepusing(benchmark b_minus_ffs b_div_ffs) nogen
+compress
+save base, replace
+
+*construct two different datasets for hicbic-level and discharged based analysis
+use base, clear
+*merge hicbic based rcc
+merge 1:1 hicbic ma using rcc_byhicbic, keep(1 3) keepusing(revenue cost totchrg drop) nogen
 drop if drop==1
-compress
+save probit0_byhicbic, replace
 
-merge m:1 pzip using HHI_mprovno_sys, keep(1 3) nogen
-compress
-rename pzip zip
-merge m:1 pzip using hosp_mrkt_zip, keep(1 3) nogen
-rename zip pzip
+use base, clear
+*merge expenditures for discharge based
+merge 1:m hicbic ma using rcc_bydischarge, keep(3) keepusing(revenue cost totchrg price drop) nogen
+drop if drop==1
+save probit0_bydischarge, replace
 
-drop HHI_pat_k_star drop death_yr zip5 ssa hicbic
+*loop through both hicbic and discharge level data
+foreach type in `level' {
+	*loop through both benchmarks
+	foreach bench in `benchmark' {
+		use probit0_`type', clear
+		drop benchmar hicbic ssa zip5 death_yr
+		
+		*construct demo interactions
+		gen fb = female*black
+		foreach var of varlist `ages' {
+			gen byte female_`var'= `var'*female
+			gen byte black_`var'=`var'*black
+			gen byte fb_`var'=`var'*fb
+		}
 
-*construct demo interactions
-gen fb = female*black
+		*probits for estimating ma_hat
+		probit ma `demo_ctrl' `mrkt' `bench' [pweight=weight]
+		estimates save probit0_`type', replace
+		predict ma_hat
+		save probit0_`type'_`bench', replace
+		drop if ma_hat==.
 
-foreach var of varlist `ages' {
-	gen byte female_`var'= `var'*female
-	gen byte black_`var'=`var'*black
-	gen byte fb_`var'=`var'*fb
+		*generate the IVs
+		foreach var of varlist `mrkt' {
+			gen ma_hat_`var'=ma_hat*`var'
+			gen ma_`var'=ma*`var'
+		}
+		
+		*recode nonpositive expenditures to 0
+		mvencode totchrg cost revenue, mv(0) override
+		gen lntotchrg=ln(totchrg+1)
+		gen lncost=ln(cost+1)
+		gen lnrevenue=ln(revenue+1)
+		save iv_`type'_`bench', replace
+	}
 }
 
-*probits for estimating ma_hat
-probit ma `demo_ctrl' `mrkt' benchmar [pweight=weight]
-estimates save probit0, replace
-predict ma_hat
-save probit0, replace
-
-drop if ma_hat==.
-foreach var of varlist `mrkt'{
-	gen ma_hat_`var'=ma_hat*`var'
-	gen ma_`var'=ma*`var'
-}
-
-mvencode totchrg cost revenue, mv(1) override
-recode revenue 0=1
-gen lntotchrg=ln(totchrg)
-gen lncost=ln(cost)
-gen lnrevenue=ln(revenue)
-save iv_rcc, replace
-
+do IV.do

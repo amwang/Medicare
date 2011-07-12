@@ -101,13 +101,16 @@ forval r=1/14 {
 	
 	**create zip-level market structure file
 	duplicates drop pzip, force
+	
 	if `r'==1 {
-		save HHI_mprovno_sys, replace
+		save tmp_HHI_sys, replace
 	}
 	else {
-		append using HHI_mprovno_sys
-		save HHI_mprovno_sys, replace
+		append using tmp_HHI_sys
+		save tmp_HHI_sys, replace
 	}
+	merge 1:1 pzip using hosp_mrkt_zip, keepusing(HHI_sys)
+	save hosp_mrkt_zip, replace
 }
 
 shell rm -f tmp*

@@ -27,10 +27,21 @@ options nocenter pagesize=max;
 libname tmp "/space/wanga/test/&size.";
 x "cd /space/wanga/test/&size.";
 
+*calculate costs: use ccr;
+*calculate revenue: for MA use npr ratio, for TM use medpar_payment;
+data tmp.medpar_hmo_costs;
+	set tmp.medpar_hmo_costs;
+	cost=ccr*totchrg;
+	if MA=1 then revenue=totchrg*npr;
+	else revenue=medpar_payment;
+	if MA=1 then price=npr/ccr;
+	else price=revenue/cost;
+run;
+
 *don't collapse by hicbic, MA;
 proc sql;
 	create table tmp.rcc_bydischarge as
-	select hicbic, MA, revenue, cost, totchrg
+	select hicbic, MA, revenue, cost, totchrg, price
 	from tmp.medpar_hmo_costs
 	where MA~=.;
 quit;
@@ -42,4 +53,4 @@ x "st rcc_bydischarge.sas7bdat rcc_bydischarge.dta";
 x "mv rcc_bydischarge.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata";
 x "mv rcc_bydischarge.dta /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata/100/statanew";
 
-x "mv medpar_hmo_costs.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata";
+x "mv medpar_hmo_costs.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata/medpar_hmo_costs.sas7bdat";
