@@ -76,6 +76,7 @@ merge m:1 pzip using hosp_mrkt_zip, keep(3) nogen
 *merge new benchmark variables
 merge m:1 ssa using benchmark_new, keep(3) keepusing(benchmark b_minus_ffs b_div_ffs) nogen
 save base, replace
+drop if ssa=="45762"
 
 *construct two different datasets for hicbic-level and discharged based analysis
 use base, clear

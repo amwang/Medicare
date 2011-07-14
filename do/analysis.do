@@ -33,6 +33,7 @@ forval r=1/14	{
 	*drop all alaska observations
 	drop if pzip>=99000 & pzip<100000
 	drop if substr(mprovno,1,2)=="02"
+	drop if ssa=="45762"
 	
 	merge m:1 mprovno using aha_sysid, norep nogen keep(1 3) keepusing(sysid)
 	gen hchar8 = (sysid~="")

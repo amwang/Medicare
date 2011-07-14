@@ -1,7 +1,10 @@
 .DS_Store
 .cshrc
 *.log
-variable.txt
+*.txt
 *.tex
 *.key
 /xwalks
+*.xml
+*.xlsx
+*.dta
