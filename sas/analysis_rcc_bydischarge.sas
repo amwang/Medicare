@@ -34,8 +34,7 @@ data tmp.medpar_hmo_costs;
 	cost=ccr*totchrg;
 	if MA=1 then revenue=totchrg*npr;
 	else revenue=medpar_payment;
-	if MA=1 then price=npr/ccr;
-	else price=revenue/cost;
+	price=revenue/cost;
 run;
 
 *don't collapse by hicbic, MA;

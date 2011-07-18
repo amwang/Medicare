@@ -39,7 +39,7 @@ The directory locations for these two sets of files are here:
 
 There's a subdirectory for each year of data under each of these subdirectories.  The NBER has data through 2005 currently, and we can use data as far back as 1996.  In the locations above you'll find data for 2002-2008. 
 
-All of these files have had their HICs encrypted, using a common encryption algorithm across files and two sets of years 2002-05 and 2006-08. In the 2002-05 files, you will see a variable called ehic in each file. In the 06-08 files, you will see a variable called bene\_id. We rename the bene\_id variable to hicbic for consistency with other sets of data.
+All of these files have had their HICs encrypted, using a common encryption algorithm across files and two sets of years 2002-05 and 2006-08. In the 2002-05 files, you will see a variable called ehic in each file. In the 06-08 files, you will see a variable called bene\_id. *We rename the bene\_id variable to hicbic for consistency with other sets of data.*
 
 See "construct\_denom.sas" and "construct\_medpar.sas" for code to build these files. Liberal comments are used in the denom file. These personal CMS working files are used heavily in the construction of other intermediary datasets further on in the project. After you have these constructed to your liking, make sure you have a backup stored somewhere as this is a processing intensive step.  
 
@@ -95,18 +95,18 @@ The MA indicator is assigned based on the month of discharge of a stay. "analysi
 
 ######Charges (totchrg)
 Definition: dollar amounts asked for a service by a health care provider. This is often different from the actual payments made to providers
-Other names: none
-Origin: This value is taken directly from each MedPAR stay record. No processing needed! Hurray.
+Other names: gross revenue
+Origin: This value is taken directly from each MedPAR stay record. No processing needed! Hurray!
 
-######Cost 
-Definition: Actual payment
+######Cost (cost)
+Definition: Cost to the hospital for services provided
 Other names: expenditures
-Origin: Derived using cost reports for all stays using cost-to-charge ratio
+Origin: Derived using cost reports for all stays using hospital-level cost-to-charge ratio
 
 ######Revenue (revenue)
-Definition:
-Other names: payment, medpar_payment
-Origin: Derived using cost reports
+Definition: amount that the provider (hospital) actually makes. Theoretically the identity "revenue = cost-charges" should hold true.
+Other names: payment, medpar_payment, net revenue
+Origin: For TM folks, 
 
 cost=ccr*totchrg;
 if MA=1 then revenue=totchrg*npr;

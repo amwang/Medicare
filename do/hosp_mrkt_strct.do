@@ -17,8 +17,7 @@ output: master1.dta-master14.dta
 
 ***/
 
-local size 100
-local path /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata/`size'/statanew
+local path /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata/
 
 clear all
 capture log close
@@ -94,7 +93,7 @@ forval r=1/14 {
 	*1. generate CAP_pat_k (zip level) (var: CAP_pat_k, count_k, pzip)
 	use tmp_hosp`r', clear
 	merge 1:m mprovno using tmp_ahat_jk, keepusing(ahat_jk sum_phat_kj count_kj pzip) nogen norep
-	gen CAP_pat_jk= ahat_jk*beds*sum_phat_kj
+	gen CAP_pat_jk= ahat_jk*beds/sum_phat_kj
 	collapse (sum) CAP_pat_k=CAP_pat_jk (count) count_k=count_kj, by(pzip)
 	save tmp_CAP_pat_k, replace
 
