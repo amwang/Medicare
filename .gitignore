@@ -6,6 +6,10 @@
 *.tex
 *.key
 /xwalks
+<<<<<<< HEAD
 *.xml
 *.xlsx
 *.dta
+=======
+kunhee_hafd/hosp_costs.dta
+>>>>>>> Revert 707528390636f5d4529bc23928283b22c506bbf5^..HEAD
