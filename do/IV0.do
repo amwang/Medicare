@@ -24,8 +24,7 @@ capture log close
 set more off
 set mem 20g
 set matsize 11000
-local size 100
-local path /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata/`size'/statanew
+local path /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata
 cd `path'
 pause on
 log using "IV0.log", replace
@@ -63,7 +62,7 @@ drop if dup==1
 drop dup
 drop if hicbic=="mmmmmmmUfWWsfGW"|hicbic=="mmmmmmmWDsDWWfD"|hicbic=="mmmmmmmsDWGDfXW"|hicbic=="mmmmmmmsGaDGamD"|hicbic=="mmmmmmmsXfsJDJX"
 save denom_clean, replace
-*/
+
 *start merging
 use denom_clean, clear
 *merge hccs
@@ -76,21 +75,24 @@ merge m:1 pzip using hosp_mrkt_zip, keep(3) nogen
 *merge new benchmark variables
 merge m:1 ssa using benchmark_new, keep(3) keepusing(benchmark b_minus_ffs b_div_ffs) nogen
 save base, replace
-drop if ssa=="45762"
 
 *construct two different datasets for hicbic-level and discharged based analysis
 use base, clear
 *merge hicbic based rcc
 merge 1:1 hicbic ma using rcc_byhicbic, keep(1 3) keepusing(revenue cost totchrg drop) nogen
+drop if ssa=="45762"
+drop if pzip>=99000 & pzip<100000
 drop if drop==1
 save probit0_byhicbic, replace
 
 use base, clear
 *merge expenditures for discharge based
 merge 1:m hicbic ma using rcc_bydischarge, keep(3) keepusing(revenue cost totchrg price drop) nogen
+drop if ssa=="45762"
+drop if pzip>=99000 & pzip<100000
 drop if drop==1
 save probit0_bydischarge, replace
-
+*/
 *loop through both hicbic and discharge level data
 foreach type in `level' {
 	*loop through both benchmarks

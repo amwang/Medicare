@@ -267,179 +267,180 @@ run;
 
 *macro that determines differential differences;
 %macro hosp();
-%do j=&r1. %to &r2.;
+	%do j=&r1. %to &r2.;
 
-	data analysis;
-		set tmp.analysis&j.;
-	run;
-	
-	proc sort data=analysis;
-		by pzip;
-	run;
-	
-	*create file with 2 closest hospitals;
-	proc means noprint data=analysis;
-	 class pzip hchar1 hchar2 hchar3 hchar4 hchar5 hchar6 hchar7;
-	 types pzip * (hchar1 hchar2 hchar3 hchar4 hchar5 hchar6 hchar7);
-	 var dist;
-	 output out=product
-		 idgroup (min(dist) out[2] (dist mprovno) =dist mprovno);
-	run;
-
-	proc sort data=product;
-		by pzip;
-	run;
-	
-	%macro hchar();
-	%do k=1 %to 7;
-		*keep relevant characteristic only;
-		data product&k.;
-			set product;
-			if hchar&k.~=.;
-		run;
-
-		*find dsame for each zip-characteristic;
-		proc sql;
-			create table analysis&k. as
-		select mprovno, a.pzip,
-		case
-			when mprovno ne mprovno_1 then dist_1
-			else dist_2
-			end as dsame&k.
-		from analysis a, product&k. b
-		where (a.pzip=b.pzip) and (a.hchar&k.=b.hchar&k.);
-		quit;
-	%end;
-	%mend;
-	%hchar;
-
-	*merge all distances back with analysis to one file;
-	proc sql;
-		create table analysis_char as
-		select a.*, dsame1, dsame2, dsame3, dsame4, dsame5, dsame6, dsame7
-		from analysis a left join analysis1 b on (a.pzip=b.pzip and a.mprovno=b.mprovno)
-		left join analysis2 c on (a.pzip=c.pzip and a.mprovno=c.mprovno)
-		left join analysis3 d on (a.pzip=d.pzip and a.mprovno=d.mprovno)
-		left join analysis4 e on (a.pzip=e.pzip and a.mprovno=e.mprovno)
-		left join analysis5 f on (a.pzip=f.pzip and a.mprovno=f.mprovno)
-		left join analysis6 g on (a.pzip=g.pzip and a.mprovno=g.mprovno)
-		left join analysis7 h on (a.pzip=h.pzip and a.mprovno=h.mprovno);
-	quit;
-
-	*create opp characteristic dummies in analysis;
-	data analysis_alt;
-	 set analysis;
-	 ophchar1=(hchar1=0);
-	 ophchar2=(hchar2=0);
-	 ophchar3=(hchar3=0);
-	 ophchar4=(hchar4=0);
-	 ophchar5=(hchar5=0);
-	 ophchar6=(hchar6=0);
-	 ophchar7=(hchar7=0);
-	run;
-	
-	*create file with flipped characteristics;
-	data product_alt;
-	 set product (rename=(hchar1=ophchar1 hchar2=ophchar2 hchar3=ophchar3
-		hchar4=ophchar4 hchar5=ophchar5 hchar6=ophchar6 hchar7=ophchar7));
-	run;
-
-	*find dsame for each zip-characteristic;
-	%macro ophchar();
-	%do k=1 %to 7;
-		*keep relevant characteristic only;
-		data product_alt&k.;
-			set product_alt;
-			if ophchar&k.~=.;
+		data analysis;
+			set tmp.analysis&j.;
 		run;
 	
-		*find dopp for each zip-characteristic;
-		proc sql;
-			create table analysis_alt&k. as
+		proc sort data=analysis;
+			by pzip;
+		run;
+	
+		*create file with 2 closest hospitals;
+		proc means noprint data=analysis;
+		 class pzip hchar1 hchar2 hchar3 hchar4 hchar5 hchar6 hchar7;
+		 types pzip * (hchar1 hchar2 hchar3 hchar4 hchar5 hchar6 hchar7);
+		 var dist;
+		 output out=product
+			 idgroup (min(dist) out[2] (dist mprovno) =dist mprovno);
+		run;
+
+		proc sort data=product;
+			by pzip;
+		run;
+	
+		%macro hchar();
+		%do k=1 %to 7;
+			*keep relevant characteristic only;
+			data product&k.;
+				set product;
+				if hchar&k.~=.;
+			run;
+
+			*find dsame for each zip-characteristic;
+			proc sql;
+				create table analysis&k. as
 			select mprovno, a.pzip,
 			case
 				when mprovno ne mprovno_1 then dist_1
 				else dist_2
-			end as dopp&k.
-			from analysis_alt a left join product_alt&k. b
-			on a.pzip=b.pzip and a.ophchar&k.=b.ophchar&k.;
+				end as dsame&k.
+			from analysis a, product&k. b
+			where (a.pzip=b.pzip) and (a.hchar&k.=b.hchar&k.);
+			quit;
+		%end;
+		%mend;
+		%hchar;
+
+		*merge all distances back with analysis to one file;
+		proc sql;
+			create table analysis_char as
+			select a.*, dsame1, dsame2, dsame3, dsame4, dsame5, dsame6, dsame7
+			from analysis a left join analysis1 b on (a.pzip=b.pzip and a.mprovno=b.mprovno)
+			left join analysis2 c on (a.pzip=c.pzip and a.mprovno=c.mprovno)
+			left join analysis3 d on (a.pzip=d.pzip and a.mprovno=d.mprovno)
+			left join analysis4 e on (a.pzip=e.pzip and a.mprovno=e.mprovno)
+			left join analysis5 f on (a.pzip=f.pzip and a.mprovno=f.mprovno)
+			left join analysis6 g on (a.pzip=g.pzip and a.mprovno=g.mprovno)
+			left join analysis7 h on (a.pzip=h.pzip and a.mprovno=h.mprovno);
 		quit;
+
+		*create opp characteristic dummies in analysis;
+		data analysis_alt;
+		 set analysis;
+		 ophchar1=(hchar1=0);
+		 ophchar2=(hchar2=0);
+		 ophchar3=(hchar3=0);
+		 ophchar4=(hchar4=0);
+		 ophchar5=(hchar5=0);
+		 ophchar6=(hchar6=0);
+		 ophchar7=(hchar7=0);
+		run;
+	
+		*create file with flipped characteristics;
+		data product_alt;
+		 set product (rename=(hchar1=ophchar1 hchar2=ophchar2 hchar3=ophchar3
+			hchar4=ophchar4 hchar5=ophchar5 hchar6=ophchar6 hchar7=ophchar7));
+		run;
+
+		*find dsame for each zip-characteristic;
+		%macro ophchar();
+		%do k=1 %to 7;
+			*keep relevant characteristic only;
+			data product_alt&k.;
+				set product_alt;
+				if ophchar&k.~=.;
+			run;
+	
+			*find dopp for each zip-characteristic;
+			proc sql;
+				create table analysis_alt&k. as
+				select mprovno, a.pzip,
+				case
+					when mprovno ne mprovno_1 then dist_1
+					else dist_2
+				end as dopp&k.
+				from analysis_alt a left join product_alt&k. b
+				on a.pzip=b.pzip and a.ophchar&k.=b.ophchar&k.;
+			quit;
+		%end;
+		%mend;
+		%ophchar;
+
+		*merge distances back with analysis;
+		proc sql;
+			create table analysis_full as
+			select a.*, dopp1, dopp2, dopp3, dopp4, dopp5, dopp6, dopp7
+			from analysis_char a left join analysis_alt1 b on (a.pzip=b.pzip and a.mprovno=b.mprovno)
+			left join analysis_alt2 c on (a.pzip=c.pzip and a.mprovno=c.mprovno)
+			left join analysis_alt3 d on (a.pzip=d.pzip and a.mprovno=d.mprovno)
+			left join analysis_alt4 e on (a.pzip=e.pzip and a.mprovno=e.mprovno)
+			left join analysis_alt5 f on (a.pzip=f.pzip and a.mprovno=f.mprovno)
+			left join analysis_alt6 g on (a.pzip=g.pzip and a.mprovno=g.mprovno)
+			left join analysis_alt7 h on (a.pzip=h.pzip and a.mprovno=h.mprovno);
+		quit;
+	
+		proc sort data=analysis_full;
+			by pzip;
+		run;
+
+		*calculate differential distances;
+		data final_analysis&j. (drop= dopp1-dopp7 dsame1-dsame7);
+		 set analysis_full;
+		 ddsame1= dist-dsame1;
+		 ddsame2= dist-dsame2;
+		 ddsame3= dist-dsame3;
+		 ddsame4= dist-dsame4;
+		 ddsame5= dist-dsame5;
+		 ddsame6= dist-dsame6;
+		 ddsame7= dist-dsame7;
+		 ddopp1=  dist-dopp1;
+		 ddopp2=  dist-dopp2;
+		 ddopp3=  dist-dopp3;
+		 ddopp4=  dist-dopp4;
+		 ddopp5=  dist-dopp5;
+		 ddopp6=  dist-dopp6;
+		 ddopp7=  dist-dopp7;
+		run;
+
+		*add bene characteristics;
+		proc sql;
+			create table tmp.stata&j. as
+			select id, a.ZIP, female, black, a6569jan08, a7074jan08, a7579jan08, a8089jan08, a9099jan08, count, bene, b.*,
+			case
+				when b.mprovno=a.mprovno then 1
+				else 0
+			end as choice,
+			sum(calculated choice) as choice_present
+			from medpar_region&j. a, final_analysis&j. b
+			where a.ZIP=b.pzip
+			group by id
+			having sum(calculated choice) ge 1;
+		quit;
+
+		proc datasets nolist lib=tmp;
+		MODIFY stata&j.;
+		FORMAT _all_;
+		run;
+
+		libname x xport "/space/wanga/test/&size./stata&j..xpt";
+		options VALIDVARNAME=V6;
+		proc copy in=tmp out=x memtype=data; 
+		   select stata&j.;
+		run;
+
+		x "cp stata&j..xpt 	/disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata/&size./statanew";
+		x "rm -rf stata&j..xpt";
+		x "rm -rf stata&j..sas7bdat";
+		x "rm -rf analysis&j..sas7bdat";
+	
+		*clean up;
+		proc datasets lib=work kill;
+		run;
+
 	%end;
-	%mend;
-	%ophchar;
-
-	*merge distances back with analysis;
-	proc sql;
-		create table analysis_full as
-		select a.*, dopp1, dopp2, dopp3, dopp4, dopp5, dopp6, dopp7
-		from analysis_char a left join analysis_alt1 b on (a.pzip=b.pzip and a.mprovno=b.mprovno)
-		left join analysis_alt2 c on (a.pzip=c.pzip and a.mprovno=c.mprovno)
-		left join analysis_alt3 d on (a.pzip=d.pzip and a.mprovno=d.mprovno)
-		left join analysis_alt4 e on (a.pzip=e.pzip and a.mprovno=e.mprovno)
-		left join analysis_alt5 f on (a.pzip=f.pzip and a.mprovno=f.mprovno)
-		left join analysis_alt6 g on (a.pzip=g.pzip and a.mprovno=g.mprovno)
-		left join analysis_alt7 h on (a.pzip=h.pzip and a.mprovno=h.mprovno);
-	quit;
-	
-	proc sort data=analysis_full;
-		by pzip;
-	run;
-
-	*calculate differential distances;
-	data final_analysis&j. (drop= dopp1-dopp7 dsame1-dsame7);
-	 set analysis_full;
-	 ddsame1= dist-dsame1;
-	 ddsame2= dist-dsame2;
-	 ddsame3= dist-dsame3;
-	 ddsame4= dist-dsame4;
-	 ddsame5= dist-dsame5;
-	 ddsame6= dist-dsame6;
-	 ddsame7= dist-dsame7;
-	 ddopp1=  dist-dopp1;
-	 ddopp2=  dist-dopp2;
-	 ddopp3=  dist-dopp3;
-	 ddopp4=  dist-dopp4;
-	 ddopp5=  dist-dopp5;
-	 ddopp6=  dist-dopp6;
-	 ddopp7=  dist-dopp7;
-	run;
-
-	*add bene characteristics;
-	proc sql;
-		create table tmp.stata&j. as
-		select id, a.ZIP, female, black, a6569jan08, a7074jan08, a7579jan08, a8089jan08, a9099jan08, count, bene, b.*,
-		case
-			when b.mprovno=a.mprovno then 1
-			else 0
-		end as choice,
-		sum(calculated choice) as choice_present
-		from medpar_region&j. a, final_analysis&j. b
-		where a.ZIP=b.pzip
-		group by id
-		having sum(calculated choice) ge 1;
-	quit;
-
-	proc datasets nolist lib=tmp;
-	MODIFY stata&j.;
-	FORMAT _all_;
-	run;
-
-	libname x xport "/space/wanga/test/&size./stata&j..xpt";
-	options VALIDVARNAME=V6;
-	proc copy in=tmp out=x memtype=data; 
-	   select stata&j.;
-	run;
-
-	x "cp stata&j..xpt 	/disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata/&size./statanew";
-	x "rm -rf stata&j..xpt";
-	x "rm -rf stata&j..sas7bdat";
-	x "rm -rf analysis&j..sas7bdat";
-	
-	*clean up;
-	proc datasets lib=work kill;
-	run;
-
-%end;
 %mend;
+
 %hosp;
 

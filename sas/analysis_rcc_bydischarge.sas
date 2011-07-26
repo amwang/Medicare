@@ -24,8 +24,11 @@ output: medpar_hmo_costs.sas7bdat
 options nocenter pagesize=max;
 %let size=100;
 %let year=2008;
-libname tmp "/space/wanga/test/&size.";
-x "cd /space/wanga/test/&size.";
+libname tmp "/space/wanga/test/";
+
+x "cd /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata";
+x "mv medpar_hmo_costs.sas7bdat /space/wanga/test";
+x "cd /space/wanga/test";
 
 *calculate costs: use ccr;
 *calculate revenue: for MA use npr ratio, for TM use medpar_payment;
@@ -40,7 +43,7 @@ run;
 *don't collapse by hicbic, MA;
 proc sql;
 	create table tmp.rcc_bydischarge as
-	select hicbic, MA, revenue, cost, totchrg, price
+	select hicbic, mprovno, MA, revenue, cost, totchrg, price
 	from tmp.medpar_hmo_costs
 	where MA~=.;
 quit;
@@ -49,7 +52,8 @@ quit;
 x "st rcc_bydischarge.sas7bdat rcc_bydischarge.dta";
 
 *cleanup;
+x "rm -rf /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata/rcc_bydischarge.sas7bdat";
+x "rm -rf /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata/rcc_bydischarge.dta";
 x "mv rcc_bydischarge.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata";
-x "mv rcc_bydischarge.dta /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata/100/statanew";
-
-x "mv medpar_hmo_costs.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata/medpar_hmo_costs.sas7bdat";
+x "mv rcc_bydischarge.dta /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata";
+x "mv medpar_hmo_costs.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata/";

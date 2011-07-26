@@ -171,6 +171,7 @@ proc sql;
 	put(MCRNUM, z6.) as mprovno
 	from tmp.aha_2008;
 quit;
+
 *join 2007 and 2008;
 proc sql;
 	create table join as
@@ -181,10 +182,12 @@ proc sql;
 	from tmp.aha_2008
 	order by mprovno;
 quit;
+
 *drop duplicates;
 proc sort nodupkey;
 	by mprovno lat lon;
 run;
+
 *unique hospitals: 3414;
 proc sql;
 	create table aha_hosp as
@@ -193,7 +196,7 @@ proc sql;
 	group by mprovno;
 quit;
 
-*merge aha with hospital geocodes;
+*merge aha with CMS geocodes;
 *20 hosptials lat/lon updated using aha, 147 not present in aha;
 *updated if lat and long differ by more than 0.5 radians;
 proc sql;
@@ -215,7 +218,8 @@ proc sql;
 		when (b.lat and b.lon) then 0
 		else 1
 	end as miss_aha
-	from hosp_geocodes as a left join aha_hosp b on a.mprovno=b.mprovno;
+	from hosp_geocodes a 
+	left join aha_hosp b on a.mprovno=b.mprovno;
 quit;
 
 *clean up*; 

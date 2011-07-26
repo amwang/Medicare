@@ -1,27 +1,60 @@
 #Readme for Medicare project
 *Research question at hand: what effect does hospital concentration have on the bargaining power of MA plans?
-*Prior to 2008, hospital were not required to report utilization data of their MA patients to the Medicare.
+*Starting in 2008, hospitals were required to report the utilization data of their MA patients to the Medicare. Thus our analysis starts with 2008 data.
 *The current project deals only with 2008 data, but the code can be modified so that subsequent years can be added. The macro %year. is used in all code.  
 *Change working directories to correspond to your own.
 
 ##Piece-by-Piece: building our dataset
 All dataset processing for this project is completed in SAS. All regression analysis is completed in STATA. The philosophy behind this is that SAS can handle complex data sets while STATA is much more efficient for analysis. Stat-Transfer (available on all of our servers) can be used to convert files from .sas7bdat to .dta. Elsewise, xpt files can be exported from SAS and imported into STATA.
 
-Levels: Analysis is conducted on both the discharge/stay level as well as the beneficiary-MA status level.
+Please refer to the “building_medicare.pdf” for dataflow, dataset dependencies and code dependencies.
 
-This readme is organized as follows:
-	1) raw files used to build our dataset
-		a) description and background
-		b) processing to get to base files
-		c) variables
-	2) derivative files
-		a) description and variables
-		b) processing steps
-	3) analysis
-		a) hospital choice regressions
-		b) construction of market structure variables
-		b) main MA, hospital concentration regressions
+Levels: Analysis is conducted on both the discharge level as well as the beneficiary-MA status level.
 
+ 
+This file is organized as follows:
+
+Beneficiary/Utilization: Denominator and MedPAR files
+	-Patient characteristics
+		-demographics
+		-geocodes
+		-ICD9 diagnosis codes/HCC
+	-Stay characteristics
+		-MA indicator/weights
+			-construction
+			-assignment
+		-charges, cost, revenue, revenue/cost
+Hospital-level data:
+	-hospital characteristics
+	-cost reports
+IVs: benchmarks and ffs spending
+
+Hospital market structure variables: 
+	-generate hospital choice dataset
+		-split hospitals and beneficiaries into mutually exclusive and exhaustive regions
+-calculate differential distances
+	-conditional logits
+	-calculation of hosp market structure variables
+
+Hospital competition structure variables:
+	-merge all necessary data pieces together
+	-zero-stage regressions
+		-probits
+		-generate IV variables
+	-two-part models: National and CA-only samples
+		-beneficiary-level
+		-stay-level
+
+Quick Tips for 
+-SAS
+-SQL
+-Terminal/Bash
+
+Code files and description
+Data files and description
+	-analysis_stata/: dta files
+	-workingdata/: sas7bdat files
+ 
 ###Medicare beneficiary data: Denominator and MedPAR (unique identifier: hicbic)
 One should begin by understanding the contents of the Medicare utilization and enrollment data from CMS (Center for Medicare & Medicaid Services). The [RESDAC (Research Data Assistance Center) website](http://www.resdac.org/ddvh/Index.asp) provides detailed codebook (aka data documentation, data dictionaries, record layouts, and data layouts) info regarding all the datasets that are available to researchers. The pertinent files for this project are the "Medicare Denominator File" (commonly referred to as "denom"), which is a enrollment/summary file, and the "Medicare MedPAR file" (referred to as "MedPAR"), which is the utilization file. These files are **big**. New programmers should take a look at the RESDAC documentation to get acquainted with the data and determine what variables are available and where they are located.  
 
@@ -55,14 +88,14 @@ Code to implement this appears at various points throughout the project when nee
 5-digit zip-codes are also constructed directly from 9-digit bene_zip in the denominator file. SAS has a handy zipcode-to-geocode crosswalk(sashelp.zipcode.sas7bdat) which will geocode any valid zip-code to the centroid of the zip-code and they also have some [handy documentation](http://support.sas.com/resources/papers/proceedings10/219-2010.pdf) on this process. We considered using 9-digit or 3-digit zips, but ultimately we decided that analysis on those levels would be respectively too granular or too coarse. 
 
 We also create a complete 5-digit SSA (Social Security Administration) state-county code by concatenating the SSA state-code and SSA county-codes from the denominator so that we can later merge in our IV: the Medicare Advantage benchmark payment rate.  
-Note that the SSA state-county code is different from the more commonly used FIPS (federal info processing stds) state-county codes. There are plenty of SSA-FIPS crosswalks available if any merging needs to be done. This has been unnecessary for our analysis so far.
+Note that the SSA state-county code is different from the more commonly used FIPS (federal info processing standards) state-county codes. There are plenty of SSA-FIPS crosswalks available if any merging needs to be done. This has been unnecessary for our analysis so far.
 
 #####Diagnosis codes (DGNSCD1-DGNSCD10)
-We eventually recode ICD-9 (int'l classification of disease codes/diagnosis codes) from MedPAR to HCC (hazard characteristic code) using the CMS-HCC model that was in place in 2008, the [2007 HCC model software](https://www.cms.gov/MedicareAdvtgSpecRateStats/06a_Risk_adjustment_prior.asp). Note that the CMS-HCC scheme we use is not exhaustive, so not all of our diagnosis codes will have a matching HCC. CMS uses a modified version of the model which has 70 indicators in 2007, while the true HCC model has 180 or so. The percentage of ICD-9 codes <5% that do not have a match are not worrisome.
+We eventually recode ICD-9 (int'l classification of disease codes/diagnosis codes) from MedPAR to HCC (hazard characteristic code) using the CMS-HCC model that was in place in 2008, the [2007 HCC model software](https://www.cms.gov/MedicareAdvtgSpecRateStats/06a_Risk_adjustment_prior.asp). Note that the CMS-HCC scheme we use is not exhaustive, so not all of our diagnosis codes will have a matching HCC. CMS uses a modified version of the model that has 70 indicators in 2007, while the true HCC model has 180 or so. The percentage of ICD-9 codes <5% that do not have a match are not worrisome.
 
 The HCC risk model is used to adjust Medicare capitation payments to private health care plans for the health expenditure risk of their enrollees. We are using the HCC in a different capacity: as binary controls for disease conditions. Essentially, we are binning the 6000+ different ICD-9 codes into 70 disease categories for control purposes.  
 
-"analysis\_medpar\_HCC\_byhicbic.sas" is used to recode the 10 diagnosis codes by stay in MedPAR to 70 HCC indicators by hicbic.  
+"analysis_medpar_HCC_byhicbic.sas" is used to recode the 10 diagnosis codes by stay in MedPAR to 70 HCC indicators by hicbic.  
 The HCC indicators for each hicbic represents a summary of all HCCs that the beneficiary was diagnosed with over the calendar year. We map the 10 diagnosis codes to their respective HCCs for each stay and then reshape to obtain 70 indicator dummies for each stay.  We then take the maximum value of each HCC indicator by hicbic to obtain the hicbic level file.  
 
 #####MA indicator and weight (variables: MA, weight)
@@ -86,15 +119,17 @@ Keep valid beneficiaries with valid eligibility data:
 TM and MA weights:  
 Since some proportion of benes switch plans during the year, we construct weights so that we can utilize both the TM and MA part of their data.  
 1) weightMA = months MA/12 and weightTM = months TM/12; weightTM and weightMA should sum to 1 since we only keep benes who have continuous eligibility for the entire year.  
-2) If bene dies in 2008, weightMA = months MA/months eligible and weightTM = months TM/ months eligible; we do this so as to prevent down-weighting benes who die.  
+2) If bene dies in 2008, weightMA = months MA/months eligible and weightTM = months TM/ months eligible; we do this so as to prevent the down-weighting of benes who die.  
 
 #####Assigning our MA indicator  
-The MA indicator is assigned based on the month of discharge of a stay. "analysis\_rcc\_byhicbic.sas" 
+The MA indicator is assigned based on the month of discharge of a stay. "analysis\_rcc\_byhicbic.sas" and also “analysis\_rcc\_bydischarge.sas”
+For each stay, we match the admission month to the hicbic’s respective hmo status for that month. 
 
 #####Charges, Costs, and Revenue (rcc)
+Two-levels of financial data exist. Here we discuss the values that are unique for each stay. On an aggregate level, hospitals also have these values. We use the macro level hospital ratios to interpolate some financial data for both our TM and MA stays.
 
 ######Charges (totchrg)
-Definition: dollar amounts asked for a service by a health care provider. This is often different from the actual payments made to providers
+Definition: dollar amounts “charged” for a service by a health care provider. This is often different from the actual payments made to providers
 Other names: gross revenue
 Origin: This value is taken directly from each MedPAR stay record. No processing needed! Hurray!
 
@@ -102,15 +137,20 @@ Origin: This value is taken directly from each MedPAR stay record. No processing
 Definition: Cost to the hospital for services provided
 Other names: expenditures
 Origin: Derived using cost reports for all stays using hospital-level cost-to-charge ratio
+totchrg*ccr = cost
 
 ######Revenue (revenue)
 Definition: amount that the provider (hospital) actually makes. Theoretically the identity "revenue = cost-charges" should hold true.
 Other names: payment, medpar_payment, net revenue
-Origin: For TM folks, 
+Origin: For TM folks, this value is the sum of several payment variables from MedPAR. (medpar_payment= BLDDEDAM+COIN_AMT+PMT_AMT+PRPAYAMT+DED_AMT)
+For MA folks, this value is derived using a net payment ratio (revenue/costs) revenue totchrg*npr
 
-cost=ccr*totchrg;
-if MA=1 then revenue=totchrg*npr;
-else revenue=medpar_payment;
+######Revenue/cost (price)
+Definition: revenue/cost. This 4th DV is not dependent on volume (charges)
+Other names: new DV
+Origin: revenue/cost as calculated above for all beneficiaries. One caveat is that MA patients at the same hospital all have the same “price”. This is because both the revenue and cost components for MA patients are derived payments.
+
+We can aggregate the first three of these variables to a beneficiary-ma status level by summing. Price is recalculated at the beneficiary level after all the primary variables have been summed.
 
 ###Medicare hospitals (unique identifier: mprovno)
 ####Hospital Location/geocode (variable: hzip)
@@ -140,11 +180,18 @@ We can calculate net revenue to gross revenue ratio using data directly from the
 net payment ratio  = net patient revenue/total charges
 net payment ratio = [net patient revenue - Medicare net patient revenue]/[total charges - Medicare charges]
 
-Note that these represent net and gross revenue (total charges) for all patients, for all different parts of the hospital complex.  To the extent that we can isolate those net revenues and gross revenues that do not include Medicare payments of various kinds, we can improve upon it. One thing we can definitely do is to remove Medicare inpatient net revenue from the numerator, and Medicare inpatient total charges from the denominator. Unfortunately, we don't think we can go further than this. While we can identify other pots of net revenue that are paid by Medicare (i.e., SNF, HHA), we can't find the corresponding charge figures for each of those sources.
+Note that these represent net and gross revenue (total charges) for all patients, for all different parts of the hospital complex.  To the extent that we can isolate those net revenues and gross revenues that do not include Medicare payments of various kinds, we can improve upon it. One thing we can definitely do is to remove Medicare inpatient net revenue from the numerator, and Medicare inpatient total charges from the denominator. Unfortunately, we can’t go further than this. While we can identify other pots of net revenue that are paid by Medicare (i.e., SNF, HHA), we can't find the corresponding charge figures for each of those sources.
 
-http://www.resdac.org/tools/TBs/TN-008_UsingCCRsinResearch_508.pdf
-http://www.resdac.org/Tools/TBs/TN-004_CalculatingHospitalDRG_508.pdf
+####IV construction: MA benchmark payment rate and ffs (fee for service) spending
+The MA benchmark payment rate and ffs spending are both available by county. We create two IVs out of them.
+IV1: b_divide_ffs = benchmark/ffs
+IV2: b_minus_ffs = benchmark-ffs
 
+There is one ffs outlier that we choose to remove: Loving, TX. It has an ffs spending value that is way above the norm.
+We also choose to drop all beneficiaries in Alaska since it doesn’t really have any kind of Medicare managed care market to speak of. Including it could cause problems in estimation. 
+
+
+ 
 ##Working in the Unix environment
 ###If your SAS program doesn't run:
 Learning to love SAS will take time. Breath.  
@@ -152,11 +199,11 @@ Learning to love SAS will take time. Breath.
 -Make sure that you have a **libname** specified. Unlike STATA, SAS wants you to tell it exactly where it can find the datasets it will work on.  
 -Single vs. double quotes matter. Check to see if you're using the right ones.  
 -Commas make a big difference, check to see if you need or don't need them  
--Shell commands: cd, rm, bunzip (things that your bash terminal will understand) can be evoked.  
--Are the macro variables referenced correctly: &macro_name.?
+-Shell commands: cd, rm, bunzip (things that your bash terminal will understand) can be evoked with an “x” followed by your command in double quotes
+-Are the macro variables referenced correctly: &macro_name.? Make sure macros are correctly defined before you reference them.
 
 ###The power of SQL
-Learn to run queries(aka chop up your dataset(s), combine, reshuffle your data) in SQL will save you tons of time and headaches in the long run. Any DATA step can pretty much be replaced with a more efficient and cleaner SQL step. The [handbook](http://support.sas.com/documentation/onlinedoc/91pdf/sasdoc_91/base_sqlproc_6992.pdf) provides lots of examples is a great go-to for any sql coding questions. The code for this project also has plenty examples.  
+Learn to run queries (aka chop up your dataset(s), combine, reshuffle your data) in SQL will save you tons of time and headaches in the long run. Any DATA step can pretty much be replaced with a more efficient and cleaner SQL step. The [handbook](http://support.sas.com/documentation/onlinedoc/91pdf/sasdoc_91/base_sqlproc_6992.pdf) provides lots of examples is a great go-to for any sql coding questions. The code for this project also has plenty examples. This handbook is actually pretty useful and I’ve gone through it several times and picked up good ideas to integrate into coding practices.
 We also have a MySQL book floating around in the room. The syntax between proc sql and MySQL is a bit different, but the book is still very useful.
 
 ###Most used Terminal/Bash commands
@@ -171,17 +218,18 @@ If all else fails, just close the window and start up a new session. :-)
 - cat: open and read a document in the screen  
 - pico or vim: to edit documents on the fly  
 - cd: change directories  
-	>+cd ..: go up a level  
-	>+cd: go to home dir  
-	>+cd -: go to last dir  
+	“cd ..”: go up a level  
+	“cd”: go to home dir  
+	“cd –”: go to last dir  
 - bzip, bunzip and gzip, gunzip: zip and unzip files using these two utilities  
 - Most used shortcut keys:  
-	>+ctrl+c: escape from current line/start a new line  
-	>+ctrl+c, ctrl+x: exit out of current program  
-	>+ctrl+u: delete everything ahead of the cursor on this line  
-	>+up/down arrows: recall and cycle through previous commands  
+	ctrl+c: escape from current line/start a new line  
+	ctrl+c, ctrl+x: exit out of current program  
+	ctrl+u: delete everything ahead of the cursor on this line  
+	up/down arrows: recall and cycle through previous commands  
+	ctrl+r: last stata command
 
-
+ 
 ##Code contents:
 ###SAS files:  
 -analysis\_denom.sas: duplicate observation and collapse TM/MA weights to weight variable, add hicbic characteristics  
@@ -212,3 +260,83 @@ lists of variables in datasets
 
 ###xwalks:  
 various crosswalks used for regressions
+ 
+List of files in /analysis_stata folder:
+aha_extract2008.dta: raw data from Jean with hospital system id to mprovno
+aha_sysid.dta: cleaned hospital system id to mprovno
+/analysis: folder that contains analysis1-14 data that comes from analysis.do
+analysis.do: hospital choice regressions
+analysis.ster: regression results from analysis.do
+base.dta: intermediary file for constructing full datasets in IV0.do
+benchmark_new.dta: benchmarks by county (IVs)
+bene_per_zip.dta: Medicare beneficiaries per zipcode (for descriptive stats purposes)
+/ca: folder with CA-only data
+	base_ca.dta: base dataset with CA based beneficiaries
+	IV_CA.do: IV regressions for CA
+	npr_CA.dta: new OSHPD revenue numbers
+denom_clean.dta: intermediary file for constructing full datasets in IV0.do
+denom.dta: beneficiary characteristics from CMS denominator
+/dis: folder with discharge data
+	iv_bydischarge_b_div_ffs.dta: data for regressions using b/ffs
+	iv_bydischarge_b_minus_ffs.dta: data for regressions using b-ffs
+	IV_dis.do: IV regressions for discharge based data
+	probit0_bydischarge.dta: data that feeds into zero-stage regressions
+	tpm2.ster/tpm2.txt/tpm_dis.xml: regression output
+ffs_spend.do: construct the new IVs
+hcc.dta: clean hicbic level hcc (diagnosis group) dummies
+HHI_mprovno_sys.dta: hospital market structure variables by zip
+/hic: folder with hicbic level data
+	iv_byhicbic_b_div_ffs.dta: data for regressions using b/ffs
+	iv_byhicbic_b_minus_ffs.dta: data for regressions using b-ffs
+	IV_hic.do: IV regressions for hicbic based data
+	probit0_byhicbic.dta: data that feeds into zero-stage regressions
+	tpm2.ster/tpm2.txt/tpm_hic.xml: regression output
+hosp_chars.dta: hospital characteristics by mprovno
+hosp_mrkt_struct.do: constructs hospital market structure variables
+hosp_mrkt_zip.dta: hospital market structure variables by zip code
+hosp_region.dta: hospital geocode info 
+IV0.do: zero-level regressions
+IV_CA.do: regression file for CA-only regressions
+IV.do: full two-part model regressions
+/master: folder with master1-master14 files. output from hosp_mrkt_strct.do
+medpar_hcc_byhicbic.dta: raw hicbic level hcc (diagnosis group) dummies
+rcc_bydischarge.dta: revenue charge cost data from medpar by discharge
+rcc_byhicbic.dta: revenue charge cost data from medpar by hicbic
+/stata: folder with stata1-14.xpt and .dta files. input and output from analysis.do
+variables.txt: list of all variables for IV regression (not up to date)
+zip_hrr_wcityname_xwalk.dta: xwalk for zip, hrr, hrrstate, hrrcity, and region
+
+ 
+List of files in /workingdata folder:
+2007_HCC.txt: ICD-9 HCC xwalk file
+aha_extract2007.dta: aha hospital geocodes for FY2007
+aha_extract2008.dta: aha hospital geocodes for FY2008
+analysis_HCC_byhicbic.sas: recoding ICD-9 (int'l classification of disease codes) from MedPAR to HCC (hazard characteristic code) dummies
+analysis_rcc_bydischarge.sas: match cost reports to medpar stays, calculating artificial costs for MA stays and revenue, collapse to the hicbic, MA level for a regression-ready file
+analysis_rcc_byhicbic.sas: match cost reports to medpar stays, calculating artificial costs for MA stays and revenue
+bene_per_zip.sas7bdat:
+cty_risk.sas7bdat/cty_risk.txt/cty_risk.xpt: county benchmark payment rate in various file forms
+denom100_2008.sas7bdat: full denominator file
+hcc.sas7bdat:  ICD-9 HCC xwalk file
+hicbic_medparonly.sas7bdat: intermediate dataset in analysis_rcc_byhicbic.sas
+hicbic_medpar.sas7bdat: intermediate dataset in analysis_rcc_byhicbic.sas
+hicbic.sas7bdat: duplicate entries with different weights for those benes with MA and TM enrollment
+hosp_chars_new.sas7bdat: cost report financials from chris
+hosp_costs.sas7bdat: ccr and npr
+hosp_geocode_clean.sas7bdat: cleaned hospital geocodes
+hosp_geocodes.sas7bdat: raw hospital geocodes from scott
+hosp_region.sas7bdat: hospital to region xwalk
+hosp.sas7bdat: hospital geocodes only
+medpar100.sas7bdat: full medpar file
+medpar_group.sas7bdat: collapsed hospital-choice-demographics by zip
+medpar_hcc_byhicbic.sas7bdat: hcc byhicbic
+medpar_hmo_costs.sas7bdat: medpar with merged ccr and npr by discharge date
+medpar_hmo.sas7bdat: intermediate dataset for ma status determination in analysis_rcc_bydischarge.sas
+medpar_region.sas7bdat: all valid stays in medpar with regional assignment
+rcc_bydischarge.sas7bdat: revenue charge cost by discharge
+rcc_byhicbic.sas7bdat: revenue charge cost by hicbic
+trans_medparonly.sas7bdat: intermediate dataset for ma status determination in analysis_rcc_bydischarge.sas
+trans.sas7bdat: assign weights for those benes with MA and TM enrollment
+zip_region.sas7bdat: all valid zips in medpar with regional assignment
+zip_to_region_xwalk.txt: five-digit zip to region xwalk
+zip_to_r.sas7bdat: sas version of zip_to_region

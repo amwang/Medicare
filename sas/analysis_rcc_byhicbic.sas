@@ -103,7 +103,7 @@ quit;
 x "st rcc_byhicbic.sas7bdat rcc_byhicbic.dta";
 
 *cleanup;
-x "mv rcc_byhicbic.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata";
+x "mv rcc_byhicbic.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata ";
 x "mv rcc_byhicbic.dta /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata/100/statanew";
 
 x "mv medpar_hmo_costs.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata";
