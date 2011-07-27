@@ -2,6 +2,7 @@
 .cshrc
 *.log
 *.txt
+*.lst
 *.tex
 *.key
 /xwalks

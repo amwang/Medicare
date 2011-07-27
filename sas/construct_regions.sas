@@ -305,7 +305,7 @@ run;
 			case
 				when mprovno ne mprovno_1 then dist_1
 				else dist_2
-				end as dsame&k.
+			end as dsame&k.
 			from analysis a, product&k. b
 			where (a.pzip=b.pzip) and (a.hchar&k.=b.hchar&k.);
 			quit;
