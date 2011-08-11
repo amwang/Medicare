@@ -93,12 +93,17 @@ run; */
 *obs should be unique by hicbic, MA;
 proc sql;
 	create table tmp.rcc_byhicbic as
-	select hicbic, MA, sum(revenue) as revenue, sum(cost) as cost, sum(totchrg) as totchrg, count(*) as stays
+	select hicbic, MA, sum(revenue) as revenue1, sum(cost) as cost1, sum(totchrg) as totchrg1, count(*) as stays
 	from tmp.medpar_hmo_costs
 	where MA~=. and (revenue>=1000 and revenue<=1000000) and (cost>=1000 and cost<=1000000)
 	and (totchrg>=1000 and totchrg<=1000000)
 	group by hicbic, MA;
 quit;
+
+*rename variables;
+data tmp.rcc_byhicbic (rename = (revenue1=revenue cost1=cost totchrg1=totchrg));
+	set tmp.rcc_byhicbic;
+run;
 
 *stat-transfer;
 x "st rcc_byhicbic.sas7bdat rcc_byhicbic.dta";
