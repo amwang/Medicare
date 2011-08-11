@@ -91,14 +91,14 @@ run; */
 
 *collapse by hicbic, MA;
 *obs should be unique by hicbic, MA;
-/*proc sql;
+proc sql;
 	create table tmp.rcc_byhicbic as
 	select hicbic, MA, sum(revenue) as revenue, sum(cost) as cost, sum(totchrg) as totchrg, count(*) as stays
 	from tmp.medpar_hmo_costs
 	where MA~=. and (revenue>=1000 and revenue<=1000000) and (cost>=1000 and cost<=1000000)
 	and (totchrg>=1000 and totchrg<=1000000)
 	group by hicbic, MA;
-quit; */
+quit;
 
 *stat-transfer;
 x "st rcc_byhicbic.sas7bdat rcc_byhicbic.dta";
