@@ -103,15 +103,6 @@ quit;
 *stat-transfer;
 x "st rcc_byhicbic.sas7bdat rcc_byhicbic.dta";
 
-/*cleanup;
-x "mv rcc_byhicbic.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata ";
-x "mv rcc_byhicbic.dta /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata/100/statanew";
+*cleanup;
+x "mv rcc_byhicbic.dta /disk/agedisk2/medicare.work/kessler-DUA16444/kunhee/analysis_stata";
 
-x "mv medpar_hmo_costs.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata";
-x "mv medpar_hmo.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata";
-x "mv hosp_costs.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata";
-x "mv hicbic_medparonly.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata";
-x "mv hicbic_medpar.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata";
-x "mv trans_medparonly.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata";
-x "mv medpar100.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata";
-x "mv hicbic.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata"; */
