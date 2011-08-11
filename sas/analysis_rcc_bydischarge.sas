@@ -55,8 +55,4 @@ quit;
 x "st rcc_bydischarge.sas7bdat rcc_bydischarge.dta";
 
 *cleanup;
-x "rm -rf /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata/rcc_bydischarge.sas7bdat";
-x "rm -rf /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata/rcc_bydischarge.dta";
-x "mv rcc_bydischarge.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata";
-x "mv rcc_bydischarge.dta /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata";
-x "mv medpar_hmo_costs.sas7bdat /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/workingdata/";
+x "mv rcc_bydischarge.dta /disk/agedisk2/medicare.work/kessler-DUA16444/kunhee/analysis_stata";
