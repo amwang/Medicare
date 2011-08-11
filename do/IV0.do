@@ -24,7 +24,7 @@ capture log close
 set more off
 set mem 20g
 set matsize 11000
-local path /disk/agedisk2/medicare.work/kessler-DUA16444/kunhee/analysis_stata
+local path /disk/agedisk2/medicare.work/kessler-DUA16444/wanga/analysis_stata
 cd `path'
 pause on
 log using "IV0.log", replace
@@ -37,40 +37,34 @@ local age_x_case female_* black_* fb_*
 local demo_ctrl `ages' `case' `age_x_case' `hcc'
 local ma_hat_IV ma_hat ma_hat_HHI* ma_hat_CAP_pat_k_star ma_hat_hosp_char*
 local ma_mrkt ma_HHI* ma_CAP_pat_k_star ma_hosp_char*
-local depvar totchrg cost revenue 
 local dep_var lntotchrg lncost lnrevenue
 local level byhicbic bydischarge
 local benchmark b_minus_ffs b_div_ffs
-
-/*prep datasets for merge
+/*
+*prep datasets for merge
 use medpar_hcc_byhicbic, clear
 keep hicbic `hcc'
-save hcc, replace */
+save hcc, replace
 
-/*use rcc_byhicbic, clear
-capture drop drop
+use rcc_byhicbic, clear
 gen drop = (revenue==.)|(cost==.)|(revenue<0)|(cost>0 & revenue==0)
-count if drop==1
-save rcc_byhicbic, replace */
+save rcc_byhicbic, replace
 
-/*use rcc_bydischarge, clear
-capture drop drop
+use rcc_bydischarge, clear
 gen drop = (revenue==.)|(cost==.)|(revenue<0)|(cost>0 & revenue==0)|(price==.)
-count if drop==1
-save rcc_bydischarge, replace */
+save rcc_bydischarge, replace
 
-/*use denom_new, clear
-*destring(zip5), gen(pzip)
-drop zip5
+use denom, clear
+destring(zip5), gen(pzip)
 duplicates drop
 duplicates tag hicbic ma, gen(dup)
 drop if dup==1
 drop dup
 drop if hicbic=="mmmmmmmUfWWsfGW"|hicbic=="mmmmmmmWDsDWWfD"|hicbic=="mmmmmmmsDWGDfXW"|hicbic=="mmmmmmmsGaDGamD"|hicbic=="mmmmmmmsXfsJDJX"
-save denom_new_clean, replace */
+save denom_clean, replace
 
 *start merging
-use denom_new_clean, clear
+use denom_clean, clear
 *merge hccs
 merge m:1 hicbic using hcc, keep(1 3) nogen
 mvencode `hcc', mv(0) override
@@ -98,7 +92,7 @@ drop if ssa=="45762"
 drop if pzip>=99000 & pzip<100000
 drop if drop==1
 save probit0_bydischarge, replace
-
+*/
 *loop through both hicbic and discharge level data
 foreach type in `level' {
 	*loop through both benchmarks
@@ -126,10 +120,6 @@ foreach type in `level' {
 			gen ma_hat_`var'=ma_hat*`var'
 			gen ma_`var'=ma*`var'
 		}
-		
-		*add new DV: markup = 1-cost/rev
-		gen markup = 1-cost/revenue
-		drop if markup <-1 | markup > 0.5
 		
 		*recode nonpositive expenditures to 0
 		mvencode totchrg cost revenue, mv(0) override
